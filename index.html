@@ -9,13 +9,19 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
+  <nav>
+    <a href="#/">中文</a>
+    <a href="#/en/">EN</a>
+  </nav>
   <div id="app">吟美文档加载中...</div>
   <script>
     window.$docsify = {
+      coverpage: true,
       name: '吟美说明文档',
-      repo: 'git@github.com:worm128/yinmei-docs.git',
+      repo: 'https://github.com/worm128/AI-YinMei',
       loadSidebar: true,
       subMaxLevel: 3,
+      loadNavbar: true,
 
       search: 'auto', // 默认值
 
@@ -65,7 +71,23 @@
         // 您可以提供一个正则表达式来匹配前缀。在这种情况下，
         // 匹配到的字符串将被用来识别索引
         pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
-      }
+      },
+
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span><a href="https://github.com/worm128/AI-YinMei" target="_blank">AI-Yinmei</a> &copy;2025.</span>',
+            '<span>Power by <a href="https://space.bilibili.com/46130941" target="_blank">程序猿的退休生活</a>.</span>',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function (html) {
+            return html + footer;
+          });
+        }
+      ]
     }
   </script>
   <!-- Docsify v4 -->

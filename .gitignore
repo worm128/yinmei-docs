@@ -1,0 +1,7 @@
+*__pycache__/
+.vscode/
+runtime/
+*.bin
+.github/
+.git/
+.idea/
