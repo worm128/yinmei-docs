@@ -1,4 +1,8 @@
 * [**首页**](/README.md)
 * [**下载与介绍**](/link.md)
 * [**吟美核心**](/yinmei-core.md)
+* [**吟美分析**](/yinmei-analysis.md)
+* [**吟美桌宠**](/yinmei-desktop-plus.md)
+* [**吟美唱歌**](/yinmei-music.md)
+* [**开放平台**](/openapi.md)
 * [**版本更新**](/update.md)
