@@ -233,13 +233,20 @@ fastgpt地址配置：
 ![30.png](images/吟美核心/30.png)  
 
 ### 2、gpt-sovits1和2配置  
-如果你想语音更加生动，可以选择gpt-sovits的产品  
-整合包我已经放在网盘，GPT-SoVITS-v2.zip是GPT-SoVITS的2.0版本：  
-网盘下载地址  
-夸克：https://pan.quark.cn/s/9b523c0b857a  
-提取码：Tm6Y  
-百度网盘：https://pan.baidu.com/s/1dQLa0MyHKbgSPhrTIZbcwg  
-提取码: 66xs  
+- **如果你想语音更加生动，可以选择gpt-sovits的产品**  
+- <font color="red" style="font-weight:bold">整合包我已经放在网盘，GPT-SoVITS-v2.zip是GPT-SoVITS的2.0版本：</font>  
+**吟美整合包下载地址：**  
+百度网盘群：请在“百度网盘->消息” 添加群号   
+百度网盘群号1：930109408（满）  
+百度网盘群号2：939447713（满）   
+百度网盘群号3：945900295   
+百度网盘群号4：969208563  
+**夸克：**   
+夸克群1：1231405830   
+夸克群2：428937868   
+![103.png](images/吟美核心/103.png)  
+
+**配置语音：**  
 ![31.png](images/吟美核心/31.png)  
 
 温度和语速只对版本2.0生效  
@@ -282,6 +289,10 @@ pause
 这里触发助手说话的音频，你可以和上面配置的一样，也可以在多开一个不同发音的gpt-sovits服务出来  
 助手的语音：然后我们在唱歌回复、绘画回复、跳舞回复、进入房间欢迎词、积分播报等一些说话上，引用这个助手语音  
 ![38.png](images/吟美核心/38.png)  
+
+### 3、语音声道
+语音新增声道选择，默认输出到 扬声器，这里会被【桌宠的live2D_audio_device参数】音频捕获或者【VTS设置口型】音频捕获，从而实现口型匹配  
+![66.png](images/吟美核心/66.png)  
 
 ## 三、直播配置  
 ### 1、弹幕
@@ -368,7 +379,8 @@ docker run --name blivechat  -d -p 12450:12450 -v blivechat-data:/mnt/data xfgry
 ![65.png](images/吟美核心/65.png)  
 
 ### 5、吟美声道设置
-#### 5.1、语音新增声道选择，默认输出到 扬声器，这里会被【桌宠的live2D_audio_device参数】音频捕获或者【VTS设置口型】音频捕获，从而实现口型匹配  
+#### 5.1、语音声道
+语音新增声道选择，默认输出到 扬声器，这里会被【桌宠的live2D_audio_device参数】音频捕获或者【VTS设置口型】音频捕获，从而实现口型匹配  
 ![66.png](images/吟美核心/66.png)  
 #### 5.2、唱歌声道
 ![67.png](images/吟美核心/67.png)  
