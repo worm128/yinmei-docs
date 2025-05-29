@@ -6,6 +6,14 @@
 > 启动成功：管理后台地址
 
 ![00.png](images/吟美核心/00.png)  
+**访问地址：** http://127.0.0.1:9000  
+
+## 快速配置
+> 配置好以下两个配置，就可以马上进行聊天了  
+
+1、[配置聊天](#_2、通用Ai聊天)  
+2、[配置语音](#二、语音合成)  
+3、[进行对话](#_23-聊天对话)  
 
 ## 一、聊天配置
 ### 1、Ai名称
@@ -132,6 +140,9 @@ https://cloud.baidu.com/
 请求接口：https://qianfan.baidubce.com/v2/chat/completions  
 openai 秘钥：Bearer xxx  
 模型列表：https://cloud.baidu.com/doc/WENXINWORKSHOP/s/Fm2vrveyu  
+
+#### 2.3 聊天对话
+![39.png](images/吟美核心/39.png)  
 
 ### 3、Fastgpt配置
 #### 3.1 注册账号
@@ -271,3 +282,33 @@ pause
 这里触发助手说话的音频，你可以和上面配置的一样，也可以在多开一个不同发音的gpt-sovits服务出来  
 助手的语音：然后我们在唱歌回复、绘画回复、跳舞回复、进入房间欢迎词、积分播报等一些说话上，引用这个助手语音  
 ![38.png](images/吟美核心/38.png)  
+
+## 三、直播配置  
+### 1、弹幕
+申请开通B站开放平台配置  
+![40.png](images/吟美核心/40.png)  
+申请开通B站开放平台后，在个人资料找到秘钥  
+![41.png](images/吟美核心/41.png)  
+把数据填写到这里来，  
+access_key_id：B站开放平台KeyId  
+access_key_secred：B站开放平台密钥  
+关联直播间：B站直播房间号  
+![42.png](images/吟美核心/42.png)  
+点击头像，url的id就是“直播用户UID”  
+![43.png](images/吟美核心/43.png)  
+![44.png](images/吟美核心/44.png)  
+新建项目->直播工具，获取直播应用id  
+![45.png](images/吟美核心/45.png)  
+项目ID，填入吟美核心2.0的“B站开放平台应用id”  
+![46.png](images/吟美核心/46.png)  
+最后，需要保存配置并且重启应用才会生效  
+
+
+### 2、直播间发起聊天  
+发起聊天文本：fuck you  
+![47.png](images/吟美核心/47.png)  
+后台捕抓到Ai回复和弹幕  
+![48.png](images/吟美核心/48.png)  
+BliveChat项目，右侧弹幕区配置：  
+项目地址：https://github.com/xfgryujk/blivechat  
+![49.png](images/吟美核心/49.png)  
