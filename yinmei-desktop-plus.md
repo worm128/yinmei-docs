@@ -1,8 +1,9 @@
-## 1、网盘包含：
-AI-YinMei-v2.2.0.zip、yinmei-desktop-plus.zip  
+## 1、启动方式：
+**下载包：**  
+下载路径：在[网盘](/link?id=项目下载)的yinmei-all文件夹  
+应用包：yinmei-desktop-plus.zip  
 ![1.png](images/yinmei-desktop-plus/1.png)  
 **启动方式：**  
-吟美核心启动：start.bat  或者  yinmei-core-api.exe  
 桌宠启动：启动桌宠.bat  或者 yinmei-desktop-plus.exe  
 可以查看音频设置：双击“查询音频设备.bat”  
 

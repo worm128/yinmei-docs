@@ -1,8 +1,11 @@
 ## 1、启动方式：
-**yinmei-NeteaseCloudMusicApi：**  
-网易音乐渠道  
+### 1.1 下载包：
+下载路径：需要在[吟美直播间](http://live.bilibili.com/3033646)上舰后，问程序猿的退休生活【QQ：314769095】获取  
+### 1.2、yinmei-NeteaseCloudMusicApi：  
+作用：网易音乐渠道    
 双击启动 “start.bat”   
-**yinmei-music：**  
+### 1.3、yinmei-music：  
+作用：吟美唱歌  
 双击启动“yinmei-music-api.exe”或者“start.bat”
 
 ## 2、登录配置：

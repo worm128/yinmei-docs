@@ -1,5 +1,9 @@
 ## 快速启动
-> 双击strat.bat 或者 yinmei-core-api.exe，即可启动吟美核心服务
+**下载包：**  
+下载路径：在"吟美核心"文件夹  
+应用包：AI-YinMei-v2.2.0.zip  
+**启动方式：**
+双击启动“start.bat"或者"yinmei-core-api.exe"  
 
 ![0.png](images/吟美核心/0.png)
 
@@ -54,6 +58,9 @@ OBS配置两个浏览器插件decision.html和emotion.html
 [新款-聊天回复框-下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476544&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 ![00.png](images/plug/回复框效果.png)  
 
+### 4、吟美爆粗和温柔提示词
+[吟美爆粗和温柔如何设置](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12477860&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+![78.png](images/吟美核心/78.png)  
 
 ## 一、聊天配置
 ### 1、Ai名称

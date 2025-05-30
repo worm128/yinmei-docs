@@ -1,5 +1,8 @@
 ## 一、启动方式：
-**yinmei-analysis：**  
+**下载包：**  
+下载路径：在[网盘](/link?id=项目下载)的yinmei-all文件夹  
+应用包：yinmei-analysis.zip  
+**启动方式：**  
 双击启动“yinmei-analysis-api.exe”或者“start.bat”  
 
 ## 二、扩散思维
