@@ -324,8 +324,61 @@ pause
 ![107.png](images/吟美核心/107.png)  
 ![108.png](images/吟美核心/108.png)  
 
+## 三、人物  
+### 1、VTube Studio
+#### 1.1、人物参数配置
+**皮肤教程：**  
+https://www.bilibili.com/video/BV1nV4y1X7yJ/  
 
-## 三、直播配置  
+VST官方人物参数说明：https://github.com/DenchiSoft/VTubeStudio/wiki/VTS-Model-Settings  
+VST手部参数：https://www.bilibili.com/video/BV1CW4y1A77p  
+相关动作文档：https://www.bilibili.com/read/cv18777039/  
+
+#### 1.2、人物口型
+##### 1、虚拟声卡安装：
+**虚拟声卡驱动（Virtual Audio Cable）4.66 官方版**  
+https://www.pcsoft.com.cn/soft/123115.html  
+![108.png](images/吟美核心/109.png)  
+
+**Voicemeeter虚拟声卡：**  
+https://vb-audio.com/Voicemeeter/banana.htm  
+![110.png](images/吟美核心/110.png)  
+
+##### 2、虚拟声道配置：
+教程：https://www.bilibili.com/video/BV1BPfVY9Epz  
+观看：34:44  
+![117.png](images/吟美核心/117.png)  
+
+1、虚拟声道划分：  
+唱歌伴奏：第一个虚拟输出声道  
+唱歌人声：第二个虚拟输出声道  
+聊天说话：第二个虚拟输出声道  
+助手聊天：第三个虚拟输出声道  
+说明：使用第二虚拟声道，是为了live2D人物要做口型匹配，为了其他声音不影响人物口型，这个第二声道只用于人物声音，其他伴奏、音乐、或者主人对话音频都不占用这个第二声道  
+![111.png](images/吟美核心/111.png)  
+
+2、voicemeeter必须设置MME的扬声器，不然Vtube Studio不能选择虚拟麦克风  
+![112.png](images/吟美核心/112.png)  
+
+3、voicemeeter选择Aux输出到B2通道  
+![113.png](images/吟美核心/113.png)  
+
+4、VTS选择OUT B2  
+![114.png](images/吟美核心/114.png)  
+
+5、VTS记得设置口型动作使用声音和声频来变化  
+![115.png](images/吟美核心/115.png)  
+
+#### 1.3、人物动作联动
+视频：https://www.bilibili.com/video/BV1PMq9YZEWS  
+观看：29:20  
+![116.png](images/吟美核心/116.png)  
+
+### 2、吟美桌宠
+[桌宠配置](yinmei-desktop-plus?id=桌宠包含内容)  
+
+
+## 四、直播配置  
 ### 1、弹幕
 申请开通B站开放平台配置  
 ![40.png](images/吟美核心/40.png)  
@@ -416,13 +469,14 @@ docker run --name blivechat  -d -p 12450:12450 -v blivechat-data:/mnt/data xfgry
 #### 5.2、唱歌声道
 ![67.png](images/吟美核心/67.png)  
 
-## 四、数据库
+## 五、数据库
 ### * 视频参考效果：
 https://www.bilibili.com/video/BV1r3rgY6ER6/  
 > 这里创建了mongodb后，会支持聊天记录、用户注册、用户积分等功能  
 
 ### * 安装步骤：
-#### 1、选用数据库：mongodb 6.0.16
+#### 1、数据库：
+选择mongodb 6.0.16  
 ```dockerfile
 docker pull mongo:6.0.16
 ```
@@ -465,7 +519,7 @@ docker run -itd --name yinmei-data -p 27018:27017 -e MONGO_INITDB_ROOT_USERNAME=
 ![75.png](images/吟美核心/75.png)  
 
 
-## 五、情感系统
+## 六、情感系统
 ### 1、感情识别：
 > 情感作用：通过用户不同的问题，变化ai的情感，可以在说话语气、语音语调、人物性格、说话语种等地方变化  
 
@@ -534,7 +588,7 @@ key名称就是vts的表情名称，endwait是这个动作运行的时间，时�
 > pattern: 支持正则规则匹配；  
 > percent是触发机率，值越大越容易触发，值范围：0~100  
 
-## 六、QQ机器人
+## 七、QQ机器人
 ### 6.1、napcat配置
 ![85.png](images/吟美核心/85.png)  
 当选择了QQ机器人后，需要你安装一个napcat软件进行QQ信息的采集  
@@ -592,7 +646,7 @@ Q号是你当前AI的qq号码
 3、记得配置表情包保存路径：  
 ![101.png](images/吟美核心/101.png)  
 
-## 七、搜索
+## 八、搜索
 ### 7.1、百度搜索
 有可能会触发安全校验，注意异常捕获跳转的百度安全验证码，手动访问验证地址后再次复制浏览器的cookie即可  
 **访问地址：**https://www.baidu.com/s?ie=utf-8&tn=baidu&wd=%E6%80%AA%E4%BA%BA  
