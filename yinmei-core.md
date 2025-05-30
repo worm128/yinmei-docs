@@ -233,6 +233,7 @@ fastgpt地址配置：
 ![30.png](images/吟美核心/30.png)  
 
 ### 2、gpt-sovits1和2配置  
+#### 2.1、下载软件
 - **如果你想语音更加生动，可以选择gpt-sovits的产品**  
 - <font color="red" style="font-weight:bold">整合包我已经放在网盘，GPT-SoVITS-v2.zip是GPT-SoVITS的2.0版本：</font>  
 **吟美整合包下载地址：**  
@@ -244,8 +245,10 @@ fastgpt地址配置：
 **夸克：**   
 夸克群1：1231405830   
 夸克群2：428937868   
+<font color="red">PS: 请在"yinmei-all"下载gpt-sovits的压缩包，解压即可使用</font>  
 ![103.png](images/吟美核心/103.png)  
 
+#### 2.2、语音配置
 **配置语音：**  
 ![31.png](images/吟美核心/31.png)  
 
@@ -255,9 +258,22 @@ fastgpt地址配置：
 打开GPT-SoVITS-v2，双击api.bat就可以启动  
 ![33.png](images/吟美核心/33.png)  
 
-启动成功界面：  
+#### 2.3、启动软件
+**配置IP：**  
+打开记事本编辑api.bat文件  
+如果你语音是部署在局域网上其他机器，请配置那台机器的IP  
+如果你的语音和吟美核心是同一台机器，则是默认配置127.0.0.1  
+端口是默认9880，如果你有端口冲突，请配置其他端口  
+![105.png](images/吟美核心/105.png)  
+
+**双击api.bat启动软件：**  
 ![34.png](images/吟美核心/34.png)  
 
+**启动成功界面：**  
+启动成功会显示你当前配置好的ip地址  
+![104.png](images/吟美核心/104.png)  
+
+#### 2.4、音频模型选择
 **GPT-SOVITS2的音频模型下载：**  
 https://pan.baidu.com/s/14WUDbWnBn7GPQYVREkWMug?pwd=1145  
 **<font color="red">特别鸣谢：</font>**  
@@ -282,17 +298,31 @@ runtime\python.exe api.py -s "./SoVITS_weights_v2/虎克_e10_s320.pth" -g "./GPT
 pause
 ```
 
-然后配置语音服务地址：  
-这里的地址是你刚才启动GPT-SOVITS服务的地址，如果你是在另外一台机器启动的，请配置那台机器的局域网IP地址和端口，而且请保证网络是通的  
-![37.png](images/吟美核心/37.png)  
-
+#### 2.5、助手音频配置
 这里触发助手说话的音频，你可以和上面配置的一样，也可以在多开一个不同发音的gpt-sovits服务出来  
 助手的语音：然后我们在唱歌回复、绘画回复、跳舞回复、进入房间欢迎词、积分播报等一些说话上，引用这个助手语音  
+助手需要启动多一个gpt-sovits服务，音频端口和主人物端口分开即可，然后服务IP和端口配置这个新音频地址  
 ![38.png](images/吟美核心/38.png)  
 
 ### 3、语音声道
 语音新增声道选择，默认输出到 扬声器，这里会被【桌宠的live2D_audio_device参数】音频捕获或者【VTS设置口型】音频捕获，从而实现口型匹配  
 ![66.png](images/吟美核心/66.png)  
+
+### 4、情感语气
+#### 4.1、语气配置方案  
+配置参考音频，一个情感名称对应一个参考音频文件名  
+![106.png](images/吟美核心/106.png)  
+> 例如： "开心": "蛋糕都已经端到你的面前了，快许个心愿吧。"  
+
+遇到"开心"情感，则使用参考音频"蛋糕都已经端到你的面前了，快许个心愿吧。.WAV"  
+<br>
+
+#### 4.2、参考音频配置
+需要在gpt-sovits的"语气"文件夹加入音频文件"蛋糕都已经端到你的面前了，快许个心愿吧。.WAV"  
+需要参考音频，请在这里下载：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)
+![107.png](images/吟美核心/107.png)  
+![108.png](images/吟美核心/108.png)  
+
 
 ## 三、直播配置  
 ### 1、弹幕
