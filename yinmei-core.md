@@ -15,6 +15,40 @@
 2、[配置语音](#二、语音合成)  
 3、[进行对话](#_23-聊天对话)  
 
+## 付费插件
+### 1、聊天+情感提示效果
+[聊天+情感提示效果](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476099&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+![00.png](images/plug/聊天提示.jpg)  
+OBS配置两个浏览器插件decision.html和emotion.html  
+![00.png](images/plug/webplug.png)  
+
+### 2、AI吟美2.2.0语气参考音频
+[聊天+情感提示效果](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+![00.png](images/plug/参考音频.png)  
+默认参考音频配置：  
+```json
+{
+    "平淡": "引航者，你来啦，这已经是香奈美第九十六次做蛋包饭了，应该成功了吧。",
+    "开心": "蛋糕都已经端到你的面前了，快许个心愿吧。",
+    "伤心": "哎，多少会有点不舍吧，毕竟是个很浪漫的故事，我还想再多回味下呢。",
+    "生气": "记错了，那不是他，为什么唯独对这件事印象这么深刻？",
+    "尴尬": "这，都是少女的心病呀。",
+    "害怕": "非常感谢你的应援，我会继续努力，绝不辜负你的期待。",
+    "可爱": "晚上好，想来听我唱歌吗？能缓解一整天的疲惫哦。",
+    "激情": "圣诞节的钟声已经敲响了，你看到香奈美挂好的新袜子了吗？",
+    "害羞": "你是特意来见我的吗？",
+    "调皮": "好在意呀好想知道，啊要不要下次换上凯文的外套来试试他的反应呢欸嘿",
+    "感激": "谢谢你的支持，我会继续努力的。",
+    "深情": "毕竟，我这一次又是来请他帮忙的，被他听到，恐怕要了不得了呢。",
+    "疑惑": "嗯？你刚才是不是在偷瞄我？",
+    "搞笑": "拜托了医生，对我来说这真的很重要。",
+    "挑衅": "你是说特别漂亮，还是特别可爱？",
+    "无奈": "啊，原来你对他比对我更感兴趣吗？啊真让人伤心。",
+    "好奇": "你会怀疑我吗？会，远离我吗？"
+}
+```
+
+
 ## 一、聊天配置
 ### 1、Ai名称
 > 启动吟美核心AI-YinMei-v2.0.0的start.bat，首先要给你的Ai起个名称，然后在对话里面，你问她名字，她会称呼自己是这个名字
