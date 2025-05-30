@@ -25,6 +25,8 @@ OBS配置两个浏览器插件decision.html和emotion.html
 ### 2、AI吟美2.2.0语气参考音频
 [聊天+情感提示效果](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 ![00.png](images/plug/参考音频.png)  
+![107.png](images/吟美核心/107.png)  
+![108.png](images/吟美核心/108.png)  
 默认参考音频配置：  
 ```json
 {
@@ -47,6 +49,10 @@ OBS配置两个浏览器插件decision.html和emotion.html
     "好奇": "你会怀疑我吗？会，远离我吗？"
 }
 ```
+
+### 3、聊天回复框
+[新款-聊天回复框-下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476544&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+![00.png](images/plug/回复框效果.png)  
 
 
 ## 一、聊天配置
