@@ -1,12 +1,12 @@
-## 桌宠包含内容
-### 1、网盘包含：
-AI-YinMei-v2.1.0.zip、yinmei-desktop-plus.zip  
+## 1、网盘包含：
+AI-YinMei-v2.2.0.zip、yinmei-desktop-plus.zip  
 ![1.png](images/yinmei-desktop-plus/1.png)  
 **启动方式：**  
-吟美核心启动：双击start.bat  
-桌宠启动：启动桌宠.bat    可以查看音频设置：双击“查询音频设备.bat”  
+吟美核心启动：start.bat  或者  yinmei-core-api.exe  
+桌宠启动：启动桌宠.bat  或者 yinmei-desktop-plus.exe  
+可以查看音频设置：双击“查询音频设备.bat”  
 
-### 2、桌宠配置：
+## 2、桌宠配置：
 【配置config.yml】  
 **口型匹配：**live2D_audio_device参数，默认是输出到 扬声器 (Realtek High Definition，请自行配置  
 **麦克风：**mic_audio_device参数，默认输出到 Voicemeeter Out B3，请自行配置  
@@ -15,7 +15,7 @@ AI-YinMei-v2.1.0.zip、yinmei-desktop-plus.zip
 **live2D人物选择：**model_path参数，自行更换人物模型路径："./Resources/v3/Hiyori/Hiyori.model3.json"  
 **人物动作：**我只配置了v2版本Epsilon和v3版本Hiyori，其他人物还没配置动作和表情关联，可以自己配置，参考Epsilon和Hiyori加上name参数，注意大小写  
 
-### 3、语音对话
+## 3、语音对话
 开启语音按钮：语音依赖funasr语音识别系统  
 ![3.png](images/yinmei-desktop-plus/3.png)  
 **需要安装funasr服务端系统才可以使用**  
@@ -50,11 +50,11 @@ nohup bash run_server_2pass.sh \
 #   每行一个热词，格式(热词 权重)：阿里巴巴 20（注：热词理论上无限制，但为了兼顾性能和效果，建议热词长度不超过10，个数不超过1k，权重1~100）
 ```
 
-### 4、声道选择：
+## 4、声道选择：
 ![4.png](images/yinmei-desktop-plus/4.png)  
 
-### 5、桌宠表情：
-#### 5.1、以V3版本Live2D
+## 5、桌宠表情：
+### 5.1、以V3版本Live2D
 **Hiyori举例：**  
 在人物Hiyori.model3.json里面配置动作+表情  
 1、动作：  
@@ -92,7 +92,7 @@ remove=true打开开关后，removeName="唱歌"是释放"唱歌"的表情
 }
 ```
 
-#### 5.2、V2版本Live2D
+### 5.2、V2版本Live2D
 **Epsilon举例：**
 在人物Epsilon.model.json里面配置动作+表情  
 1、动作：  
