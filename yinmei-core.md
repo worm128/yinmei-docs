@@ -320,6 +320,7 @@ pause
 #### 4.2、参考音频配置
 需要在gpt-sovits的"语气"文件夹加入音频文件"蛋糕都已经端到你的面前了，快许个心愿吧。.WAV"  
 需要参考音频，请在这里下载：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)
+  
 ![107.png](images/吟美核心/107.png)  
 ![108.png](images/吟美核心/108.png)  
 
