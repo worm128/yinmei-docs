@@ -34,7 +34,7 @@ channel = data.get("channel", "api")  #渠道号
 ```
 
 ## 3、复读：
-作用：朗读文本 
+作用：朗读文本  
 地址：http://127.0.0.1:9888/say  
 方法：POST  
 请求参数：
@@ -48,4 +48,18 @@ voiceType = json["voiceType"]  # 音频类型： chat=时序流式回复，other
 返回参数：
 ```json
 {"status": "成功"}
+```
+
+## 4、回复文本：
+作用：AI回复文本  
+地址：ws://localhost:18765  
+方法：WebSocket  
+请求参数：  
+ws链接时候需要先注册插件，才会回调回复文本  
+```json
+{"register": "聊天回复"}
+```
+返回参数：  
+```json
+{"type": "聊天回复", "voiceType":语音类别，chat：聊天语音|other：其他语音, "index": 流式回复索引位置, "traceid": 同一语音序列id一样, "chatStatus": start|空|end, "text": 回复文本}
 ```
