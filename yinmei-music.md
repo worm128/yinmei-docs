@@ -1,21 +1,38 @@
 ## 一、启动方式
 ### 1 下载包
 下载路径：需要在[吟美直播间](http://live.bilibili.com/3033646)上舰后，问程序猿的退休生活【QQ：314769095】获取  
-### 2、yinmei-NeteaseCloudMusicApi
-作用：网易音乐渠道    
-双击启动 “start.bat”   
-### 3、yinmei-music
-作用：吟美唱歌  
-双击启动“yinmei-music-api.exe”或者“start.bat”
-### 4、pytorch版本兼容问题
-吟美唱歌模块的pytorch版本是对应cuda 12.4，如果你的cuda是12.6、12.8等，就需要重新安装  
-```bash
+
+### 2、安装cuda
+**当前版本：**
+```cmd
+英伟达：cuda 12.4
+当前项目：pytorch 2.4.0+cu124
+```
+**兼容说明：**当前安装版本只支持cuda12.4,如果是50系显卡需要高版本cuda请自己卸载pytorch进行安装  
+cuda开发包下载【版本12.4】：https://developer.nvidia.com/cuda-12-4-1-download-archive  
+cuda历史版本：https://developer.nvidia.com/cuda-toolkit-archive  
+**重装pytorch：**  
+请自己选择安装的pytorch是cu128、cu124、cu126，具体[查看](https://pytorch.org/get-started/locally/)  
+在项目根目录打开cmd执行如下命令：  
+```cmd
 卸载
 .\runtime\python.exe -m pip uninstall torch torchvision torchaudio
 
-安装对应cuda12.6
-.\runtime\python.exe -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+安装对应cuda12.8
+.\runtime\python.exe -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
+
+驱动版本【nvidia驱动程序】：nvidia-smi -l 1  
+CUDA程序【cudatoolkit开发包】：nvcc -V  
+
+### 3、yinmei-NeteaseCloudMusicApi
+作用：网易音乐渠道    
+双击启动 “start.bat”   
+
+### 4、yinmei-music
+作用：吟美唱歌  
+双击启动“yinmei-music-api.exe”或者“start.bat”  
+
 
 ## 二、登录配置
 唱歌扫码后，可能回调qr/check接口获取不了cookie的，请查看浏览器自行把MUSIC_U和NMTID两个值复制到yinmei-music项目的根目录的netease.txt文件  

@@ -2,17 +2,33 @@
 ### 1、下载包 
 下载路径：在[网盘](/link?id=项目下载)的yinmei-all文件夹  
 应用包：yinmei-analysis.zip  
-### 2、启动方式 
-双击启动“yinmei-analysis-api.exe”或者“start.bat”  
-### 3、pytorch版本兼容问题
-吟美唱歌模块的pytorch版本是对应cuda 12.4，如果你的cuda是12.6、12.8等，就需要重新安装  
-```bash
+
+### 2、安装cuda
+**当前版本：**
+```cmd
+英伟达：cuda 12.4
+当前项目：pytorch 2.4.0+cu124
+```
+**兼容说明：**当前安装版本只支持cuda12.4,如果是50系显卡需要高版本cuda请自己卸载pytorch进行安装  
+cuda开发包下载【版本12.4】：https://developer.nvidia.com/cuda-12-4-1-download-archive  
+cuda历史版本：https://developer.nvidia.com/cuda-toolkit-archive  
+**重装pytorch：**  
+请自己选择安装的pytorch是cu128、cu124、cu126，具体[查看](https://pytorch.org/get-started/locally/)  
+在项目根目录打开cmd执行如下命令：  
+```cmd
 卸载
 .\runtime\python.exe -m pip uninstall torch torchvision torchaudio
 
-安装对应cuda12.6
-.\runtime\python.exe -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+安装对应cuda12.8
+.\runtime\python.exe -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
+
+驱动版本【nvidia驱动程序】：nvidia-smi -l 1  
+CUDA程序【cudatoolkit开发包】：nvcc -V  
+
+### 3、启动方式 
+双击启动“yinmei-analysis-api.exe”或者“start.bat”  
+
 
 
 ## 二、扩散思维
