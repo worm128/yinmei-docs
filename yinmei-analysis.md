@@ -1,9 +1,19 @@
-## 一、启动方式：
-**下载包：**  
+## 一、启动方式
+### 1、下载包 
 下载路径：在[网盘](/link?id=项目下载)的yinmei-all文件夹  
 应用包：yinmei-analysis.zip  
-**启动方式：**  
+### 2、启动方式 
 双击启动“yinmei-analysis-api.exe”或者“start.bat”  
+### 3、pytorch版本兼容问题
+吟美唱歌模块的pytorch版本是对应cuda 12.4，如果你的cuda是12.6、12.8等，就需要重新安装  
+```bash
+卸载
+.\runtime\python.exe -m pip uninstall torch torchvision torchaudio
+
+安装对应cuda12.6
+.\runtime\python.exe -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+```
+
 
 ## 二、扩散思维
 ### 1、安装neo4j图数据库
@@ -95,10 +105,10 @@ http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*(),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+   /
 服务地址：http://192.168.2.58:9997/v1/   #这个是你one api的部署地址的接口，通常修改你的ip和端口就行，openai规范后面都是带v1路径  
 模型名称：Qwen2.5-14B-Instruct-GPTQ-Int8  
 
-#### 3.4 把以上参数配置进去大模型：
+#### 3.4 把以上参数配置进去大模型
 ![15.png](images/yinmei-analysis/15.png)  
 
-#### 3.5 打开关系图库：
+#### 3.5 打开关系图库
 ![16.png](images/yinmei-analysis/16.png)  
 
 **文件处理路径：**  

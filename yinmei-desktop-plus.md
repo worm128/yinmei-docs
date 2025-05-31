@@ -1,13 +1,23 @@
-## 1、启动方式：
-**下载包：**  
+## 一、启动方式
+### 1、下载包
 下载路径：在[网盘](/link?id=项目下载)的yinmei-all文件夹  
 应用包：yinmei-desktop-plus.zip  
 ![1.png](images/yinmei-desktop-plus/1.png)  
-**启动方式：**  
+### 2、启动方式
 桌宠启动：启动桌宠.bat  或者 yinmei-desktop-plus.exe  
 可以查看音频设置：双击“查询音频设备.bat”  
+### 3、pytorch版本兼容问题 
+吟美唱歌模块的pytorch版本是对应cuda 12.4，如果你的cuda是12.6、12.8等，就需要重新安装  
+```bash
+卸载
+.\runtime\python.exe -m pip uninstall torch torchvision torchaudio
 
-## 2、桌宠配置：
+安装对应cuda12.6
+.\runtime\python.exe -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+```
+
+
+## 二、桌宠配置
 【配置config.yml】  
 **口型匹配：**live2D_audio_device参数，默认是输出到 扬声器 (Realtek High Definition，请自行配置  
 **麦克风：**mic_audio_device参数，默认输出到 Voicemeeter Out B3，请自行配置  
@@ -16,7 +26,7 @@
 **live2D人物选择：**model_path参数，自行更换人物模型路径："./Resources/v3/Hiyori/Hiyori.model3.json"  
 **人物动作：**我只配置了v2版本Epsilon和v3版本Hiyori，其他人物还没配置动作和表情关联，可以自己配置，参考Epsilon和Hiyori加上name参数，注意大小写  
 
-## 3、语音对话
+## 三、语音对话
 开启语音按钮：语音依赖funasr语音识别系统  
 ![3.png](images/yinmei-desktop-plus/3.png)  
 **需要安装funasr服务端系统才可以使用**  
@@ -51,11 +61,11 @@ nohup bash run_server_2pass.sh \
 #   每行一个热词，格式(热词 权重)：阿里巴巴 20（注：热词理论上无限制，但为了兼顾性能和效果，建议热词长度不超过10，个数不超过1k，权重1~100）
 ```
 
-## 4、声道选择：
+## 四、声道选择
 ![4.png](images/yinmei-desktop-plus/4.png)  
 
-## 5、桌宠表情：
-### 5.1、以V3版本Live2D
+## 五、桌宠表情
+### 1、以V3版本Live2D
 **Hiyori举例：**  
 在人物Hiyori.model3.json里面配置动作+表情  
 1、动作：  
@@ -93,7 +103,7 @@ remove=true打开开关后，removeName="唱歌"是释放"唱歌"的表情
 }
 ```
 
-### 5.2、V2版本Live2D
+### 2、V2版本Live2D
 **Epsilon举例：**
 在人物Epsilon.model.json里面配置动作+表情  
 1、动作：  
