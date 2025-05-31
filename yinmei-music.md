@@ -42,8 +42,7 @@ netease.txt内容格式：缺少NMTID参数，更换机器秘钥不可用
 ```
 扫码登录地址：http://localhost:11301/login/qrlogin.html  
 ![1.png](images/yinmei-music/1.png)  
-![2.png](images/yinmei-music/2.png)  
-![3.png](images/yinmei-music/3.png)  
+扫码登录成功，会在yinmei-music项目根目录生成一个netease.txt文件  
 
 ## 三、歌曲目录
 input_path: H:\yinmei-music\input  #原始歌曲下载路径  
