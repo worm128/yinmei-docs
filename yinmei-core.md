@@ -725,6 +725,11 @@ formats:
     - json
 ```
 
+#### 2.3、访问searxng
+html服务：http://localhost:10800/  
+json接口服务：http://localhost:10800/search?format=json&q=doro  
+PS：需要json接口服务成功访问才能使用搜索服务
+
 ### 3、duckduckgo搜索
 duckduckgo搜索国内需要魔法上网,ip和端口请根据实际情况配置  
 配置代理：  
