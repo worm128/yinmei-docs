@@ -26,12 +26,17 @@ cuda历史版本：https://developer.nvidia.com/cuda-toolkit-archive
 CUDA程序【cudatoolkit开发包】：nvcc -V  
 
 ### 3、yinmei-NeteaseCloudMusicApi
-作用：网易音乐渠道    
-双击启动 “start.bat”   
+作用：网易音乐渠道  
+需要安装nodejs：  
+![7.png](images/yinmei-music/7.png)  
+双击启动 “start.bat”  
+![8.png](images/yinmei-music/8.png)  
 
 ### 4、yinmei-music
 作用：吟美唱歌  
 双击启动“yinmei-music-api.exe”或者“start.bat”  
+如果未登录网易音乐，会提示登录，输入4扫码登录  
+![9.png](images/yinmei-music/9.png)  
 
 
 ## 二、登录配置
