@@ -21,13 +21,13 @@
 
 ## 付费插件
 ### 1、聊天+情感提示效果
-[聊天+情感提示效果](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476099&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+聊天+情感提示效果：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476099&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 ![00.png](images/plug/聊天提示.jpg)  
 OBS配置两个浏览器插件decision.html和emotion.html  
 ![00.png](images/plug/webplug.png)  
 
 ### 2、AI吟美2.2.0语气参考音频
-[聊天+情感提示效果](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+聊天+情感提示效果：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 ![00.png](images/plug/参考音频.png)  
 ![107.png](images/吟美核心/107.png)  
 ![108.png](images/吟美核心/108.png)  
@@ -55,11 +55,12 @@ OBS配置两个浏览器插件decision.html和emotion.html
 ```
 
 ### 3、聊天回复框
-[新款-聊天回复框-下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476544&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+新款-聊天回复框：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476544&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 ![00.png](images/plug/回复框效果.png)  
 
+
 ### 4、吟美爆粗和温柔提示词
-[吟美爆粗和温柔如何设置](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12477860&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+吟美爆粗和温柔如何设置：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12477860&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 ![78.png](images/吟美核心/78.png)  
 
 ## 一、聊天配置
@@ -451,6 +452,8 @@ access_key_secred：B站开放平台密钥
 ![47.png](images/吟美核心/47.png)  
 后台捕抓到Ai回复和弹幕  
 ![48.png](images/吟美核心/48.png)  
+新款-聊天回复框：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476544&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+![00.png](images/plug/回复框效果.png)  
 BliveChat项目，右侧弹幕区配置：  
 项目地址：https://github.com/xfgryujk/blivechat  
 ![49.png](images/吟美核心/49.png)  
@@ -577,9 +580,13 @@ docker run -itd --name yinmei-data -p 27018:27017 -e MONGO_INITDB_ROOT_USERNAME=
 ?> 问题：我点的音乐哪去了？   分析的情感为：疑惑  
 ![76.png](images/吟美核心/76.png)  
 
+**用户文本弹框+情感弹框+决策弹框**  
+效果插件：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476099&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+
 ### 2、性格配置
 **性格配置的作用：**根据情感变化，变化人物的性格特征，性格可以自定义多个。  
 配置方案的key值，例如，“女仆版”是对应项目提示词配置。  
+吟美爆粗和温柔如何设置：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12477860&loadingShow=1&noTitleBar=1&msource=merchant_share)   
 **性格配置所在位置：**人物性格[🌟]: /prompt/character/  
 ![77.png](images/吟美核心/77.png)  
 ```json
@@ -701,7 +708,7 @@ Q号是你当前AI的qq号码
 ![102.png](images/吟美核心/102.png)  
 
 ### 2、searxng聚合搜索
-安装searxng服务  
+#### 2.1、安装searxng服务
 ```dockerfile
 docker run -d -p 10800:8080 ^
     -v "/j/ai/ai-code/searxng:/etc/searxng" ^
@@ -709,6 +716,13 @@ docker run -d -p 10800:8080 ^
     -e "INSTANCE_NAME=winlone-searxng" ^
     --name "searxng" ^
     searxng/searxng
+```
+#### 2.2、配置searxng
+找到settings.yml配置文件，在formats参数加入配置
+```json
+formats:
+    - html
+    - json
 ```
 
 ### 3、duckduckgo搜索
