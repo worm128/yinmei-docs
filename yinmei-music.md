@@ -47,3 +47,17 @@ netease.txt内容格式：缺少NMTID参数，更换机器秘钥不可用
 ## 三、歌曲目录
 input_path: H:\yinmei-music\input  #原始歌曲下载路径  
 save_path: H:\yinmei-music\output  #歌曲翻唱输出路径  
+
+## 四、FFmpeg解码器配置
+注意：如果没有FFmpeg解码器，将会不能识别mp3音频文件  
+下载方式：
+[官网下载](https://ffmpeg.org/download.html#build-windows)  
+唱歌网盘下载：  
+![4.png](images/yinmei-music/4.png)  
+FFmpeg加入环境变量：
+![5.png](images/yinmei-music/5.png)  
+![6.png](images/yinmei-music/6.png)  
+查看FFmpeg是否生效：  
+```cmd
+ffmpeg -version
+```
