@@ -737,4 +737,150 @@ duckduckgo搜索国内需要魔法上网,ip和端口请根据实际情况配置
 {"http": "socks5://127.0.0.1:10806", "https": "socks5://127.0.0.1:10806"}
 ```
 
+## 九、智化功能  
+### 1、mcp服务
+#### 1.1 使用mcp服务必要软件  
+**安装UVX工具**  
+方法 1: PowerShell  
+```bash
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"  
+```
+方法 2: winget  
+```bash
+winget install --id=astral-sh.uv -e  
+```
+重要：对于 winget，安装完成后请重启命令行 / IDE  
 
+**安装NPX工具**  
+需要安装nodejs，自带npm包管理器  
+下载：https://nodejs.org/zh-cn/download  
+
+#### 1.2 配置mcp工具  
+**第一步、打开功能列表：**
+![1.png](images/funcall/1.png)  
+**第二步、新增工具：**   
+
+!> 进入功能列表菜单，右上角有新增按钮，点击新增  
+
+**1、stdio方式**  
+工具类型选择stdio，需要填写是执行命令和mcp名称，然后点击按钮生成配置  
+方法名和function call调用函数会自动生成  
+![2.png](images/funcall/2.png)  
+注意：stdio方式需要每次初始化工具，所以调用速度会比sse慢  
+  
+**2、sse方式**  
+工具类型选择sse，然后sse地址要填上，因为sse要自己手动启动服务  
+![3.png](images/funcall/3.png)  
+sse启动的一键包，可以使用我配置好的软件，下载后点击start.bat就可以直接使用  
+![4.png](images/funcall/4.png)  
+进入任意一个mcp服务，然后双击startb.bat脚本就可以  
+![5.png](images/funcall/6.png)  
+看到端口显示，就证明启动成功  
+![6.png](images/funcall/7.png)  
+
+#### 1.3 mcp插件代码自定义
+**安装依赖包：**   
+npx安装：预安装一次bilibili-mcp依赖包，保证第一次启动npx bilibili-mcp不会卡住  
+npx属于js代码  
+```bash
+npx bilibili-mcp
+```  
+
+uvx安装：预安装一次mcp-server-calculator依赖包，保证第一次启动uvx mcp-server-calculator不会卡住  
+uvx属于python代码  
+```bash
+uvx mcp-server-calculator
+```  
+
+**方法定义**  
+可以在plugin文件夹下面新建一个py文件example.py，定义一个类名叫DefaultMCP  
+那么你在新建插件时候，可以这样配置  
+![5.png](images/funcall/5.png)  
+
+以下是对应代码，start_info, func_param, process_info这三个值必传，具体说明看代码解释  
+```python
+from func.log.default_log import DefaultLog
+from func.tools.singleton_mode import singleton
+from func.base.entity import ChatEntity
+import asyncio, json
+from mcp import ClientSession, StdioServerParameters
+from mcp.client.stdio import stdio_client
+from mcp.client.sse import sse_client
+import json5
+
+@singleton
+class DefaultMCP:
+    log = DefaultLog().getLogger()
+
+    def __init__(self):
+        pass
+
+    def custom_do(self, start_info, func_param, process_info):
+        '''
+        自定义方法-可以是mcp，也可以是自己写的代码方法
+        :param start_info:  command=启用mcp的命令、mcp_name=mcp名称、sseurl=sse地址、env=环境变量
+        :param func_param: 返回llm选择工具内容：'function': {'name': 'mcp_howtocook_whatToEat', 'arguments': '{"peopleCount": 2}'}}]}
+        :param process_info:   dict结构体：query是用户提问、chatEntity是用户信息
+        :return: result=返回结果字符串或者dict都可以、is_stop=true：继续执行聊天  false：直接跳出，不执行下面聊天操作
+        '''
+        
+        # 1、这里你可以自己写mcp连接
+        # 2、你可以自定义自己代码，不一定是mcp
+        return "", True
+``` 
+
+**stdio连接方式：**  
+command：启动命令  
+args：启动命令名称  
+env：环境变量，可以塞入配置：{ "HTTP_PROXY": "http://127.0.0.1:10806", "HTTPS_PROXY": "http://127.0.0.1:10806" }
+```nodejs
+server_params = StdioServerParameters(
+                command="npx",
+                args=["bilibili-mcp"],
+                env=None,  # 可在此处设置环境变量
+            )
+```
+stdio链接代码  
+```json
+server_params = StdioServerParameters(
+    command=cmd,
+    args=mcp_names,
+    env=env
+)
+
+async with asyncio.timeout(20):  # 20 秒超时
+    async with stdio_client(server_params) as (stdio, write):
+        async with ClientSession(stdio, write) as session:
+            await session.initialize()  # 初始化会话
+            arguments = func_param["arguments"].replace('\n', '')
+            json_args = json5.loads(arguments)
+            func_name = func_param["name"]
+            self.log.info(f"\033[44m\033[97m 准备请求stdio类型的mcp名称:{mcp_name},方法名:{func_name},参数:{json_args}\033[0m")
+            result = await session.call_tool(func_name, json_args)
+            return result
+```
+**sse连接方式：**  
+bilibili-mcp配置： 
+command：启动命令  
+args：启动命令名称  
+env：环境变量，可以塞入配置：{ "HTTP_PROXY": "http://127.0.0.1:10806", "HTTPS_PROXY": "http://127.0.0.1:10806" }
+```nodejs
+server_params = StdioServerParameters(
+                command="npx",
+                args=["bilibili-mcp"],
+                env=None,  # 可在此处设置环境变量
+            )
+```
+stdio链接代码  
+```json
+async with asyncio.timeout(20):  # 20 秒超时
+    async with sse_client(start_info["sseurl"]) as streams:
+        async with ClientSession(*streams) as session:
+            await session.initialize()
+            arguments = func_param["arguments"].replace('\n', '')
+            json_args = json5.loads(arguments)
+            func_name = func_param["name"]
+            self.log.info(f"\033[44m\033[97m 准备请求sse类型的mcp名称:{mcp_name},方法名:{func_name},参数:{json_args}\033[0m")
+            result = await session.call_tool(func_name, json_args)
+            return result
+```

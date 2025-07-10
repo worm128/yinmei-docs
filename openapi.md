@@ -9,7 +9,7 @@ uid = data["uid"]  # 获取用户昵称
 user_name = data["username"]  # 获取用户昵称
 uface = data["uface"]  #用户头像
 channel = data.get("channel", "api")  #渠道号
-chat_interrupt = data.get("chat_interrupt", False)  # 聊天打算参数
+chat_interrupt = data.get("chat_interrupt", False)  # 聊天打断参数
 ```
 返回参数：
 ```json
