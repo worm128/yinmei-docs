@@ -917,6 +917,10 @@ PS：不会导入请联系B站：程序猿的退休生活
 - mcp文件夹：导入后总共有20个插件  
 ![8.png](images/funcall/8.png)  
 ![9.png](images/funcall/9.png)  
+- 代理访问和密钥：  
+mcp-server-tmdb：需要密钥和代理访问，网站地址：https://www.themoviedb.org/  
+mcp-se-wikipedia：需要代理访问，网站地址：https://zh.wikipedia.org/    
+tavily：需要密钥，网站地址：https://www.tavily.com/  
 
 ### 2、寻找新MCP  
 **推荐几个MCP服务网站**  
