@@ -19,6 +19,17 @@
 2、[配置语音](#二、语音合成)  
 3、[进行对话](#_23-聊天对话)  
 
+## 吟美秘钥
+此商品包含吟美核心+吟美分析模块秘钥，吟美秘钥获取方式【以下秘钥有效期均为1个月】  
+方式一、[购买吟美秘钥](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12738795&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+方式二、在吟美直播间进行抽奖获取，每当吟美直播时候，输入“抽奖”即可以参与秘钥抽奖，每次抽奖需要消耗500积分，送礼物0.1元【1电池】可以获取100积分，点赞聊天都可以获取1点积分  
+遇到秘钥不能用的提示，请进行秘钥购买或者直播间秘钥抽奖。【秘钥抽奖概率：8%，大概12次抽中1次，12次费用大概6元，如果你不想花费时间抽奖，请直接购买吟美秘钥】    
+![166.png](images/funcall/16.png)  
+注意：购买本商品链接后，请联系 B站：程序猿的退休生活或者QQ：314769095 获取秘钥，需要提供你在首页的机器码进行秘钥生成  
+![15.png](images/funcall/15.png)  
+
+
+
 ## 付费插件
 ### 1、聊天+情感提示效果
 聊天+情感提示效果：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476099&loadingShow=1&noTitleBar=1&msource=merchant_share)  
@@ -27,7 +38,7 @@ OBS配置两个浏览器插件decision.html和emotion.html
 ![00.png](images/plug/webplug.png)  
 
 ### 2、AI吟美2.2.0语气参考音频
-聊天+情感提示效果：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+语气参考音频：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 ![00.png](images/plug/参考音频.png)  
 ![107.png](images/吟美核心/107.png)  
 ![108.png](images/吟美核心/108.png)  
@@ -280,7 +291,8 @@ fastgpt地址配置：
 语音配置开关打开，选择语音是微软edge-tts，这个不需要额外部署项目，可以直接使用
 ![30.png](images/吟美核心/30.png)  
 
-### 2、gpt-sovits1和2配置  
+### 2、gpt-sovits配置
+<span style="color:red">注意：gpt-sovits【支持全系列1~4、pro、pro plus】</span>  
 #### 2.1、下载软件
 - **如果你想语音更加生动，可以选择gpt-sovits的产品**  
 - <font color="red" style="font-weight:bold">整合包我已经放在网盘，GPT-SoVITS-v2.zip是GPT-SoVITS的2.0版本：</font>  
@@ -292,9 +304,15 @@ fastgpt地址配置：
 百度网盘群号4：969208563  
 **夸克：**   
 夸克群1：1231405830   
-夸克群2：428937868   
-<font color="red">PS: 请在"yinmei-all"下载gpt-sovits的压缩包，解压即可使用</font>  
-![103.png](images/吟美核心/103.png)  
+夸克群2：428937868  
+  
+**gpt-sovits pro plus最新包:**  
+<font color="red">GPT-SoVITS-v2pro-yinmei下载: 请在"yinmei-all"下载"GPT-SoVITS-v2pro-yinmei"的压缩包，解压即可使用</font>  
+![118.png](images/吟美核心/118.png)  
+  
+[Pro Plus语音模型下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12731807&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+<img src="images/吟美核心/119.jpg" alt="" width="500">  
+
 
 #### 2.2、语音配置
 **配置语音：**  
@@ -743,6 +761,8 @@ duckduckgo搜索国内需要魔法上网,ip和端口请根据实际情况配置
 **安装UVX工具**  
 方法 1: PowerShell  
 ```bash
+$env:HTTP_PROXY = "http://127.0.0.1:10806"
+$env:HTTPS_PROXY = "http://127.0.0.1:10806"
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"  
 ```
 方法 2: winget  
@@ -792,12 +812,12 @@ uvx属于python代码
 uvx mcp-server-calculator
 ```  
 
-**方法定义**  
+**方法定义的配置**  
 可以在plugin文件夹下面新建一个py文件example.py，定义一个类名叫DefaultMCP  
 那么你在新建插件时候，可以这样配置  
 ![5.png](images/funcall/5.png)  
 
-以下是对应代码，start_info, func_param, process_info这三个值必传，具体说明看代码解释  
+**以下是对应代码，start_info, func_param, process_info这三个值必传，具体说明看代码解释**  
 ```python
 from func.log.default_log import DefaultLog
 from func.tools.singleton_mode import singleton
@@ -829,7 +849,7 @@ class DefaultMCP:
         return "", True
 ``` 
 
-**stdio连接方式：**  
+**mcp的stdio连接方式：**  
 command：启动命令  
 args：启动命令名称  
 env：环境变量，可以塞入配置：{ "HTTP_PROXY": "http://127.0.0.1:10806", "HTTPS_PROXY": "http://127.0.0.1:10806" }
@@ -859,7 +879,7 @@ async with asyncio.timeout(20):  # 20 秒超时
             result = await session.call_tool(func_name, json_args)
             return result
 ```
-**sse连接方式：**  
+**mcp的sse连接方式：**  
 bilibili-mcp配置： 
 command：启动命令  
 args：启动命令名称  
@@ -871,7 +891,7 @@ server_params = StdioServerParameters(
                 env=None,  # 可在此处设置环境变量
             )
 ```
-stdio链接代码  
+sse链接代码  
 ```json
 async with asyncio.timeout(20):  # 20 秒超时
     async with sse_client(start_info["sseurl"]) as streams:
@@ -884,3 +904,45 @@ async with asyncio.timeout(20):  # 20 秒超时
             result = await session.call_tool(func_name, json_args)
             return result
 ```
+
+#### 1.4 导入mcp插件  
+说明：吟美的MCP功能配置列表，是没有配置任何MCP的，需要你们自行配置，如果需要配置好现成的MCP服务，请进行知识付费  
+**MCP购买地址：** [购买下载 ](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12731981&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+<img src="images/funcall/10.jpg" alt="" width="500">  
+**购买的文件包含：**
+- 每一个插件里面多有一个*.bat的脚本启动，当前只配置了在window系统下启动  
+- 双击*.bat脚本就能直接启动，每一个插件会监听一个接口，插件启动端口和sql配置文件已经配置好，不需要变动  
+- 请把yinmei.func_call_list.json导入到吟美mongodb数据库  
+PS：不会导入请联系B站：程序猿的退休生活  
+- mcp文件夹：导入后总共有20个插件  
+![8.png](images/funcall/8.png)  
+![9.png](images/funcall/9.png)  
+
+### 2、寻找新MCP  
+**推荐几个MCP服务网站**  
+https://mcp.so/  
+https://mcp.aibase.cn/  
+https://cloud.tencent.com/developer/mcp  
+然后大家可以在上面寻找自己的MCP服务  
+举例，例如找一个烹饪的MCP，[进入详情页](https://mcp.so/server/howtocook-mcp/worryzyy) 
+![13.png](images/funcall/13.png)  
+你会看到右侧有安装这个MCP的脚本 
+```bash
+npx -y howtocook-mcp
+```
+这个脚本就是安装烹饪这个MCP服务的  
+然后我们来到吟美后台的功能列表，点击新增，按下图步骤新建  
+![14.png](images/funcall/14.png)  
+最后一步：点击生成配置的按钮，就会自动生成调用函数的方法名  
+
+
+### 3、MCP效果展示  
+- **如果你是灵笼的角色4068，你会如何抉择？**    
+工具：产生思维链+搜索工具+TMDB电影信息查询  
+![10.png](images/funcall/10.png)  
+- **转圈圈10个**  
+工具：人物移动工具
+![11.png](images/funcall/11.png)  
+- **最近几年最好听的爱情连续剧主题曲有哪些**  
+工具：搜索工具 &nbsp;&nbsp;&nbsp;&nbsp; **说明：**这里会调用搜索工具进行搜索歌曲  
+![12.png](images/funcall/12.png)  
