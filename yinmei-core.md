@@ -950,3 +950,11 @@ npx -y howtocook-mcp
 - **最近几年最好听的爱情连续剧主题曲有哪些**  
 工具：搜索工具 &nbsp;&nbsp;&nbsp;&nbsp; **说明：**这里会调用搜索工具进行搜索歌曲  
 ![12.png](images/funcall/12.png)  
+
+### 4、MCP对应OBS插件  
+1、工具调用提示  
+插件路径：ai-yinmei/html/tools.html  
+![17.png](images/funcall/17.png)  
+2、B站视频MCP  
+插件路径：ai-yinmei/vip/video.html  
+![18.png](images/funcall/18.png)  
