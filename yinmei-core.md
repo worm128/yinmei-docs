@@ -20,6 +20,7 @@
 3、[进行对话](#_23-聊天对话)  
 
 ## 吟美秘钥
+### 1、获取秘钥
 此商品包含吟美核心+吟美分析模块秘钥，吟美秘钥获取方式【以下秘钥有效期均为1个月】  
 方式一、[购买吟美秘钥](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12738795&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 方式二、在吟美直播间进行抽奖获取，每当吟美直播时候，输入“抽奖”即可以参与秘钥抽奖，每次抽奖需要消耗500积分，送礼物0.1元【1电池】可以获取100积分，点赞聊天都可以获取1点积分  
@@ -28,6 +29,11 @@
 注意：购买本商品链接后，请联系 B站：程序猿的退休生活或者QQ：314769095 获取秘钥，需要提供你在首页的机器码进行秘钥生成  
 ![15.png](images/funcall/15.png)  
 
+### 2、配置秘钥
+在每个项目的根目录的config.yml配置文件，找到在最后的valid_val值，替换即可。  
+![120.png](images/funcall/120.png)  
+也可以在项目后台界面的首页替换秘钥  
+![121.png](images/funcall/121.png)  
 
 
 ## 付费插件
