@@ -66,3 +66,10 @@ FFmpeg加入环境变量：
 ```cmd
 ffmpeg -version
 ```
+
+## 五、唱歌模型切换
+在你所训练的模型里面，需要有对应人物名称  
+![10.png](images/yinmei-music/10.png)  
+![11.png](images/yinmei-music/11.png)  
+然后再项目根目录，配置唱歌人物名称才会生效  
+![12.png](images/yinmei-music/12.png) 
