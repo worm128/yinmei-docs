@@ -105,11 +105,14 @@ OBS配置两个浏览器插件decision.html和emotion.html
 **密钥：**  
 以阿里百炼为例：https://bailian.console.aliyun.com/?apiKey=1#/api-key
 
-![5.png](images/吟美核心/5.png)
+![5.png](images/吟美核心/5.png)  
 
 **模型名称：**  
 看文本生成的模型【阿里百炼为例】：  
 https://help.aliyun.com/zh/model-studio/getting-started/models  
+
+**LLM配置参数：**  
+![124.png](images/吟美核心/124.png)  
 
 **历史记录：**  
 Ai聊天的上下文长度，通常一问一答为1个历史记录  
@@ -119,7 +122,7 @@ Ai聊天的上下文长度，通常一问一答为1个历史记录
 默认值和最大值都是模型的最大输出长度。关于各模型的最大输出长度，请参见模型列表。  
 max_tokens参数适用于需要限制字数（如生成摘要、关键词）、控制成本或减少响应时间的场景。  
 
-**top_p float （可选） **  
+**top_p float （可选）**  
 核采样的概率阈值，用于控制模型生成文本的多样性。  
 top_p越高，生成的文本更多样。反之，生成的文本更确定。  
 取值范围：（0,1.0]  
