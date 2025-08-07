@@ -1,6 +1,6 @@
 ![logo](images/logo.png)
 
-# AI吟美 <small>2.0</small>
+# AI吟美 <small>2.3</small>
 
 > 一站式人工智能直播平台。
 
