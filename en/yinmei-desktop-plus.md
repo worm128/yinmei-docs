@@ -78,7 +78,7 @@ nohup bash run_server_2pass.sh \
 ![4.png](../images/yinmei-desktop-plus/4.png)
 
 ## 5. Desktop Pet Expressions
-### 1. Using Live2D V3
+### 1. Live2D V3
 **Hiyori as an example:**
 Configure the motions and expressions in the character Hiyori.model3.json
 1. Motions:
@@ -116,7 +116,7 @@ When remove=true is enabled, removeName="Sing" will release the "Sing" emoticon.
 }
 ```
 
-### 2. V2 Live2D
+### 2. Live2D V2 
 **Epsilon Example:**
 Configure the action + emoticon in the character Epsilon.model.json
 1. Action:

@@ -252,10 +252,7 @@ openai 秘钥：Bearer xxx
 ![19.png](images/吟美核心/19.png) 
 
 选择后的界面  
-![20.png](images/吟美核心/20.png) 
-
-选择后的界面  
-![20.png](images/吟美核心/20.png) 
+![20.png](images/吟美核心/20.png)
 
 如果没有知识库引用，可以自行删除这个知识库配置  
 删除后，流程线条会丢失，<font color="red">记得手动把线条链接好</font>  
@@ -319,7 +316,7 @@ fastgpt地址配置：
 <font color="red">GPT-SoVITS-v2pro-yinmei下载: 请在"yinmei-all"下载"GPT-SoVITS-v2pro-yinmei"的压缩包，解压即可使用</font>  
 ![118.png](images/吟美核心/118.png)  
   
-[Pro Plus语音模型下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12731807&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+[Pro Plus语音模型下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12731807&loadingShow=1&noTitleBar=1&msource=merchant_share)   
 <img src="images/吟美核心/119.jpg" alt="" width="500">  
 
 
@@ -461,7 +458,7 @@ https://vb-audio.com/Voicemeeter/banana.htm
 ![116.png](images/吟美核心/116.png)  
 
 ### 2、吟美桌宠
-[桌宠配置](yinmei-desktop-plus?id=桌宠包含内容)  
+[桌宠配置](yinmei-desktop-plus?id=_2-desktop-pet-configuration)  
 
 
 ## 四、直播配置  
@@ -502,9 +499,9 @@ BliveChat项目，右侧弹幕区配置：
 docker run --name blivechat  -d -p 12450:12450 -v blivechat-data:/mnt/data xfgryujk/blivechat:v1.9.3
 ```  
 
-而且，B站主播身份码要配置正确
+而且，B站主播身份码要配置正确  
 ![50.png](images/吟美核心/50.png)  
-访问地址：http://localhost:12450，进去配置一下身份码
+访问地址：http://localhost:12450，进去配置一下身份码  
 ![51.png](images/吟美核心/51.png)  
 容器启动完成后，会自动关联BliveChat项目  
 
@@ -532,9 +529,9 @@ docker run --name blivechat  -d -p 12450:12450 -v blivechat-data:/mnt/data xfgry
 ![59.png](images/吟美核心/59.png)  
 **程序自动回写秘钥**  
 ![60.png](images/吟美核心/60.png)  
-**保存配置，重启应用就会生效**
+**保存配置，重启应用就会生效**  
 ![61.png](images/吟美核心/61.png)  
-**链接状态** 
+**链接状态**  
 ![62.png](images/吟美核心/62.png)  
 
 #### 4.2 配置vtube studio的必要表情
@@ -756,7 +753,7 @@ docker run -d -p 10800:8080 ^
     searxng/searxng
 ```
 #### 2.2、配置searxng
-找到settings.yml配置文件，在formats参数加入配置
+找到settings.yml配置文件，在formats参数加入配置  
 ```json
 formats:
     - html
@@ -766,7 +763,7 @@ formats:
 #### 2.3、访问searxng
 html服务：http://localhost:10800/  
 json接口服务：http://localhost:10800/search?format=json&q=doro  
-PS：需要json接口服务成功访问才能使用搜索服务
+PS：需要json接口服务成功访问才能使用搜索服务  
 
 ### 3、duckduckgo搜索
 duckduckgo搜索国内需要魔法上网,ip和端口请根据实际情况配置  
@@ -872,7 +869,7 @@ class DefaultMCP:
 **mcp的stdio连接方式：**  
 command：启动命令  
 args：启动命令名称  
-env：环境变量，可以塞入配置：{ "HTTP_PROXY": "http://127.0.0.1:10806", "HTTPS_PROXY": "http://127.0.0.1:10806" }
+env：环境变量，可以塞入配置：{ "HTTP_PROXY": "http://127.0.0.1:10806", "HTTPS_PROXY": "http://127.0.0.1:10806" }  
 ```nodejs
 server_params = StdioServerParameters(
                 command="npx",
@@ -903,7 +900,7 @@ async with asyncio.timeout(20):  # 20 秒超时
 bilibili-mcp配置： 
 command：启动命令  
 args：启动命令名称  
-env：环境变量，可以塞入配置：{ "HTTP_PROXY": "http://127.0.0.1:10806", "HTTPS_PROXY": "http://127.0.0.1:10806" }
+env：环境变量，可以塞入配置：{ "HTTP_PROXY": "http://127.0.0.1:10806", "HTTPS_PROXY": "http://127.0.0.1:10806" }  
 ```nodejs
 server_params = StdioServerParameters(
                 command="npx",
