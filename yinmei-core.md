@@ -22,7 +22,7 @@
 ## 吟美秘钥
 ### 1、获取秘钥
 此商品包含吟美核心+吟美分析模块秘钥，吟美秘钥获取方式【以下秘钥有效期均为1个月】  
-方式一、[购买月卡](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12738795&loadingShow=1&noTitleBar=1&msource=merchant_share) | [购买年卡](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12738795&loadingShow=1&noTitleBar=1&msource=merchant_share)    
+方式一、[购买月卡](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12738795&loadingShow=1&noTitleBar=1&msource=merchant_share) | [购买年卡](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12988851&loadingShow=1&noTitleBar=1&msource=merchant_share)    
 方式二、在吟美直播间进行抽奖获取，每当吟美直播时候，输入“抽奖”即可以参与秘钥抽奖，每次抽奖需要消耗500积分，送礼物0.1元【1电池】可以获取100积分，点赞聊天都可以获取1点积分  
 遇到秘钥不能用的提示，请进行秘钥购买或者直播间秘钥抽奖。【秘钥抽奖概率：8%，大概12次抽中1次，12次费用大概6元，如果你不想花费时间抽奖，请直接购买吟美秘钥】    
 ![166.png](images/funcall/16.png)  
