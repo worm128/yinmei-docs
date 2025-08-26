@@ -22,7 +22,7 @@ Double-click to launch "start.bat" or "yinmei-core-api.exe"
 ## Yinmei Secret Key
 ### 1. Obtaining the Key
 This product includes the Yinmei Core and Yinmei Analysis Module keys. How to obtain the Yinmei Key [All keys below are valid for one month]  
-Method 1: [Purchase the Yinmei Key](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12738795&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+Method 1: [Monthly Card](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12738795&loadingShow=1&noTitleBar=1&msource=merchant_share) | [Year Card](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12988851&loadingShow=1&noTitleBar=1&msource=merchant_share)   
 Method 2: Participate in the lucky draw during Yinmei's livestream. During Yinmei's livestream, enter "Lucky Draw" to enter the lucky draw. Each draw costs 500 points. Sending a 0.1 yuan gift [1 battery] earns 100 points. Liking a post or chatting earns 1 point.  
 If you receive a message that the key cannot be used, please purchase the key or participate in the lucky draw during the livestream. [Key lottery probability: 8%, approximately 1 in 12 wins, costing approximately 6 yuan. If you prefer not to invest in the lottery, please purchase the Yinmei key directly.]  
 
