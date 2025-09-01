@@ -1025,7 +1025,7 @@ Type "Lottery" or "Lottery 10" on Bilibili to initiate a lottery. Lottery 10 mea
 Use the "yinmei.prize_info.json" file from the lottery integration package and import it into the prize_info table in the Yinmei database.
 ![7.png](../images/prize/7.png)
 1. prizename: Prize name
-2. action: Winning action: Gifts | Points | Bilibili Private Message. Gifts directly record the winning details without any other actions. Points are awarded directly to the user after winning. Bilibili Private Message: Send a private message directly to the user on Bilibili after winning [private message content can be customized].
+2. action: Winning action: Gifts | Points | Bilibili Private Message. Gifts directly record the winning details without any other actions. Points are awarded directly to the user after winning. Bilibili Private Message: Send a private message directly to the user on Bilibili after winning [private message content can be customized],If no action is required, please fill in "None", for example, if you have won a prize.
 3. value: Prize content. If it is points, set a point reward number [positive or negative; negative numbers will deduct points]. If it is a Bilibili Private Message, set the text to be sent to the private message [line breaks supported].
 4. prizeimg: Prize image
 5. status: Prize status: On/Off. If set to Off, this prize will not be entered into the lottery.
