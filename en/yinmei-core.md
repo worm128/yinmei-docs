@@ -1007,3 +1007,74 @@ Plugin Path: ai-yinmei/html/tools.html
 2. Bilibili Video MCP
 Plugin Path: ai-yinmei/vip/video.html  
 ![18.png](../images/funcall/18.png)  
+
+## 10. Lottery Service
+### 1. Accessing the Lottery Function
+<font color="red">Tip: Please contact "Programmer's Retirement Life" on Bilibili to unlock this function or contact QQ: 314769095</font>
+### 2. Automated Lottery
+#### 2.1. Lottery Effect
+Purpose: Allows unattended lottery draws, enabling 24-hour lottery events.
+![3.png](../images/prize/3.png)
+#### 2.2. How to Enter a Lottery
+Type "Lottery" or "Lottery 10" on Bilibili to initiate a lottery. Lottery 10 means 10 consecutive draws. The maximum limit is 10. Any draws exceeding the limit will be treated as 10.
+#### 2.3. Backend Configuration Interface
+1. Enable the automatic lottery switch.
+![1.png](../images/prize/1.png)
+
+2. Configure Prizes Please import the prizes into the database. The interface configuration has not yet been configured.
+Use the "yinmei.prize_info.json" file from the lottery integration package and import it into the prize_info table in the Yinmei database.
+![7.png](../images/prize/7.png)
+1. prizename: Prize name
+2. action: Winning action: Gifts | Points | Bilibili Private Message. Gifts directly record the winning details without any other actions. Points are awarded directly to the user after winning. Bilibili Private Message: Send a private message directly to the user on Bilibili after winning [private message content can be customized].
+3. value: Prize content. If it is points, set a point reward number [positive or negative; negative numbers will deduct points]. If it is a Bilibili Private Message, set the text to be sent to the private message [line breaks supported].
+4. prizeimg: Prize image
+5. status: Prize status: On/Off. If set to Off, this prize will not be entered into the lottery.
+6. num: The number of prizes. Enter a number. The prize number will automatically be deducted. No prize drawing will take place after it reaches 0.
+7. submitTime: The time the prize was posted.
+8. range: The probability of winning. Enter a decimal point. 0.2 represents 20%, and 0.02 represents 2%.
+9. prizetype: The prize type. Unique means each user can only win once. Once won, the prize will not be drawn again. This is suitable for one-time prize drawing.
+
+If the prize is set to be sent via private message, you will need to enter your Bilibili login information to successfully send it.
+
+SESSDATA, bili_jct, buvid3, and DedeUserID are the main parameters.
+
+![8.png](../images/prize/8.png)
+
+3. User enters "Lucky Draw" in the comment.
+
+Enter "Lucky Draw 10" for continuous drawing.
+
+![6.png](../images/prize/6.png)
+
+4. Winner List Query
+![2.png](../images/prize/2.png)
+
+#### 2.4. OBS Configuration
+Create a new browser extension and add the self-prize plugin: self-prize/prize.html
+![8.png](../images/prize/9.png)
+
+### 3. Livestream Control of the Lottery
+#### 3.1. Lottery Effect
+Purpose: This lottery feature allows the livestreamer to independently control the lottery process. This feature can be used to manually control the lottery by using the "Disable AI Hosting" setting in the backend management interface.
+![4.png](images/prize/4.png)
+
+#### 3.2. Backend Configuration Interface
+![5.png](../images/prize/5.png)
+1. Lottery Rules:
+Winnings are based on the list of all users in the Bilibili livestream room + the list of lottery participants in the backend management interface.
+2. Prize Name:
+The title of the prize to be drawn.
+3. Prize Image: Enter an image link or local image path.
+4. Scrolling Speed:
+Enter a number. This is the speed at which the lucky draw wheel will spin. A larger value indicates a faster rotation.
+5. Personnel Configuration:
+channel: The lucky draw channel source, username: The lucky draw username, uid: QQ number or Bilibili UID, uface: User avatar link, switch: True to add to the lucky draw list | False to remove from the lucky draw list based on UID.
+
+#### 3.3. Operation Instructions
+a. After configuring the above parameters, click "Lottery Settings." You will see the prize images and roulette generated on the OBS interface.
+b. Click "Start Lucky Draw." The roulette will begin spinning.
+c. Click "Stop Lucky Draw." The roulette will slowly stop and a user will be drawn. The user range is [the list of all users in the Bilibili livestream room + the lucky draw list managed by the backend]. The probability is evenly distributed among each user. For example, if there are 10 users, each user has a 100% chance of winning. d. Click "Close Lottery" and the roulette wheel will disappear from the OBS interface.
+
+#### 3.4. OBS Configuration
+Create a new browser extension and add the custom lottery extension: prize/prize.html
+![10.png](../images/prize/10.png)
