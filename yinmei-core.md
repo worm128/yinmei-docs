@@ -138,33 +138,17 @@ temperature越高，生成的文本更多样，反之，生成的文本更确定
 > 看到支持OpenAi规范接口的平台，包括云平台的阿里百炼、智谱清言，还有本地服务 OneApi、Xinference等接口  
 
 ##### 1、阿里百炼：  
-https://www.aliyun.com/product/bailian  
-阿里百炼包含的102个文本生成模型  
+阿里百炼包含的102个文本生成模型,[查看模型列表](https://bailian.console.aliyun.com/?spm=5176.29619931.J_SEsSjsNv72yRuRFS2VknO.2.74cd405fRO0JGF&tab=doc#/doc/?type=model&url=2840914)    
+https://www.aliyun.com/product/bailian
 ![6.png](images/吟美核心/6.png)  
 
-##### 2、智谱的模型：GLM4等  
-https://open.bigmodel.cn/  
+##### 2、智谱的模型：  
+GLM4、GLM4.5、GLM4.6等模型,[查看模型列表](https://open.bigmodel.cn/pricing)    
+https://open.bigmodel.cn/ 
 ![7.png](images/吟美核心/7.png)  
 
-##### 3、搜索参数  
-```json
-{
-    "enable_search":true,
-    "tools": [{
-        "type": "web_search", "web_search": {"enable": true}
-    }]
-}
-```
-**阿里百炼搜索：**  
-https://bailian.console.aliyun.com/?accounttraceid=ce194831be774d6a91188482feb46b54xrie#/model-market/detail/qwen-plus-latest  
-![8.png](images/吟美核心/8.png)  
 
-**glm搜索：**  
-https://www.bigmodel.cn/dev/howuse/websearch  
-![9.png](images/吟美核心/9.png)  
-<br>
-
-##### 4、本地服务 
+##### 3、本地服务 
 **本地OneApi**  
 项目地址：https://github.com/songquanpeng/one-api  
 OneApi中转场跳板对接：本地或者云服务  
@@ -186,30 +170,79 @@ docker run --name xinference121 -d -p 9998:9997 -e XINFERENCE_HOME=/data -v /D/d
 ```
 <br>
 
-##### 5、更多云服务：  
-智谱清言：  
+**本地ollama**  
+接口：http://IP:9997/v1/chat/completions  
+容器安装：  
+```dockerfile
+docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+```
+<br>
+
+##### 4、更多云服务：  
+【智谱清言】  
 https://open.bigmodel.cn/  
 测试秘钥：Bearer xxx  
 请求接口：https://open.bigmodel.cn/api/paas/v4/chat/completions  
 模型：glm-4-flashx  
-阿里百炼  
+【阿里百炼】  
 https://www.aliyun.com/product/bailian  
 测试秘钥：Bearer xxx  
 请求接口：https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions  
 模型：qwen2.5-72b-instruct  
 模型列表：https://help.aliyun.com/zh/model-studio/getting-started/models?spm=a2c4g.11186623.help-menu-2400256.d_0_2.5a06b0a8eYXY9K  
-腾讯混元  
+【腾讯混元】  
 https://console.cloud.tencent.com  
 请求接口：https://api.hunyuan.cloud.tencent.com/v1/chat/completions  
 openai 秘钥：Bearer xxx  
 模型：hunyuan-turbo  
-百度云：  
+【火山引擎】  
+https://www.volcengine.com/
+【百度云】  
 https://cloud.baidu.com/  
 请求接口：https://qianfan.baidubce.com/v2/chat/completions  
 openai 秘钥：Bearer xxx  
 模型列表：https://cloud.baidu.com/doc/WENXINWORKSHOP/s/Fm2vrveyu  
+【deepseek】  
+https://platform.deepseek.com/  
+【硅基流动】  
+https://www.siliconflow.cn/  
 
-#### 2.3 聊天对话
+
+#### 2.3 万能扩展参数
+##### 1、搜索参数  
+在不同的LLM模型平台开启搜索能力，以阿里百炼、智谱清言为例  
+在吟美核心的【接口请求参数扩展】加入搜索配置  
+![125.png](images/吟美核心/125.png)  
+```json
+{
+    "enable_search":true,
+    "tools": [{
+        "type": "web_search", "web_search": {"enable": true}
+    }]
+}
+```
+
+**阿里百炼搜索：**  
+https://bailian.console.aliyun.com/?accounttraceid=ce194831be774d6a91188482feb46b54xrie#/model-market/detail/qwen-plus-latest  
+![8.png](images/吟美核心/8.png)  
+
+**glm搜索：**  
+https://www.bigmodel.cn/dev/howuse/websearch  
+![9.png](images/吟美核心/9.png)  
+<br>
+
+##### 2、深度思考  
+**智谱清言：**  
+文档：https://docs.bigmodel.cn/cn/guide/start/concept-param#thinking  
+```json
+{
+    "thinking": {
+          "type": "disabled"
+    }
+}
+```
+
+#### 2.4 聊天对话
 ![39.png](images/吟美核心/39.png)  
 
 ### 3、Fastgpt配置

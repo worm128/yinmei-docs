@@ -9,4 +9,4 @@
 - 多功能二次元AI机器人
 
 [Q群](https://qm.qq.com/cgi-bin/qm/qr?k=SW5NZsdS0kuiI3yJUyN-8toJDt-KCYdz&jump_from=webapi&authKey=or1l72VST4euCTE8aI+KJkni8prp6kG13JOtMkiZ4pmGQSWkmliFrh3/XIPU4Hew)
-[Get Started](/README.md)
+[开始查看](/README.md)

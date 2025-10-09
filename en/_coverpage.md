@@ -8,5 +8,5 @@
 - Lightweight AI, ready to use out of the box
 - Multifunctional 2D AI robot
 
-[Q群](https://qm.qq.com/cgi-bin/qm/qr?k=SW5NZsdS0kuiI3yJUyN-8toJDt-KCYdz&jump_from=webapi&authKey=or1l72VST4euCTE8aI+KJkni8prp6kG13JOtMkiZ4pmGQSWkmliFrh3/XIPU4Hew)
+[QQ Group](https://qm.qq.com/cgi-bin/qm/qr?k=SW5NZsdS0kuiI3yJUyN-8toJDt-KCYdz&jump_from=webapi&authKey=or1l72VST4euCTE8aI+KJkni8prp6kG13JOtMkiZ4pmGQSWkmliFrh3/XIPU4Hew)
 [Get Started](/en/README.md)
