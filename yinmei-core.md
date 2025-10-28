@@ -330,9 +330,37 @@ fastgpt地址配置：
 语音配置开关打开，选择语音是微软edge-tts，这个不需要额外部署项目，可以直接使用
 ![30.png](images/吟美核心/30.png)  
 
-### 2、gpt-sovits配置
-<span style="color:red">注意：gpt-sovits【支持全系列1~4、pro、pro plus】</span>  
+### 2、cosyvoice2配置
+<span style="color:red">注意：cosyvoice只支持2模型，1代我已经T掉</span>  
 #### 2.1、下载软件
+##### 1、Docker版本：  
+**说明：** Docker版本支持vllm加速，是合成速度最快的版本  
+**容器地址：** https://hub.docker.com/r/worm128/yinmei-cosyvoice  
+**运行命令：**  
+**镜像：**worm128/yinmei-cosyvoice:latest  
+**Window docker cmd执行：**  
+```cmd
+docker run -d ^
+  --name yinmei-cosyvoice ^
+  --gpus all ^
+  -p 50001:50001 ^
+  -p 50000:50000 ^
+  -e MODEL_DIR=pretrained_models/CosyVoice2-0.5B ^
+  -e PORT=50001 ^
+  -e WEBPORT=50000 ^
+  -e LIMIT_COUNT=5 ^
+  -e MODE=3 ^
+  worm128/yinmei-cosyvoice:latest
+```
+
+##### 2、Window版本：  
+**说明：** Window版本不支持vllm，我安装的是cuda12.6，其他版本cuda自己测试是否兼容  
+**百度网盘：** [下载](https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp) 提取码: i4mp  
+**夸克：** [下载](https://pan.quark.cn/s/e19caa11c9d8)  提取码：DejZ  
+
+### 3、gpt-sovits配置
+<span style="color:red">注意：gpt-sovits【支持全系列1~4、pro、pro plus】</span>  
+#### 3.1、下载软件
 - **如果你想语音更加生动，可以选择gpt-sovits的产品**  
 - <font color="red" style="font-weight:bold">整合包我已经放在网盘，GPT-SoVITS-v2.zip是GPT-SoVITS的2.0版本：</font>  
 **吟美整合包下载地址：**  
@@ -353,7 +381,7 @@ fastgpt地址配置：
 <img src="images/吟美核心/119.jpg" alt="" width="500">  
 
 
-#### 2.2、语音配置
+#### 3.2、语音配置
 **配置语音：**  
 ![31.png](images/吟美核心/31.png)  
 
@@ -363,7 +391,7 @@ fastgpt地址配置：
 打开GPT-SoVITS-v2，双击api.bat就可以启动  
 ![33.png](images/吟美核心/33.png)  
 
-#### 2.3、启动软件
+#### 3.3、启动软件
 **配置IP：**  
 打开记事本编辑api.bat文件  
 如果你语音是部署在局域网上其他机器，请配置那台机器的IP  
@@ -378,7 +406,7 @@ fastgpt地址配置：
 启动成功会显示你当前配置好的ip地址  
 ![104.png](images/吟美核心/104.png)  
 
-#### 2.4、音频模型选择
+#### 3.4、音频模型选择
 **GPT-SOVITS2的音频模型下载：**  
 https://pan.baidu.com/s/14WUDbWnBn7GPQYVREkWMug?pwd=1145  
 **<font color="red">特别鸣谢：</font>**  
@@ -403,29 +431,29 @@ runtime\python.exe api.py -s "./SoVITS_weights_v2/虎克_e10_s320.pth" -g "./GPT
 pause
 ```
 
-#### 2.5、助手音频配置
+#### 3.5、助手音频配置
 这里触发助手说话的音频，你可以和上面配置的一样，也可以在多开一个不同发音的gpt-sovits服务出来  
 助手的语音：然后我们在唱歌回复、绘画回复、跳舞回复、进入房间欢迎词、积分播报等一些说话上，引用这个助手语音  
 助手需要启动多一个gpt-sovits服务，音频端口和主人物端口分开即可，然后服务IP和端口配置这个新音频地址  
 ![38.png](images/吟美核心/38.png)  
 
-### 3、语音声道
-#### 3.1、直接输出扬声器
+### 4、语音声道
+#### 4.1、直接输出扬声器
 语音新增声道选择，默认输出到 扬声器，这里会被【桌宠的live2D_audio_device参数】音频捕获或者【VTS设置口型】音频捕获，从而实现口型匹配  
 ![66.png](images/吟美核心/66.png)  
-#### 3.2、输出虚拟通道B2
+#### 4.2、输出虚拟通道B2
 如果你在吟美核心配置语音主人物的输出通道是Voicemeeter的B2虚拟通道  
 ![123.png](images/吟美核心/123.png)  
-#### 3.3、虚拟通道分配逻辑
+#### 4.3、虚拟通道分配逻辑
 主人物对应虚拟通道2、助手对应虚拟通道3，分开通道互不影响不同人物的口型      
 ![4.png](images/yinmei-desktop-plus/4.png)  
-#### 3.4、虚拟通道需要监听声音
+#### 4.4、虚拟通道需要监听声音
 声道如果选择扬声器，可以直接在你的音箱听到声音，如果输出的是Voicemeeter的虚拟通道则不能听到声音，则需要如下配置才能在扬声器监听到虚拟通道的声音  
 ![122.png](images/吟美核心/122.png)  
 
 
-### 4、情感语气
-#### 4.1、语气配置方案  
+### 5、情感语气
+#### 5.1、语气配置方案  
 配置参考音频，一个情感名称对应一个参考音频文件名  
 ![106.png](images/吟美核心/106.png)  
 > 例如： "开心": "蛋糕都已经端到你的面前了，快许个心愿吧。"  
@@ -433,7 +461,7 @@ pause
 遇到"开心"情感，则使用参考音频"蛋糕都已经端到你的面前了，快许个心愿吧。.WAV"  
 <br>
 
-#### 4.2、参考音频配置
+#### 5.2、参考音频配置
 需要在gpt-sovits的"语气"文件夹加入音频文件"蛋糕都已经端到你的面前了，快许个心愿吧。.WAV"  
 需要参考音频，请在这里下载：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)
   
