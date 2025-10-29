@@ -7,6 +7,7 @@
 **视频教程：[点击进入观看](https://www.bilibili.com/video/BV1BdsozBEuV/)**  
 **官网：[www.yinmei.vip](https://www.yinmei.vip)**  
 **Q群：27831318**  
+**Docker版本下载：[Docker仓库](https://hub.docker.com/r/worm128/yinmei-cosyvoice)**  
 **Window版本下载：**   
 [百度网盘](https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp)   提取码: i4mp  
 [夸克](https://pan.quark.cn/s/e19caa11c9d8)  提取码：DejZ  
