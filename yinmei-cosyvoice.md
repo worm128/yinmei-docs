@@ -102,6 +102,13 @@ LIMIT_COUNT：这个会在流式语音有效，解决性能较差显卡在流式
 MODE：1、api模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、webui模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、api模式+webui模式双模式  
 共享内存：--shm-size 20g；不设置这个容易OOM启动程序自动退出
 
+共享内存OOM会导致程序崩溃退出：  
+```cmd
+docker inspect -f '{{.State.ExitCode}} {{.State.Error}}' yinmei-cosyvoice
+137
+```
+共享内存：--shm-size 20g；不设置这个容易OOM启动程序自动退出
+
 指定GPU启动：  
 关键命令：--gpus '"device=0"'   
 ```bash
