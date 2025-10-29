@@ -52,6 +52,10 @@ tensorrt-cu12：10.0.1  高性能推理引擎，必须用 GPU
 1、要安装nvidia驱动  
 2、要安装cuda版本为12.6或以上版本，我觉得12.4或者12.1也可以，你们可以自行测试看看  
 
+⚠️兼容性：  
+兼容环境：cuda12.0全版本  
+不兼容环境：cuda13.0【待验证】、cuda11.0【待验证】  
+
 ⚠️本人测试环境：  
 nvidia驱动：560.94  
 cuda驱动：12.6和12.4  
@@ -71,6 +75,7 @@ nvidia-smi
 nvcc -V
 ```
 
+
 ## ✅️运行命令
 镜像：`worm128/yinmei-cosyvoice:latest`
 Window docker cmd执行：  
@@ -78,6 +83,7 @@ Window docker cmd执行：
 docker run -d ^
   --name yinmei-cosyvoice ^
   --gpus all ^
+  --shm-size 20g
   -p 50001:50001 ^
   -p 50000:50000 ^
   -e MODEL_DIR=pretrained_models/CosyVoice2-0.5B ^
@@ -90,10 +96,11 @@ docker run -d ^
 
 参数说明：  
 MODEL_DIR：模型路径  
-api端口：PORT  
-webui端口：WEBPORT  
+PORT：api端口  
+WEBPORT：webui端口  
 LIMIT_COUNT：这个会在流式语音有效，解决性能较差显卡在流式语音中播放声音卡顿问题，如果你显卡较差，请调大这个值；如果LIMIT_COUNT=5代表累计5个字符才会返回流式音频  
 MODE：1、api模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、webui模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、api模式+webui模式双模式  
+共享内存：--shm-size 20g；不设置这个容易OOM启动程序自动退出
 
 指定GPU启动：  
 关键命令：--gpus '"device=0"'   
