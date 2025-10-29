@@ -355,8 +355,8 @@ docker run -d ^
 
 ##### 2、Window版本：  
 **说明：** Window版本不支持vllm，我安装的是cuda12.6，其他版本cuda自己测试是否兼容  
-**百度网盘：** [下载](https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp) 提取码: i4mp  
-**夸克：** [下载](https://pan.quark.cn/s/e19caa11c9d8)  提取码：DejZ  
+**百度网盘：** [下载](https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp)&nbsp;&nbsp;&nbsp;提取码: i4mp  
+**夸克：** [下载](https://pan.quark.cn/s/e19caa11c9d8)&nbsp;&nbsp;&nbsp;提取码：DejZ  
 
 ### 3、gpt-sovits配置
 <span style="color:red">注意：gpt-sovits【支持全系列1~4、pro、pro plus】</span>  
