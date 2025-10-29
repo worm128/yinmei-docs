@@ -71,7 +71,6 @@ nvidia-smi
 nvcc -V
 ```
 
-
 ## ✅️运行命令
 镜像：`worm128/yinmei-cosyvoice:latest`
 Window docker cmd执行：  
@@ -95,6 +94,19 @@ api端口：PORT
 webui端口：WEBPORT  
 LIMIT_COUNT：这个会在流式语音有效，解决性能较差显卡在流式语音中播放声音卡顿问题，如果你显卡较差，请调大这个值；如果LIMIT_COUNT=5代表累计5个字符才会返回流式音频  
 MODE：1、api模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、webui模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、api模式+webui模式双模式  
+
+指定GPU启动：  
+关键命令：--gpus '"device=0"'   
+```bash
+✅ 使用 GPU 0
+docker run --gpus '"device=0"' -d your-image:latest
+
+✅ 使用 GPU 1
+docker run --gpus '"device=1"' -d your-image:latest
+
+✅ 使用 GPU 2
+docker run --gpus '"device=2"' -d your-image:latest
+```
 
 地址访问：  
 webui：http://127.0.0.1:50000/  
