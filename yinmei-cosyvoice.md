@@ -9,8 +9,8 @@
 **Q群：27831318**  
 **Docker版本下载：[Docker仓库](https://hub.docker.com/r/worm128/yinmei-cosyvoice)**  
 **Window版本下载：**   
-[百度网盘](https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp)   提取码: i4mp  
-[夸克](https://pan.quark.cn/s/e19caa11c9d8)  提取码：DejZ  
+[百度网盘](https://pan.baidu.com/s/10fmcGfksHsSKAS8LckYTqQ?pwd=29tq)   提取码: 29tq  
+[夸克](https://pan.quark.cn/s/b666220e73c2)  提取码：kibi  
 
 ![吟美 Linux 开发系统](https://www.yinmei.vip/images/直播间封面.png)
 
@@ -52,9 +52,16 @@ tensorrt-cu12：10.0.1  高性能推理引擎，必须用 GPU
 1、要安装nvidia驱动  
 2、要安装cuda版本为12.6或以上版本，我觉得12.4或者12.1也可以，你们可以自行测试看看  
 
-⚠️兼容性：  
-兼容环境：cuda12.0全版本  
-不兼容环境：cuda13.0【待验证】、cuda11.0【待验证】  
+⚠️版本说明：  
+window版本：  
+```
+yinmei-cosyvoice【40系以下显卡】.rar：2.6.0+cu124
+yinmei-cosyvoice.rar：2.8.0+cu129
+```
+docker版本：  
+```
+2.7.0+cu126
+```
 
 ⚠️本人测试环境：  
 nvidia驱动：560.94  
@@ -75,6 +82,30 @@ nvidia-smi
 nvcc -V
 ```
 
+## ✅️问题汇总
+1、内存松了导致减少一半内存  
+2、威联通nas不能映射显卡驱动  
+3、镜像拉取缓存问题  
+4、不保证可以： 魔改docker、宝塔docker、nas自研docker  
+
+例如，宝塔docker：  
+```shell
+(base) root@c62e1d12f1cc:/program/cosyvoice#  ls -l /usr/lib/x86_64-linux-gnu/libnvidia-ml.so*
+-r-xr-xr-x 1 root root       0 Oct 24 12:56 /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1
+-rwxr-xr-x 1 root root 2213912 Oct 15 10:01 /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.570.86.10
+
+# 产生了libnvidia-ml.so.1挂载为空的问题，实际挂载到了libnvidia-ml.so.570.86.10，导致nvidia-smi查询不到显卡
+
+# 解决方案：
+# 删除损坏的文件
+rm /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1
+# 重新创建符号链接
+ln -s libnvidia-ml.so.570.86.10 /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1
+# 更新动态链接缓存
+/sbin/ldconfig /usr/lib/x86_64-linux-gnu
+# 测试
+nvidia-smi
+```
 
 ## ✅️运行命令
 镜像：`worm128/yinmei-cosyvoice:latest`
@@ -100,29 +131,28 @@ PORT：api端口
 WEBPORT：webui端口  
 LIMIT_COUNT：这个会在流式语音有效，解决性能较差显卡在流式语音中播放声音卡顿问题，如果你显卡较差，请调大这个值；如果LIMIT_COUNT=5代表累计5个字符才会返回流式音频  
 MODE：1、api模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、webui模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、api模式+webui模式双模式  
-共享内存：--shm-size 20g；不设置这个容易OOM启动程序自动退出
 
-共享内存OOM会导致程序崩溃退出：  
+🚨共享内存OOM会导致程序崩溃退出：  
 ```cmd
 docker inspect -f '{{.State.ExitCode}} {{.State.Error}}' yinmei-cosyvoice
 137
 ```
 共享内存：--shm-size 20g；不设置这个容易OOM启动程序自动退出
 
-指定GPU启动：  
-关键命令：--gpus '"device=0"'   
+🚨指定GPU启动：  
+关键命令：--gpus "device=0"   
 ```bash
 ✅ 使用 GPU 0
-docker run --gpus '"device=0"' -d your-image:latest
+docker run --gpus "device=0" -d your-image:latest
 
 ✅ 使用 GPU 1
-docker run --gpus '"device=1"' -d your-image:latest
+docker run --gpus "device=1" -d your-image:latest
 
 ✅ 使用 GPU 2
-docker run --gpus '"device=2"' -d your-image:latest
+docker run --gpus "device=2" -d your-image:latest
 ```
 
-地址访问：  
+✅地址访问：  
 webui：http://127.0.0.1:50000/  
 api：http://127.0.0.1:50001/docs  
 
