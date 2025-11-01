@@ -45,7 +45,15 @@ CUDA程序【cudatoolkit开发包】：nvcc -V
 开启语音按钮：语音依赖funasr语音识别系统  
 ![3.png](images/yinmei-desktop-plus/3.png)  
 **需要安装funasr服务端系统才可以使用**  
-**服务端：**  
+### **方法一、开箱即用【推荐】：**  
+[容器详情页](https://hub.docker.com/r/worm128/funasr-yinmei),以下示例基于 Windows Docker Desktop，映射到物理盘 J:\ai\ai-code\funasr\models
+```cmd
+docker run -p 10095:10095 --name funasr -it --privileged=true ^
+  -v /j/ai/ai-code/funasr/models:/workspace/models ^
+  worm128/funasr-yinmei
+```
+
+### **方法二、官方安装：**  
 需要根据[阿里 funasr](https://github.com/alibaba-damo-academy/FunASR/)进行配置, 建议安装容器，  
 参考[服务器部署文档](https://github.com/alibaba-damo-academy/FunASR/blob/main/runtime/docs/SDK_advanced_guide_online_zh.md)：
 ```dockerfile
