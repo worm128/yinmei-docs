@@ -97,7 +97,7 @@ New - Chat Reply Box: [Download](https://mall.bilibili.com/neul-next/detailunive
 How to set Yinmei's Rude and Gentle Prompts: [Download](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12477860&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 ![78.png](../images/yinmei-core/78.png)  
 
-## 1. Chat Configuration
+## 一. Chat Configuration
 ### 1. Ai Name
 > To launch 吟美核心 AI (v2.0.0), first give your AI a name. Then, when you ask for her name during conversation, she will address herself by that name.
 
@@ -345,15 +345,15 @@ Note: The cloud service here is shortened to https://api.fastgpt.in/api. In prin
 Remember to save the configuration.  
 ![30.png](../images/yinmei-core/30.png)  
 
-##2、 Speech synthesis
-###1. Microsoft edge ts configuration
+## 二、 Speech synthesis
+### 1. Microsoft edge ts configuration
 Turn on the voice configuration switch and select Microsoft edge ts for voice. This does not require additional deployment projects and can be used directly
 ![30.png](images/yinmei-core/30.png)  
 
-###2. Cosyvoice 2 configuration
+### 2. Cosyvoice 2 configuration
 <span style="color: red">Note: Cosyvoice only supports 2 models, I have already dropped the 1st generation</span>
-####2.1 Download software
-#####1. Docker version
+#### 2.1 Download software
+##### 1. Docker version
 **Explanation: * * Docker version supports vllm acceleration and is the fastest synthesis version
 **Container address:** https://hub.docker.com/r/worm128/yinmei-cosyvoice   
 **Run command:**
@@ -373,89 +373,92 @@ docker run -d ^
 worm128/yinmei-cosyvoice:latest
 ```
 
-#####2. Window version
-**Explanation: * * Window version does not support vllm. I installed CUDA12.6, and tested for compatibility with other versions of CUDA myself
-**Baidu Cloud Drive: * * [Download]（ https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp )&nbsp; &nbsp; &nbsp; Extraction code: i4mp
-**Quark: * * [Download]（ https://pan.quark.cn/s/e19caa11c9d8 )&nbsp; &nbsp; &nbsp; Extraction code: DejZ
+##### 2. Window version
+**Explanation: * *  
+Window version does not support vllm. I installed CUDA12.6, and tested for compatibility with other versions of CUDA myself  
+**Baidu Cloud Drive: * *  
+[Download](https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp)&nbsp; &nbsp; &nbsp; Extraction code: i4mp  
+**Quark: * *  
+[Download](https://pan.quark.cn/s/e19caa11c9d8)&nbsp; &nbsp; &nbsp; Extraction code: DejZ  
 
-###3. GPT rovits configuration
+### 3. GPT rovits configuration
 <span style="color: red">Note: GPT videos support the full range of 1-4 pro、pro plus】</span>  
-####3.1 Download software
--If you want your voice to be more vivid, you can choose GPT Ovits products**
--<font color="red" style="font weight: bold">I have placed the integration package on the cloud drive. GPT-SoVITS-v2.zip is version 2.0 of GPT-SoVITS:</font>
-**Yinmei integration package download link:**
-Baidu Cloud Storage Group: Please add the group number in "Baidu Cloud Storage ->Messages"
-Baidu Netdisk Group Number 1: 930109408 (Full)
-Baidu Netdisk Group Number 2: 939447713 (Full)
-Baidu Netdisk Group Number 3: 945900295
-Baidu Netdisk Group Number 4: 969208563
-**Quark:**
-Quark group 1:1231405830
-Quark group 2:428937868
+#### 3.1 Download software
+-If you want your voice to be more vivid, you can choose GPT Ovits products**  
+-<font color="red" style="font weight: bold">I have placed the integration package on the cloud drive. GPT-SoVITS-v2.zip is version 2.0 of GPT-SoVITS:</font>  
+**Yinmei integration package download link:**  
+Baidu Cloud Storage Group: Please add the group number in "Baidu Cloud Storage ->Messages"  
+Baidu Netdisk Group Number 1: 930109408 (Full)  
+Baidu Netdisk Group Number 2: 939447713 (Full)  
+Baidu Netdisk Group Number 3: 945900295  
+Baidu Netdisk Group Number 4: 969208563  
+**Quark:**  
+Quark group 1:1231405830  
+Quark group 2:428937868  
   
-**Latest package of GPT rovits Pro Plus:**
-<font color="red">GPT-SoVITS-v2pro yinmei Download: Please download the compressed file of "GPT-SoVITS-v2pro yinmei" from "yinmei all" and unzip it to use</font>
+**Latest package of GPT rovits Pro Plus:**  
+<font color="red">GPT-SoVITS-v2pro yinmei Download: Please download the compressed file of "GPT-SoVITS-v2pro yinmei" from "yinmei all" and unzip it to use</font>   
 ![118.png](images/yinmei-core/118.png)  
   
-The Pro Plus voice model is already built-in, with over a dozen options to choose from. Please refer to the "Audio Startup. txt" startup method by yourself
-<img src="images/yinmei-core/119.jpg" alt="" width="500">  
+The Pro Plus voice model is already built-in, with over a dozen options to choose from. Please refer to the "Audio Startup. txt" startup method by yourself  
+<img src="images/yinmei-core/119.jpg" alt="" width="500">   
 
 
-####3.2. Voice configuration
+#### 3.2. Voice configuration
 **Configure voice:**
 ![31.png](images/yinmei-core/31.png)  
 
-Temperature and speech rate are only effective for version 2.0
+Temperature and speech rate are only effective for version 2.0  
 ![32.png](images/yinmei-core/32.png)  
 
-Open GPT-SoVITS-v2, double-click api.bat to start it
+Open GPT-SoVITS-v2, double-click api.bat to start it  
 ![33.png](images/yinmei-core/33.png)  
 
-####3.3. Start the software
+#### 3.3. Start the software
 **Configure IP:**
-Open Notepad to edit the api.bat file
-If your voice is deployed on another machine on the local area network, please configure the IP address of that machine
-If your voice and Yinmei core are on the same machine, the default configuration is 127.0.0.1
-The default port is 9880. If you have a port conflict, please configure a different port
+Open Notepad to edit the api.bat file  
+If your voice is deployed on another machine on the local area network, please configure the IP address of that machine  
+If your voice and Yinmei core are on the same machine, the default configuration is 127.0.0.1  
+The default port is 9880. If you have a port conflict, please configure a different port  
 ![105.png](images/yinmei-core/105.png)  
 
-**Full synthesis: Double click api.bat to start the software:**
-**Stream synthesis: Double click api-steam.bat to start the software:**
-![34.png](images/yinmei-core/34.png)  
+**Full synthesis: Double click api.bat to start the software:**  
+**Stream synthesis: Double click api-steam.bat to start the software:**  
+![34.png](images/yinmei-core/34.png)    
 
-**Successful startup interface:**
-Successful startup will display your currently configured IP address
-![104.png](images/yinmei-core/104.png)  
+**Successful startup interface:**  
+Successful startup will display your currently configured IP address  
+![104.png](images/yinmei-core/104.png)    
 
-####3.4. Audio Model Selection
-**Download the audio model of GPT-SOVITS2:**
+#### 3.4. Audio Model Selection
+**Download the audio model of GPT-SOVITS2:**  
 https://pan.baidu.com/s/14WUDbWnBn7GPQYVREkWMug?pwd=1145   
-**<font color="red">Special thanks:</font>**
-Thank you to Employee 1145 of the Cabbage Factory on Bilibili for sharing the GPT-SOVITS integration package and model
-Thank you for the technical research and development of GPT-SOVITS on Bilibili's "Flowers Don't Cry" platform
+**<font color="red">Special thanks:</font>**  
+Thank you to Employee 1145 of the Cabbage Factory on Bilibili for sharing the GPT-SOVITS integration package and model  
+Thank you for the technical research and development of GPT-SOVITS on Bilibili's "Flowers Don't Cry" platform  
 ![35.png](images/yinmei-core/35.png)  
 
 **The use of the model:**
-Place the CKPT suffix file in GPT_weights_v2 and the pth suffix file in SoVITs_weights_v2
+Place the CKPT suffix file in GPT_weights_v2 and the pth suffix file in SoVITs_weights_v2  
 ![36.png](images/yinmei-core/36.png)  
 
-**Start script:**
--S parameter: Use the corresponding PTH model
--G parameter: Use the corresponding CKPT model
--DR parameter: Reference audio file path
--DT parameter: Refer to the audio text content
--A "192.168.2.57": Remember to change it to your own IP path
--p: This is for port modification. If there is a service port conflict, please modify this
+**Start script:**  
+-S parameter: Use the corresponding PTH model  
+-G parameter: Use the corresponding CKPT model  
+-DR parameter: Reference audio file path  
+-DT parameter: Refer to the audio text content  
+-A "192.168.2.57": Remember to change it to your own IP path  
+-p: This is for port modification. If there is a service port conflict, please modify this  
 ```bash
 chcp 65001
 Run time \ python. exe app. py - s "./SoVITSWeights-v2/Huke_10us320. th" - g "./GPTWeights-v2/Huke-e10. ckpt" - dr "./Reference audio/Huke/Excited - Mole Party, go! Brave mole, charge forward! . wav "- dt" Excited - Mole Party, mobilize! Brave mole, charge forward! " -cp ",.，。!！?？ " -dl "auto" -d cuda -a "192.168.2.57" -p 9881 -fp
 pause
 ```
 
-####3.5. Assistant Audio Configuration
-The audio that triggers the assistant to speak here can be configured the same as above, or you can open an additional gpt videos service with different pronunciations to output it
-Assistant's voice: Then we use this assistant's voice for singing replies, drawing replies, dancing replies, welcoming messages when entering the room, point broadcasts, and other conversations
-The assistant needs to start an additional GPT vitamins service, separate the audio port from the main character port, and then configure the new audio address for the service IP and port
+#### 3.5. Assistant Audio Configuration
+The audio that triggers the assistant to speak here can be configured the same as above, or you can open an additional gpt videos service with different pronunciations to output it  
+Assistant's voice: Then we use this assistant's voice for singing replies, drawing replies, dancing replies, welcoming messages when entering the room, point broadcasts, and other conversations  
+The assistant needs to start an additional GPT vitamins service, separate the audio port from the main character port, and then configure the new audio address for the service IP and port  
 ![38.png](images/yinmei-core/38.png)    
 
 ### 3. Voice Channels
@@ -491,7 +494,7 @@ For reference audio, please download it here: [Download](https://mall.bilibili.c
 ![107.png](../images/yinmei-core/107.png)  
 ![108.png](../images/yinmei-core/108.png)  
 
-## 3. Characters
+## 三. Characters
 ### 1. VTube Studio
 #### 1.1. Character Parameter Configuration
 **Skin Tutorial：**  
@@ -545,7 +548,7 @@ Views: 29:20
 [Desktop Pet Configuration](/en/yinmei-desktop-plus?id=_1-live2d-v3)  
 
 
-## 4. Live Streaming Configuration
+## 四. Live Streaming Configuration
 ### 1. Danmu
 Apply for B Station Open Platform Configuration
 ![40.png](../images/yinmei-core/40.png)  
@@ -639,7 +642,7 @@ Added a new voice channel selection. By default, the output is to the speaker. T
 #### 5.2. Singing Channels
 ![67.png](../images/yinmei-core/67.png)  
 
-## 5. Database
+## 五. Database
 ### 1. Live Streaming
 https://www.bilibili.com/video/BV1r3rgY6ER6/
 > After creating MongoDB here, it will support chat history, user registration, user points, and other functions.
@@ -689,7 +692,7 @@ Below is the user list.
 ![75.png](../images/yinmei-core/75.png)  
 
 
-## 6. Emotion System
+## 六. Emotion System
 ### 1. Emotion Recognition
 > Emotional Function: The AI's emotions are modified based on different user questions. This can be achieved through speech tone, voice intonation, character personality, and speech type.
 
@@ -764,7 +767,7 @@ The key is the expression name in VTS. The endwait is the duration for the actio
 > Pattern: Supports regular expression matching;
 > percent is the trigger probability; a higher value increases the probability of triggering. Value range: 0-100
 
-## 7. QQ Robot
+## 七. QQ Robot
 ### 1. Napcat Configuration
 ![85.png](../images/yinmei-core/85.png)  
 After selecting the QQ robot, you will need to install the Napcat software to collect QQ information.  
@@ -822,7 +825,7 @@ Poke Probability:
 3. Remember to configure the emoji save path:  
 ![101.png](../images/yinmei-core/101.png)  
 
-## 8. Search
+## 八. Search
 ### 1. Baidu Search
 This may trigger a security check. Be careful to avoid being redirected to the Baidu security verification code. Manually access the verification URL and copy the browser's cookie again. **Visit URL：**   https://www.baidu.com/s?ie=utf-8&tn=baidu&wd=%E6%80%AA%E4%BA%BA  
 Press F12 in your browser. In the message header, be sure to use the [Copy Value] button to avoid missing cookies.  
@@ -858,7 +861,7 @@ Configuring the proxy:
 {"http": "socks5://127.0.0.1:10806", "https": "socks5://127.0.0.1:10806"}
 ```
 
-## 9. Intelligent Functions
+## 九. Intelligent Functions
 ### 1. MCP Service
 #### 1.1 Required Software for Using the MCP Service
 **Install the UVX Tool**
@@ -1062,7 +1065,7 @@ Plugin Path: ai-yinmei/html/tools.html
 Plugin Path: ai-yinmei/vip/video.html  
 ![18.png](../images/funcall/18.png)  
 
-## 10. Lottery Service
+## 十. Lottery Service
 ### 1. Accessing the Lottery Function
 <font color="red">Tip: Please contact "Programmer's Retirement Life" on Bilibili to unlock this function or contact QQ: 314769095</font>
 ### 2. Automated Lottery
