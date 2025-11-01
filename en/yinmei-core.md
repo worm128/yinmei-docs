@@ -375,7 +375,7 @@ worm128/yinmei-cosyvoice:latest
 
 ##### 2. Window version
 **Explanation: * *  
-Window version does not support vllm. I installed CUDA12.6, and tested for compatibility with other versions of CUDA myself  
+Window version does not support vllm. I installed CUDA12.9, It should be compatible with all 50 series and 40 series Nvidia graphics cards, including A100, A5000 and other graphics cards  
 **Baidu Cloud Drive: * *  
 [Download](https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp)&nbsp; &nbsp; &nbsp; Extraction code: i4mp  
 **Quark: * *  
