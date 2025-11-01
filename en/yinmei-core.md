@@ -346,11 +346,11 @@ Remember to save the configuration.
 ![30.png](../images/yinmei-core/30.png)  
 
 ## 二、 Speech synthesis
-### 1. Microsoft edge ts configuration
+### 1. Microsoft edge-tts
 Turn on the voice configuration switch and select Microsoft edge ts for voice. This does not require additional deployment projects and can be used directly
 ![30.png](images/yinmei-core/30.png)  
 
-### 2. Cosyvoice 2 configuration
+### 2. Cosyvoice2
 <span style="color: red">Note: Cosyvoice only supports 2 models, I have already dropped the 1st generation</span>
 #### 2.1 Download software
 ##### 1. Docker version
@@ -381,7 +381,7 @@ Window version does not support vllm. I installed CUDA12.6, and tested for compa
 **Quark: * *  
 [Download](https://pan.quark.cn/s/e19caa11c9d8)&nbsp; &nbsp; &nbsp; Extraction code: DejZ  
 
-### 3. GPT rovits configuration
+### 3. GPT-Sovits
 <span style="color: red">Note: GPT videos support the full range of 1-4 pro、pro plus】</span>  
 #### 3.1 Download software
 -If you want your voice to be more vivid, you can choose GPT Ovits products**  
