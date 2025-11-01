@@ -377,7 +377,7 @@ docker run -d ^
 <font color="red">GPT-SoVITS-v2pro-yinmei下载: 请在"yinmei-all"下载"GPT-SoVITS-v2pro-yinmei"的压缩包，解压即可使用</font>  
 ![118.png](images/吟美核心/118.png)  
   
-[Pro Plus语音模型下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12731807&loadingShow=1&noTitleBar=1&msource=merchant_share)   
+Pro Plus语音模型已经内置，内置有十几个提供选择，自己参考“音频启动.txt”启动方式    
 <img src="images/吟美核心/119.jpg" alt="" width="500">  
 
 
@@ -399,7 +399,8 @@ docker run -d ^
 端口是默认9880，如果你有端口冲突，请配置其他端口  
 ![105.png](images/吟美核心/105.png)  
 
-**双击api.bat启动软件：**  
+**全量合成：双击api.bat启动软件：**  
+**流式合成：双击api-stream.bat启动软件：**  
 ![34.png](images/吟美核心/34.png)  
 
 **启动成功界面：**  
