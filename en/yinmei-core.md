@@ -345,91 +345,118 @@ Note: The cloud service here is shortened to https://api.fastgpt.in/api. In prin
 Remember to save the configuration.  
 ![30.png](../images/yinmei-core/30.png)  
 
-## 2. Speech Synthesis
-### 1. Microsoft Edge-TTS Configuration
-Turn on the speech configuration switch and select Microsoft Edge-TTS as the voice. This does not require additional deployment and can be used directly.  
-![30.png](../images/yinmei-core/30.png)  
+##2、 Speech synthesis
+###1. Microsoft edge ts configuration
+Turn on the voice configuration switch and select Microsoft edge ts for voice. This does not require additional deployment projects and can be used directly
+![30.png](images/yinmei-core/30.png)  
 
-### 2. GPT-Sovits Configuration
-<span style="color:red">Note: GPT-Sovits [supports all series 1-4, Pro, and Pro Plus]</span>  
-#### 2.1. Software Download
-- **If you want more vivid speech, you can choose GPT-Sovits products**
-- <font color="red" style="font-weight:bold">I have placed the integration package on the network drive. GPT-SoVITS-v2.zip is version 2.0 of GPT-SoVITS:</font>  
-**Yinmei integration package download address：**  
-Baidu Netdisk group: Please add the group number in "Baidu Netdisk -> Messages"  
-- Baidu Netdisk Group 1: 930109408 (Full)  
-- Baidu Netdisk Group 2: 939447713 (Full)  
-- Baidu Netdisk Group 3: 945900295  
-- Baidu Netdisk Group 4: 969208563  
-**Quark：**  
-Quark Group 1: 1231405830  
-Quark Group 2: 428937868  
+###2. Cosyvoice 2 configuration
+<span style="color: red">Note: Cosyvoice only supports 2 models, I have already dropped the 1st generation</span>
+####2.1 Download software
+#####1. Docker version
+**Explanation: * * Docker version supports vllm acceleration and is the fastest synthesis version
+**Container address:** https://hub.docker.com/r/worm128/yinmei-cosyvoice   
+**Run command:**
+**Mirror: * * worm128/yinmei cosyvoice: latest
+**Window Docker cmd Execution:**
+```cmd
+docker run -d ^
+--name yinmei-cosyvoice ^
+--gpus all ^
+-p 50001:50001 ^
+-p 50000:50000 ^
+-e MODEL_DIR=pretrained_models/CosyVoice2-0.5B ^
+-e PORT=50001 ^
+-e WEBPORT=50000 ^
+-e LIMIT_COUNT=5 ^
+-e MODE=3 ^
+worm128/yinmei-cosyvoice:latest
+```
 
-**GPT-SoVITS Pro Plus Latest Package：**  
-<font color="red">GPT-SoVITS-v2pro-yinmei Download: Please download the compressed package "GPT-SoVITS-v2pro-yinmei" from "yinmei-all" and unzip it to use.</font>  
-![118.png](../images/yinmei-core/118.png)  
+#####2. Window version
+**Explanation: * * Window version does not support vllm. I installed CUDA12.6, and tested for compatibility with other versions of CUDA myself
+**Baidu Cloud Drive: * * [Download]（ https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp )&nbsp; &nbsp; &nbsp; Extraction code: i4mp
+**Quark: * * [Download]（ https://pan.quark.cn/s/e19caa11c9d8 )&nbsp; &nbsp; &nbsp; Extraction code: DejZ
 
-[Pro Plus Voice Model Download](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12731807&loadingShow=1&noTitleBar=1&msource=merchant_share)  
-<img src="images/yinmei-core/119.jpg" alt="" width="500">
+###3. GPT rovits configuration
+<span style="color: red">Note: GPT videos support the full range of 1-4 pro、pro plus】</span>  
+####3.1 Download software
+-If you want your voice to be more vivid, you can choose GPT Ovits products**
+-<font color="red" style="font weight: bold">I have placed the integration package on the cloud drive. GPT-SoVITS-v2.zip is version 2.0 of GPT-SoVITS:</font>
+**Yinmei integration package download link:**
+Baidu Cloud Storage Group: Please add the group number in "Baidu Cloud Storage ->Messages"
+Baidu Netdisk Group Number 1: 930109408 (Full)
+Baidu Netdisk Group Number 2: 939447713 (Full)
+Baidu Netdisk Group Number 3: 945900295
+Baidu Netdisk Group Number 4: 969208563
+**Quark:**
+Quark group 1:1231405830
+Quark group 2:428937868
+  
+**Latest package of GPT rovits Pro Plus:**
+<font color="red">GPT-SoVITS-v2pro yinmei Download: Please download the compressed file of "GPT-SoVITS-v2pro yinmei" from "yinmei all" and unzip it to use</font>
+![118.png](images/yinmei-core/118.png)  
+  
+The Pro Plus voice model is already built-in, with over a dozen options to choose from. Please refer to the "Audio Startup. txt" startup method by yourself
+<img src="images/yinmei-core/119.jpg" alt="" width="500">  
 
-#### 2.2 Voice Configuration
-**Configure Voice：**  
-![31.png](../images/yinmei-core/31.png)  
 
-Temperature and speech rate are only effective for version 2.0.  
-![32.png](../images/yinmei-core/32.png)  
+####3.2. Voice configuration
+**Configure voice:**
+![31.png](images/yinmei-core/31.png)  
 
-Open GPT-SoVITS-v2 and double-click api.bat to start it.  
-![33.png](../images/yinmei-core/33.png)  
+Temperature and speech rate are only effective for version 2.0
+![32.png](images/yinmei-core/32.png)  
 
-#### 2.3. Starting the Software
-**Configure the IP：**  
-Open Notepad and edit the api.bat file.
-If your voice is deployed on another machine on the LAN, please configure the IP address of that machine.
-If your voice and 吟美核心 are on the same machine, the default configuration is 127.0.0.1.
-The default port is 9880. If there is a port conflict, please configure a different port.
-![105.png](../images/yinmei-core/105.png)  
+Open GPT-SoVITS-v2, double-click api.bat to start it
+![33.png](images/yinmei-core/33.png)  
 
-**Double-click api.bat to start the software：**  
-![34.png](../images/yinmei-core/34.png)  
+####3.3. Start the software
+**Configure IP:**
+Open Notepad to edit the api.bat file
+If your voice is deployed on another machine on the local area network, please configure the IP address of that machine
+If your voice and Yinmei core are on the same machine, the default configuration is 127.0.0.1
+The default port is 9880. If you have a port conflict, please configure a different port
+![105.png](images/yinmei-core/105.png)  
 
-**Startup Success Screen：**  
-A successful startup will display your currently configured IP address.
-![104.png](../images/yinmei-core/104.png)  
+**Full synthesis: Double click api.bat to start the software:**
+**Stream synthesis: Double click api-steam.bat to start the software:**
+![34.png](images/yinmei-core/34.png)  
 
-#### 2.4. Audio Model Selection
-**GPT-SOVITS2 audio model download：**  
-https://pan.baidu.com/s/14WUDbWnBn7GPQYVREkWMug?pwd=1145  
-**<font color="red">Special Thanks:</font>**  
-Thanks to "Cabbage Factory Employee No. 1145" on Bilibili for sharing the GPT-SOVITS integration package and model.  
-Thanks to "Hua'er Bu Ku" on Bilibili for their technical development of GPT-SOVITS.  
-[35.png](../images/yinmei-core/35.png)  
+**Successful startup interface:**
+Successful startup will display your currently configured IP address
+![104.png](images/yinmei-core/104.png)  
 
-**Model Usage：**  
-Place files with the CKPT suffix in GPT_weights_v2 and files with the PTH suffix in SoVITS_weights_v2.  
-[36.png](../images/yinmei-core/36.png)  
+####3.4. Audio Model Selection
+**Download the audio model of GPT-SOVITS2:**
+https://pan.baidu.com/s/14WUDbWnBn7GPQYVREkWMug?pwd=1145   
+**<font color="red">Special thanks:</font>**
+Thank you to Employee 1145 of the Cabbage Factory on Bilibili for sharing the GPT-SOVITS integration package and model
+Thank you for the technical research and development of GPT-SOVITS on Bilibili's "Flowers Don't Cry" platform
+![35.png](images/yinmei-core/35.png)  
 
-**Startup Script：**  
--s parameter: Use the corresponding PTH model.  
--g parameter: Use the corresponding CKPT model.  
--dr parameter: Reference audio file path  
--dt parameter: Reference audio text content  
--a "192.168.2.57": Remember to change it to your own IP address  
--p: This is for port changes. If there is a service port conflict, please modify this.  
+**The use of the model:**
+Place the CKPT suffix file in GPT_weights_v2 and the pth suffix file in SoVITs_weights_v2
+![36.png](images/yinmei-core/36.png)  
+
+**Start script:**
+-S parameter: Use the corresponding PTH model
+-G parameter: Use the corresponding CKPT model
+-DR parameter: Reference audio file path
+-DT parameter: Refer to the audio text content
+-A "192.168.2.57": Remember to change it to your own IP path
+-p: This is for port modification. If there is a service port conflict, please modify this
 ```bash
 chcp 65001
-runtime\python.exe api.py -s "./SoVITS_weights_v2/Hook_e10_s320.pth" -g "./GPT_weights_v2/Hook-e10.ckpt" -dr "./Reference Audio/Hook/Excited - Mole Gang, Move Out! Brave Moles Charge Forward!.wav" -dt "Excited - Mole Gang, Move Out! Brave Moles Charge Forward!" -cp ",.，。！！?？" -dl "auto" -d cuda -a "192.168.2.57" -p 9881 -fp
+Run time \ python. exe app. py - s "./SoVITSWeights-v2/Huke_10us320. th" - g "./GPTWeights-v2/Huke-e10. ckpt" - dr "./Reference audio/Huke/Excited - Mole Party, go! Brave mole, charge forward! . wav "- dt" Excited - Mole Party, mobilize! Brave mole, charge forward! " -cp ",.，。!！?？ " -dl "auto" -d cuda -a "192.168.2.57" -p 9881 -fp
 pause
 ```
 
-#### 2.5. Assistant Audio Configuration
-This triggers the assistant's voice audio. You can use the same configuration as above, or you can run a separate gpt-sovits service with different pronunciations.  
-
-Assistant Voice: We can then reference this assistant's voice in singing replies, drawing replies, dancing replies, room entry welcome messages, and points announcements.  
-
-The assistant needs to start an additional gpt-sovits service, separating the audio port from the main character port. Then, configure the service IP and port for this new audio address.  
-
-![38.png](../images/yinmei-core/38.png)    
+####3.5. Assistant Audio Configuration
+The audio that triggers the assistant to speak here can be configured the same as above, or you can open an additional gpt videos service with different pronunciations to output it
+Assistant's voice: Then we use this assistant's voice for singing replies, drawing replies, dancing replies, welcoming messages when entering the room, point broadcasts, and other conversations
+The assistant needs to start an additional GPT vitamins service, separate the audio port from the main character port, and then configure the new audio address for the service IP and port
+![38.png](images/yinmei-core/38.png)    
 
 ### 3. Voice Channels
 #### 3.1. Direct Speaker Output

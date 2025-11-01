@@ -338,7 +338,7 @@ fastgpt地址配置：
 ### 2、cosyvoice2配置
 <span style="color:red">注意：cosyvoice只支持2模型，1代我已经T掉</span>  
 #### 2.1、下载软件
-##### 1、Docker版本：  
+##### 1、Docker版本
 **说明：** Docker版本支持vllm加速，是合成速度最快的版本  
 **容器地址：** https://hub.docker.com/r/worm128/yinmei-cosyvoice  
 **运行命令：**  
@@ -358,7 +358,7 @@ docker run -d ^
   worm128/yinmei-cosyvoice:latest
 ```
 
-##### 2、Window版本：  
+##### 2、Window版本
 **说明：** Window版本不支持vllm，我安装的是cuda12.6，其他版本cuda自己测试是否兼容  
 **百度网盘：** [下载](https://pan.baidu.com/s/1z8W_iZFvstmL2AR9i_cx5Q?pwd=i4mp)&nbsp;&nbsp;&nbsp;提取码: i4mp  
 **夸克：** [下载](https://pan.quark.cn/s/e19caa11c9d8)&nbsp;&nbsp;&nbsp;提取码：DejZ  

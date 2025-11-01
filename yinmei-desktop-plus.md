@@ -88,7 +88,7 @@ nohup bash run_server_2pass.sh \
 ![4.png](images/yinmei-desktop-plus/4.png)  
 
 ## 五、桌宠表情
-### 1、以V3版本Live2D
+### 1、V3版本Live2D
 **Hiyori举例：**  
 在人物Hiyori.model3.json里面配置动作+表情  
 1、动作：  
