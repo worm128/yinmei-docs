@@ -5,11 +5,11 @@
 **启动方式：**
 双击启动“start.bat"或者"yinmei-core-api.exe"  
 
-![0.png](images/吟美核心/0.png)
+![0.png](images/yinmei-core/0.png)
 
 > 启动成功：管理后台地址
 
-![00.png](images/吟美核心/00.png)  
+![00.png](images/yinmei-core/00.png)  
 **访问地址：** http://127.0.0.1:9000  
 
 ## 快速配置
@@ -31,23 +31,23 @@
 
 ### 2、配置秘钥
 在每个项目的根目录的config.yml配置文件，找到在最后的valid_val值，替换即可。  
-![120.png](images/吟美核心/120.png)  
+![120.png](images/yinmei-core/120.png)  
 也可以在项目后台界面的首页替换秘钥  
-![121.png](images/吟美核心/121.png)  
+![121.png](images/yinmei-core/121.png)  
 
 
 ## 付费插件
 ### 1、聊天+情感提示效果
-聊天+情感提示效果：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476099&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+聊天+情感提示效果：免费，在核心html\chat-tip文件夹内  
 ![00.png](images/plug/聊天提示.jpg)  
 OBS配置两个浏览器插件decision.html和emotion.html  
 ![00.png](images/plug/webplug.png)  
 
 ### 2、AI吟美2.2.0语气参考音频
-语气参考音频：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+语气参考音频：免费，已经内置gpt-sovits合成整合包内  
 ![00.png](images/plug/参考音频.png)  
-![107.png](images/吟美核心/107.png)  
-![108.png](images/吟美核心/108.png)  
+![107.png](images/yinmei-core/107.png)  
+![108.png](images/yinmei-core/108.png)  
 默认参考音频配置：  
 ```json
 {
@@ -72,47 +72,52 @@ OBS配置两个浏览器插件decision.html和emotion.html
 ```
 
 ### 3、聊天回复框
-新款-聊天回复框：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476544&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+新款-聊天回复框：免费，在核心html\chat-reply文件夹内  
 ![00.png](images/plug/回复框效果.png)  
 
 
 ### 4、吟美爆粗和温柔提示词
 吟美爆粗和温柔如何设置：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12477860&loadingShow=1&noTitleBar=1&msource=merchant_share)  
-![78.png](images/吟美核心/78.png)  
+![78.png](images/yinmei-core/78.png)  
+
+### 5、送礼和上舰特效
+特效插件：免费，在核心html\effect文件夹内  
+![126.png](images/yinmei-core/126.jpg)  
+![127.png](images/yinmei-core/127.png)  
 
 ## 一、聊天配置
 ### 1、Ai名称
 > 启动吟美核心AI-YinMei-v2.0.0的start.bat，首先要给你的Ai起个名称，然后在对话里面，你问她名字，她会称呼自己是这个名字
 
-![1.png](images/吟美核心/1.png)
+![1.png](images/yinmei-core/1.png)
 
 !> 记得点击"保存配置"按钮，然后点击"刷新配置"按钮才会生效。
 
-![save.png](images/吟美核心/save.png)  
+![save.png](images/yinmei-core/save.png)  
 <br>
 
 ### 2、通用Ai聊天
 #### 2.1 类型选择
 > 在LLM大模型，可以选择通用聊天，此功能适配所有OpenAi规范的接口
 
-![3.png](images/吟美核心/3.png)
+![3.png](images/yinmei-core/3.png)
 
 **服务地址：**  
 以阿里百炼为例：https://help.aliyun.com/zh/model-studio/developer-reference/use-qwen-by-calling-api
 
-![4.png](images/吟美核心/4.png)
+![4.png](images/yinmei-core/4.png)
 
 **密钥：**  
 以阿里百炼为例：https://bailian.console.aliyun.com/?apiKey=1#/api-key
 
-![5.png](images/吟美核心/5.png)  
+![5.png](images/yinmei-core/5.png)  
 
 **模型名称：**  
 看文本生成的模型【阿里百炼为例】：  
 https://help.aliyun.com/zh/model-studio/getting-started/models  
 
 **LLM配置参数：**  
-![124.png](images/吟美核心/124.png)  
+![124.png](images/yinmei-core/124.png)  
 
 **历史记录：**  
 Ai聊天的上下文长度，通常一问一答为1个历史记录  
@@ -140,12 +145,12 @@ temperature越高，生成的文本更多样，反之，生成的文本更确定
 ##### 1、阿里百炼：  
 阿里百炼包含的102个文本生成模型,[查看模型列表](https://bailian.console.aliyun.com/?spm=5176.29619931.J_SEsSjsNv72yRuRFS2VknO.2.74cd405fRO0JGF&tab=doc#/doc/?type=model&url=2840914)    
 https://www.aliyun.com/product/bailian
-![6.png](images/吟美核心/6.png)  
+![6.png](images/yinmei-core/6.png)  
 
 ##### 2、智谱的模型：  
 GLM4、GLM4.5、GLM4.6等模型,[查看模型列表](https://open.bigmodel.cn/pricing)    
 https://open.bigmodel.cn/ 
-![7.png](images/吟美核心/7.png)  
+![7.png](images/yinmei-core/7.png)  
 
 
 ##### 3、本地服务 
@@ -212,7 +217,7 @@ https://www.siliconflow.cn/
 ##### 1、搜索参数  
 在不同的LLM模型平台开启搜索能力，以阿里百炼、智谱清言为例  
 在吟美核心的【接口请求参数扩展】加入搜索配置  
-![125.png](images/吟美核心/125.png)  
+![125.png](images/yinmei-core/125.png)  
 ```json
 {
     "enable_search":true,
@@ -224,11 +229,11 @@ https://www.siliconflow.cn/
 
 **阿里百炼搜索：**  
 https://bailian.console.aliyun.com/?accounttraceid=ce194831be774d6a91188482feb46b54xrie#/model-market/detail/qwen-plus-latest  
-![8.png](images/吟美核心/8.png)  
+![8.png](images/yinmei-core/8.png)  
 
 **glm搜索：**  
 https://www.bigmodel.cn/dev/howuse/websearch  
-![9.png](images/吟美核心/9.png)  
+![9.png](images/yinmei-core/9.png)  
 <br>
 
 ##### 2、深度思考  
@@ -243,7 +248,7 @@ https://www.bigmodel.cn/dev/howuse/websearch
 ```
 
 #### 2.4 聊天对话
-![39.png](images/吟美核心/39.png)  
+![39.png](images/yinmei-core/39.png)  
 
 ### 3、Fastgpt配置
 #### 3.1 注册账号
@@ -255,80 +260,80 @@ https://www.bigmodel.cn/dev/howuse/websearch
 
 #### 3.2 导入fastgpt工作流  
 下载网盘的fastgpt工作流配置  
-![10.png](images/吟美核心/10.png)  
+![10.png](images/yinmei-core/10.png)  
 
 新建一个空白工作流  
-![11.png](images/吟美核心/11.png) 
+![11.png](images/yinmei-core/11.png) 
 
 起个名称，选择空白工作流  
-![12.png](images/吟美核心/12.png) 
+![12.png](images/yinmei-core/12.png) 
 
 左上角导入配置：  
-![13.png](images/吟美核心/13.png) 
+![13.png](images/yinmei-core/13.png) 
 
 上传文件  
-![14.png](images/吟美核心/14.png) 
+![14.png](images/yinmei-core/14.png) 
 
 选择配置  
-![15.png](images/吟美核心/15.png) 
+![15.png](images/yinmei-core/15.png) 
 
 导入工作流成功：  
-![16.png](images/吟美核心/16.png) 
+![16.png](images/yinmei-core/16.png) 
 
 知识库需要重新选择：导入配置的知识库默认缺失，需要你重新选择你自己的知识库  
-![17.png](images/吟美核心/17.png) 
+![17.png](images/yinmei-core/17.png) 
 
 手动选择，选择一个自己的知识库  
-![18.png](images/吟美核心/18.png) 
+![18.png](images/yinmei-core/18.png) 
 
 选择知识库 
-![19.png](images/吟美核心/19.png) 
+![19.png](images/yinmei-core/19.png) 
 
 选择后的界面  
-![20.png](images/吟美核心/20.png)
+![20.png](images/yinmei-core/20.png)
 
 如果没有知识库引用，可以自行删除这个知识库配置  
 删除后，流程线条会丢失，<font color="red">记得手动把线条链接好</font>  
-![21.png](images/吟美核心/21.png) 
+![21.png](images/yinmei-core/21.png) 
 
 这里吟美包含了两个性格，可以参考我的格式，自行填写自己的性格特征  
-![22.png](images/吟美核心/22.png) 
+![22.png](images/yinmei-core/22.png) 
 
 右侧模型是基本设定  
 1、选择自己的聊天模型   2、人物通用的设定都在这里配置  3、历史记录：这就是Ai的短期记忆，一般3~6比较适合  
-![23.png](images/吟美核心/23.png) 
+![23.png](images/yinmei-core/23.png) 
 
 #### 3.3 新建fastgpt云服务地址和秘钥  
 选择发布渠道，API访问，新建一个秘钥  
-![24.png](images/吟美核心/24.png) 
+![24.png](images/yinmei-core/24.png) 
 
 填写一个名称  
-![25.png](images/吟美核心/25.png) 
+![25.png](images/yinmei-core/25.png) 
 
 保管好自己的秘钥  
-![26.png](images/吟美核心/26.png) 
+![26.png](images/yinmei-core/26.png) 
 
 把秘钥回填到吟美核心  
 密码：fastgpt-t21ZxdTJ2FxfRpXB3kbEwQRcDwffewaZR4kHBco66dutDyScSCAVJ  
 记得秘钥靠头有一个Bearer，不能覆盖了，所以真实秘钥是：  
 Bearer fastgpt-t21ZxdTJ2FxfRpXB3kbEwQRcDwffewaZR4kHBco66dutDyScSCAVJ  
-![27.png](images/吟美核心/27.png) 
+![27.png](images/yinmei-core/27.png) 
 
 fastgpt地址配置：  
 云服务的api地址：https://api.fastgpt.in/api  
-![28.png](images/吟美核心/28.png) 
+![28.png](images/yinmei-core/28.png) 
 
 配置到吟美核心的地址：http://192.168.2.198:3000/api/v1/chat/completions  
 注意：这里云服务是短的https://api.fastgpt.in/api，原则上只需要替换 域名+端口就可以，后面那些小尾巴不要少了“/v1/chat/completions”  
-![29.png](images/吟美核心/29.png) 
+![29.png](images/yinmei-core/29.png) 
 
 记得要保存配置  
-![30.png](images/吟美核心/30.png) 
+![30.png](images/yinmei-core/30.png) 
 
 ## 二、语音合成
 ### 1、微软edge-tts配置
 语音配置开关打开，选择语音是微软edge-tts，这个不需要额外部署项目，可以直接使用
-![30.png](images/吟美核心/30.png)  
+![30.png](images/yinmei-core/30.png)  
 
 ### 2、cosyvoice2配置
 <span style="color:red">注意：cosyvoice只支持2模型，1代我已经T掉</span>  
@@ -375,21 +380,21 @@ docker run -d ^
   
 **gpt-sovits pro plus最新包:**  
 <font color="red">GPT-SoVITS-v2pro-yinmei下载: 请在"yinmei-all"下载"GPT-SoVITS-v2pro-yinmei"的压缩包，解压即可使用</font>  
-![118.png](images/吟美核心/118.png)  
+![118.png](images/yinmei-core/118.png)  
   
 Pro Plus语音模型已经内置，内置有十几个提供选择，自己参考“音频启动.txt”启动方式    
-<img src="images/吟美核心/119.jpg" alt="" width="500">  
+<img src="images/yinmei-core/119.jpg" alt="" width="500">  
 
 
 #### 3.2、语音配置
 **配置语音：**  
-![31.png](images/吟美核心/31.png)  
+![31.png](images/yinmei-core/31.png)  
 
 温度和语速只对版本2.0生效  
-![32.png](images/吟美核心/32.png)  
+![32.png](images/yinmei-core/32.png)  
 
 打开GPT-SoVITS-v2，双击api.bat就可以启动  
-![33.png](images/吟美核心/33.png)  
+![33.png](images/yinmei-core/33.png)  
 
 #### 3.3、启动软件
 **配置IP：**  
@@ -397,15 +402,15 @@ Pro Plus语音模型已经内置，内置有十几个提供选择，自己参考
 如果你语音是部署在局域网上其他机器，请配置那台机器的IP  
 如果你的语音和吟美核心是同一台机器，则是默认配置127.0.0.1  
 端口是默认9880，如果你有端口冲突，请配置其他端口  
-![105.png](images/吟美核心/105.png)  
+![105.png](images/yinmei-core/105.png)  
 
 **全量合成：双击api.bat启动软件：**  
 **流式合成：双击api-stream.bat启动软件：**  
-![34.png](images/吟美核心/34.png)  
+![34.png](images/yinmei-core/34.png)  
 
 **启动成功界面：**  
 启动成功会显示你当前配置好的ip地址  
-![104.png](images/吟美核心/104.png)  
+![104.png](images/yinmei-core/104.png)  
 
 #### 3.4、音频模型选择
 **GPT-SOVITS2的音频模型下载：**  
@@ -413,11 +418,11 @@ https://pan.baidu.com/s/14WUDbWnBn7GPQYVREkWMug?pwd=1145
 **<font color="red">特别鸣谢：</font>**  
 感谢B站“白菜工厂1145号员工”的GPT-SOVITS整合包分享和模型分享  
 感谢B站“花儿不哭”的GPT-SOVITS的技术研发  
-![35.png](images/吟美核心/35.png)  
+![35.png](images/yinmei-core/35.png)  
 
 **模型的使用：**  
 把CKPT后缀文件放在GPT_weights_v2，把pth后缀文件放在SoVITS_weights_v2  
-![36.png](images/吟美核心/36.png)  
+![36.png](images/yinmei-core/36.png)  
 
 **启动脚本：**  
 -s参数：使用对应pth模型  
@@ -436,27 +441,27 @@ pause
 这里触发助手说话的音频，你可以和上面配置的一样，也可以在多开一个不同发音的gpt-sovits服务出来  
 助手的语音：然后我们在唱歌回复、绘画回复、跳舞回复、进入房间欢迎词、积分播报等一些说话上，引用这个助手语音  
 助手需要启动多一个gpt-sovits服务，音频端口和主人物端口分开即可，然后服务IP和端口配置这个新音频地址  
-![38.png](images/吟美核心/38.png)  
+![38.png](images/yinmei-core/38.png)  
 
 ### 4、语音声道
 #### 4.1、直接输出扬声器
 语音新增声道选择，默认输出到 扬声器，这里会被【桌宠的live2D_audio_device参数】音频捕获或者【VTS设置口型】音频捕获，从而实现口型匹配  
-![66.png](images/吟美核心/66.png)  
+![66.png](images/yinmei-core/66.png)  
 #### 4.2、输出虚拟通道B2
 如果你在吟美核心配置语音主人物的输出通道是Voicemeeter的B2虚拟通道  
-![123.png](images/吟美核心/123.png)  
+![123.png](images/yinmei-core/123.png)  
 #### 4.3、虚拟通道分配逻辑
 主人物对应虚拟通道2、助手对应虚拟通道3，分开通道互不影响不同人物的口型      
 ![4.png](images/yinmei-desktop-plus/4.png)  
 #### 4.4、虚拟通道需要监听声音
 声道如果选择扬声器，可以直接在你的音箱听到声音，如果输出的是Voicemeeter的虚拟通道则不能听到声音，则需要如下配置才能在扬声器监听到虚拟通道的声音  
-![122.png](images/吟美核心/122.png)  
+![122.png](images/yinmei-core/122.png)  
 
 
 ### 5、情感语气
 #### 5.1、语气配置方案  
 配置参考音频，一个情感名称对应一个参考音频文件名  
-![106.png](images/吟美核心/106.png)  
+![106.png](images/yinmei-core/106.png)  
 > 例如： "开心": "蛋糕都已经端到你的面前了，快许个心愿吧。"  
 
 遇到"开心"情感，则使用参考音频"蛋糕都已经端到你的面前了，快许个心愿吧。.WAV"  
@@ -464,10 +469,10 @@ pause
 
 #### 5.2、参考音频配置
 需要在gpt-sovits的"语气"文件夹加入音频文件"蛋糕都已经端到你的面前了，快许个心愿吧。.WAV"  
-需要参考音频，请在这里下载：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)
-  
-![107.png](images/吟美核心/107.png)  
-![108.png](images/吟美核心/108.png)  
+需要参考音频，请在这里下载：免费，在gpt-sovits整合包内  
+
+![107.png](images/yinmei-core/107.png)  
+![108.png](images/yinmei-core/108.png)  
 
 ## 三、人物  
 ### 1、VTube Studio
@@ -483,16 +488,16 @@ VST手部参数：https://www.bilibili.com/video/BV1CW4y1A77p
 ##### 1、虚拟声卡安装：
 **虚拟声卡驱动（Virtual Audio Cable）4.66 官方版**  
 https://www.pcsoft.com.cn/soft/123115.html  
-![108.png](images/吟美核心/109.png)  
+![108.png](images/yinmei-core/109.png)  
 
 **Voicemeeter虚拟声卡：**  
 https://vb-audio.com/Voicemeeter/banana.htm  
-![110.png](images/吟美核心/110.png)  
+![110.png](images/yinmei-core/110.png)  
 
 ##### 2、虚拟声道配置：
 教程：https://www.bilibili.com/video/BV1BPfVY9Epz  
 观看：34:44  
-![117.png](images/吟美核心/117.png)  
+![117.png](images/yinmei-core/117.png)  
 
 1、虚拟声道划分：  
 唱歌伴奏：第一个虚拟输出声道  
@@ -500,24 +505,24 @@ https://vb-audio.com/Voicemeeter/banana.htm
 聊天说话：第二个虚拟输出声道  
 助手聊天：第三个虚拟输出声道  
 说明：使用第二虚拟声道，是为了live2D人物要做口型匹配，为了其他声音不影响人物口型，这个第二声道只用于人物声音，其他伴奏、音乐、或者主人对话音频都不占用这个第二声道  
-![111.png](images/吟美核心/111.png)  
+![111.png](images/yinmei-core/111.png)  
 
 2、voicemeeter必须设置MME的扬声器，不然Vtube Studio不能选择虚拟麦克风  
-![112.png](images/吟美核心/112.png)  
+![112.png](images/yinmei-core/112.png)  
 
 3、voicemeeter选择Aux输出到B2通道  
-![113.png](images/吟美核心/113.png)  
+![113.png](images/yinmei-core/113.png)  
 
 4、VTS选择OUT B2  
-![114.png](images/吟美核心/114.png)  
+![114.png](images/yinmei-core/114.png)  
 
 5、VTS记得设置口型动作使用声音和声频来变化  
-![115.png](images/吟美核心/115.png)  
+![115.png](images/yinmei-core/115.png)  
 
 #### 1.3、人物动作联动
 视频：https://www.bilibili.com/video/BV1PMq9YZEWS  
 观看：29:20  
-![116.png](images/吟美核心/116.png)  
+![116.png](images/yinmei-core/116.png)  
 
 ### 2、吟美桌宠
 [桌宠配置](yinmei-desktop-plus?id=_2-desktop-pet-configuration)  
@@ -526,34 +531,34 @@ https://vb-audio.com/Voicemeeter/banana.htm
 ## 四、直播配置  
 ### 1、弹幕
 申请开通B站开放平台配置  
-![40.png](images/吟美核心/40.png)  
+![40.png](images/yinmei-core/40.png)  
 申请开通B站开放平台后，在个人资料找到秘钥  
-![41.png](images/吟美核心/41.png)  
+![41.png](images/yinmei-core/41.png)  
 把数据填写到这里来，  
 access_key_id：B站开放平台KeyId  
 access_key_secred：B站开放平台密钥  
 关联直播间：B站直播房间号  
-![42.png](images/吟美核心/42.png)  
+![42.png](images/yinmei-core/42.png)  
 点击头像，url的id就是“直播用户UID”  
-![43.png](images/吟美核心/43.png)  
-![44.png](images/吟美核心/44.png)  
+![43.png](images/yinmei-core/43.png)  
+![44.png](images/yinmei-core/44.png)  
 新建项目->直播工具，获取直播应用id  
-![45.png](images/吟美核心/45.png)  
+![45.png](images/yinmei-core/45.png)  
 项目ID，填入吟美核心2.0的“B站开放平台应用id”  
-![46.png](images/吟美核心/46.png)  
+![46.png](images/yinmei-core/46.png)  
 最后，需要保存配置并且重启应用才会生效  
 
 
 ### 2、直播间发起聊天  
 **发起聊天文本：**fuck you  
-![47.png](images/吟美核心/47.png)  
+![47.png](images/yinmei-core/47.png)  
 后台捕抓到Ai回复和弹幕  
-![48.png](images/吟美核心/48.png)  
-新款-聊天回复框：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476544&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+![48.png](images/yinmei-core/48.png)  
+新款-聊天回复框：免费，在核心html\chat-reply文件夹内    
 ![00.png](images/plug/回复框效果.png)  
 BliveChat项目，右侧弹幕区配置：  
 项目地址：https://github.com/xfgryujk/blivechat  
-![49.png](images/吟美核心/49.png)  
+![49.png](images/yinmei-core/49.png)  
 
 **启动docker容器：**  
 **访问地址：**http://localhost:12450  
@@ -562,59 +567,59 @@ docker run --name blivechat  -d -p 12450:12450 -v blivechat-data:/mnt/data xfgry
 ```  
 
 而且，B站主播身份码要配置正确  
-![50.png](images/吟美核心/50.png)  
+![50.png](images/yinmei-core/50.png)  
 访问地址：http://localhost:12450，进去配置一下身份码  
-![51.png](images/吟美核心/51.png)  
+![51.png](images/yinmei-core/51.png)  
 容器启动完成后，会自动关联BliveChat项目  
 
 ### 3、OBS软件联动
 **WS服务联动：**  
-![52.png](images/吟美核心/52.png)  
+![52.png](images/yinmei-core/52.png)  
 **ws配置：**  
-![53.png](images/吟美核心/53.png)  
+![53.png](images/yinmei-core/53.png)  
 **导入配置**  
-![54.png](images/吟美核心/54.png)  
+![54.png](images/yinmei-core/54.png)  
 
 **切换场景：**  
 "当用户输入“切换+场景名称”： 粉色房间、神社、海岸花坊、花房、清晨房间。系统会根据时间智能判定早晚场景的切换，早上、黄昏和晚上的场景会有所变化哦。  
 配置房间名和背景音乐：  
-![55.png](images/吟美核心/55.png)  
+![55.png](images/yinmei-core/55.png)  
 白天效果  
-![56.png](images/吟美核心/56.png)  
+![56.png](images/yinmei-core/56.png)  
 夜晚效果
-![57.png](images/吟美核心/57.png)  
+![57.png](images/yinmei-core/57.png)  
 
 ### 4、Vtube Studio皮肤联动
 #### 4.1 注册表情
-![58.png](images/吟美核心/58.png)  
+![58.png](images/yinmei-core/58.png)  
 **确认注册**  
-![59.png](images/吟美核心/59.png)  
+![59.png](images/yinmei-core/59.png)  
 **程序自动回写秘钥**  
-![60.png](images/吟美核心/60.png)  
+![60.png](images/yinmei-core/60.png)  
 **保存配置，重启应用就会生效**  
-![61.png](images/吟美核心/61.png)  
+![61.png](images/yinmei-core/61.png)  
 **链接状态**  
-![62.png](images/吟美核心/62.png)  
+![62.png](images/yinmei-core/62.png)  
 
 #### 4.2 配置vtube studio的必要表情
 **表情方式：**  
 表情名称：开心、哭、捂嘴、生气、尴尬、认同、汗颜、晕、可爱、摸摸头  
 表情名称要和vtuber studio表情命名的一致  
-![63.png](images/吟美核心/63.png)  
+![63.png](images/yinmei-core/63.png)  
 **挂件方式：**摸摸头是挂件方式  
-![64.png](images/吟美核心/64.png)  
+![64.png](images/yinmei-core/64.png)  
 
 **换装效果：**  
 "当用户输入“换装+衣服名称”可以进行服装更换，便衣、爱的翅膀、青春猫娘、眼镜猫娘  
 **配置内容：**  
-![65.png](images/吟美核心/65.png)  
+![65.png](images/yinmei-core/65.png)  
 
 ### 5、吟美声道设置
 #### 5.1、语音声道
 语音新增声道选择，默认输出到 扬声器，这里会被【桌宠的live2D_audio_device参数】音频捕获或者【VTS设置口型】音频捕获，从而实现口型匹配  
-![66.png](images/吟美核心/66.png)  
+![66.png](images/yinmei-core/66.png)  
 #### 5.2、唱歌声道
-![67.png](images/吟美核心/67.png)  
+![67.png](images/yinmei-core/67.png)  
 
 ## 五、数据库
 ### 1、直播效果
@@ -636,34 +641,34 @@ docker run -itd --name yinmei-data -p 27018:27017 -e MONGO_INITDB_ROOT_USERNAME=
 ### 3、聊天记录
 > 这里在调用llm时候，短期记忆会在这里抽取记忆  
 
-![68.png](images/吟美核心/68.png)  
+![68.png](images/yinmei-core/68.png)  
 
 > 而长期记忆，会调用吟美智能分析模块做向量化查询。所以短期记忆和长期记忆是不同的方式调用。
 
-![69.png](images/吟美核心/69.png)  
+![69.png](images/yinmei-core/69.png)  
 
 > 聊天记录  
 
-![74.png](images/吟美核心/74.png)  
+![74.png](images/yinmei-core/74.png)  
 
 ### 4、用户注册
 > 依赖B站的开放平台，需要用户进入B站直播间，才会产生用户信息注册  
 
 以下是用户列表  
-![70.png](images/吟美核心/70.png)  
+![70.png](images/yinmei-core/70.png)  
 
 ### 5、积分功能
 > 当用户查询自己的积分请输入“我的积分”，查看积分排行榜输入“排行榜”，聊天、点赞、送礼物可以增加积分，如果唱歌、画画、跳舞会扣除一定积分。新用户注册基础积分是50。  
 
 **聊天、点赞、送礼物可以增加积分：**  
-![71.png](images/吟美核心/71.png)  
+![71.png](images/yinmei-core/71.png)  
 **唱歌、绘画、跳舞消耗积分**  
-![72.png](images/吟美核心/72.png)  
+![72.png](images/yinmei-core/72.png)  
 **输入“排行榜”关键字，可以查询积分排行；输入“我的积分”，查看自己的积分**  
-![73.png](images/吟美核心/73.png)  
+![73.png](images/yinmei-core/73.png)  
 
 **用户积分流水：**  
-![75.png](images/吟美核心/75.png)  
+![75.png](images/yinmei-core/75.png)  
 
 
 ## 六、情感系统
@@ -675,17 +680,17 @@ docker run -itd --name yinmei-data -p 27018:27017 -e MONGO_INITDB_ROOT_USERNAME=
 !> 通过吟美分析模块：yinmei-analysis，分析用户的问题得出的情感  
 
 ?> 问题：我点的音乐哪去了？   分析的情感为：疑惑  
-![76.png](images/吟美核心/76.png)  
+![76.png](images/yinmei-core/76.png)  
 
 **用户文本弹框+情感弹框+决策弹框**  
-效果插件：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476099&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+效果插件：免费，在核心html\chat-tip文件夹内  
 
 ### 2、性格配置
 **性格配置的作用：**根据情感变化，变化人物的性格特征，性格可以自定义多个。  
 配置方案的key值，例如，“女仆版”是对应项目提示词配置。  
 吟美爆粗和温柔如何设置：[下载](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12477860&loadingShow=1&noTitleBar=1&msource=merchant_share)   
 **性格配置所在位置：**人物性格[🌟]: /prompt/character/  
-![77.png](images/吟美核心/77.png)  
+![77.png](images/yinmei-core/77.png)  
 ```json
 "怒怼版": ["生气"]
 ```
@@ -694,7 +699,7 @@ docker run -itd --name yinmei-data -p 27018:27017 -e MONGO_INITDB_ROOT_USERNAME=
 "怒怼版": ["生气","尴尬","调皮","搞笑"]
 ```
 PS：这里需要注意，如果多种情绪同时触发了多种性格，吟美会随机抽取一种情绪去抽取对应的性格提示词  
-![78.png](images/吟美核心/78.png)  
+![78.png](images/yinmei-core/78.png)  
 > 修改完提示词后，可以点击按钮 刷新人物提示词，可以无感知实时更新提示词  
 
 > 例如，一开始配置的吟美是怒怼提示词，说什么话语都是非常爆粗生气的言语，替换了温柔版提示词后，点击刷新人物提示词，吟美瞬间变成温柔可爱小猫咪形象。  
@@ -704,19 +709,19 @@ PS：这里需要注意，如果多种情绪同时触发了多种性格，吟美
 **效果：**人物会在说话和唱歌时候，身体的动作进行摇摆  
 **动作录制：**自行录制人物动作，**查看视频教程：**https://www.bilibili.com/video/BV1aT421X7tF/  
 生成动作后，请在vts配置表情名称  
-![79.png](images/吟美核心/79.png)  
+![79.png](images/yinmei-core/79.png)  
 key名称就是vts的表情名称，endwait是这个动作运行的时间，时间到了会自动结束动作  
-![80.png](images/吟美核心/80.png)  
+![80.png](images/yinmei-core/80.png)  
 
 #### 3.2、表情触发
 **key值是表情名称，value值是AI关键字回复文本**  
-![81.png](images/吟美核心/81.png)  
+![81.png](images/yinmei-core/81.png)  
   
 **表情关联配置方案的名称“开心”，是VTS的表情名称**  
-![82.png](images/吟美核心/82.png)  
+![82.png](images/yinmei-core/82.png)  
   
 **key表示的吟美回复关键字，donum是执行表情多少次，timesleep是等待下一次执行的表情时间【秒】**  
-![83.png](images/吟美核心/83.png)  
+![83.png](images/yinmei-core/83.png)  
 
 > 设置了每一个字的计算时间0.3秒，用作触发表情的时间计算间隔，自行根据人物说话语速调配
 
@@ -729,7 +734,7 @@ key名称就是vts的表情名称，endwait是这个动作运行的时间，时�
 那么我们看到关键字“开心”和“呵”是会触发开心表情的，看到每字朗读速度配置是0.3，开心事在第6个字符开始，那么就是0.3\*6=1.8秒触发开心表情，然后“呵”是在11个字开始，那么就是0.3\*11 = 3.3秒触发表情  
 
 #### 3.3、语言变化
-![84.png](images/吟美核心/84.png)  
+![84.png](images/yinmei-core/84.png)  
 
 !> 根据关键字+情感变化，变化语种
 
@@ -741,68 +746,68 @@ key名称就是vts的表情名称，endwait是这个动作运行的时间，时�
 
 ## 七、QQ机器人
 ### 1、napcat配置
-![85.png](images/吟美核心/85.png)  
+![85.png](images/yinmei-core/85.png)  
 当选择了QQ机器人后，需要你安装一个napcat软件进行QQ信息的采集  
 **napcat安装：**https://github.com/NapNeko/NapCatQQ/releases  
 请选择最新版进行安装  
-![86.png](images/吟美核心/86.png)  
+![86.png](images/yinmei-core/86.png)  
 **napcat教程：**https://napneko.github.io/  
-![87.png](images/吟美核心/87.png)  
+![87.png](images/yinmei-core/87.png)  
 配置一个websocket服务器，端口配置30002，token自行定义  
-![88.png](images/吟美核心/88.png)  
+![88.png](images/yinmei-core/88.png)  
 配置后需要再吟美核心的napcat websocket配置联动  
-![89.png](images/吟美核心/89.png)  
+![89.png](images/yinmei-core/89.png)  
 
 ### 2、唤醒指令
 ```json
 ["吟美","小银","小淫","小美","渣美","电脑","模型","技术","唱","画画","绘画","搜","查","表姐","表情"]
 ```
 当Q群遇到吟美、画画、技术等以上配置的唤醒指令，都会唤醒吟美进行对话。或者你在q群直接@吟美，或者直接引用回复吟美，都会触发吟美的对话  
-![90.png](images/吟美核心/90.png)  
+![90.png](images/yinmei-core/90.png)  
 
 ### 3、QQ名单配置
-![91.png](images/吟美核心/91.png)  
+![91.png](images/yinmei-core/91.png)  
 Q号是你当前AI的qq号码  
 **Q群白名单：**虽然你qq加了又几十个Q群，但是如果你没把Q群配置到白名单，吟美是不会监听qq信息的  
 
 ### 4、其他配置
-![92.png](images/吟美核心/92.png)  
+![92.png](images/yinmei-core/92.png)  
 **过滤QQ信息：**以防你加入q群后，会触发和Q群管家这样的机器人死循环聊天，特意设置过滤这些QQ机器人的信息  
 **过滤Q群角色：**可以根据Q群的用户角色，例如，admin:管理员；member：普通用户；owner：群主  
 **共享信息条数：**监听Q群共享信息的条数，可以联动Q群聊天上下文进行联动，就是多用户混合的聊天信息  
 **触发语音的语种：**触发发送QQ语音的语种，当配置为yue，则是遇到说粤语时候必定发送语音，语种包含：英语：en，日文：jp，韩文：kor，粤语：yue，国语：zh  
 
 ### 5、机率配置
-![93.png](images/吟美核心/93.png)  
+![93.png](images/yinmei-core/93.png)  
 机率值范围：0~100  
 @某人的机率：  
-![94.png](images/吟美核心/94.png)  
+![94.png](images/yinmei-core/94.png)  
 引用回复机率：   
-![95.png](images/吟美核心/95.png)  
+![95.png](images/yinmei-core/95.png)  
 语音发送机率：  
-![96.png](images/吟美核心/96.png)  
+![96.png](images/yinmei-core/96.png)  
 戳一戳机率：  
-![97.png](images/吟美核心/97.png)  
+![97.png](images/yinmei-core/97.png)  
 
 ### 6、表情包学习
-![98.png](images/吟美核心/98.png)
+![98.png](images/yinmei-core/98.png)
 
 !> 1、重要注意：表情包学习和发送，需要开启吟美数据库服务  
 
-![99.png](images/吟美核心/99.png)  
+![99.png](images/yinmei-core/99.png)  
 <br><br>
 2、学习模式三种，0是不学习，1是学习官方已经命名好的表情，2是用户自定义的一些表情，这个吟美会综合上下文关键字进行命名  
-![100.png](images/吟美核心/100.png)  
+![100.png](images/yinmei-core/100.png)  
 <br><br>
 3、记得配置表情包保存路径：  
-![101.png](images/吟美核心/101.png)  
+![101.png](images/yinmei-core/101.png)  
 
 ## 八、搜索
 ### 1、百度搜索
 有可能会触发安全校验，注意异常捕获跳转的百度安全验证码，手动访问验证地址后再次复制浏览器的cookie即可  
 **访问地址：**https://www.baidu.com/s?ie=utf-8&tn=baidu&wd=%E6%80%AA%E4%BA%BA  
 浏览器F12，在消息头看到，注意要使用【复制值】按钮，以免cookie缺失  
-![102.png](images/吟美核心/102.png)  
+![102.png](images/yinmei-core/102.png)  
 
 ### 2、searxng聚合搜索
 #### 2.1、安装searxng服务
@@ -986,7 +991,7 @@ async with asyncio.timeout(20):  # 20 秒超时
 
 #### 1.4 导入mcp插件  
 说明：吟美的MCP功能配置列表，是没有配置任何MCP的，需要你们自行配置，如果需要配置好现成的MCP服务，请进行知识付费  
-**MCP购买地址：** [购买下载 ](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12731981&loadingShow=1&noTitleBar=1&msource=merchant_share)  
+**MCP购买地址：** 免费，在网盘的yinmei-all\mcp文件夹内    
 <img src="images/funcall/10.jpg" alt="" width="500">  
 **购买的文件包含：**
 - 每一个插件里面多有一个*.bat的脚本启动，当前只配置了在window系统下启动  

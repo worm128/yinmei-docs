@@ -5,11 +5,11 @@ Application Package: AI-YinMei-v2.2.0.zip
 **Startup Method：**  
 Double-click to launch "start.bat" or "yinmei-core-api.exe"  
 
-![0.png](../images/吟美核心/0.png)  
+![0.png](../images/yinmei-core/0.png)  
 
 > Successful Startup: Admin Backend Address
 
-![00.png](../images/吟美核心/00.png)  
+![00.png](../images/yinmei-core/00.png)  
 **Access URL：**   http://127.0.0.1:9000
 
 ## Quick Configuration
@@ -33,9 +33,9 @@ Note: After purchasing this product link, please contact Bilibili: Programmer's 
 
 ### 2. Configure the key
 In the config.yml configuration file in each project's root directory, find the value at the end of the valid_val field and replace it.  
-![120.png](../images/吟美核心/120.png)  
+![120.png](../images/yinmei-core/120.png)  
 You can also replace the secret key on the project backend homepage.  
-![121.png](../images/吟美核心/121.png)  
+![121.png](../images/yinmei-core/121.png)  
 
 ## Paid Plugins
 ### 1. Chat + Emotional Prompt Effect
@@ -47,8 +47,8 @@ OBS configures two browser plugins: decision.html and emotion.html
 ### 2. AI Yinmei 2.2.0 Tone Reference Audio
 Tone Reference Audio: [Download](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)
 ![00.png](../images/plug/ReferenceAudio.png)  
-![107.png](../images/吟美核心/107.png)  
-![108.png](../images/吟美核心/108.png)  
+![107.png](../images/yinmei-core/107.png)  
+![108.png](../images/yinmei-core/108.png)  
 Default Reference Audio Configuration:
 ```json
 {
@@ -95,40 +95,40 @@ New - Chat Reply Box: [Download](https://mall.bilibili.com/neul-next/detailunive
 
 ### 4. Yinmei's Rude and Gentle Prompts
 How to set Yinmei's Rude and Gentle Prompts: [Download](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12477860&loadingShow=1&noTitleBar=1&msource=merchant_share)  
-![78.png](../images/吟美核心/78.png)  
+![78.png](../images/yinmei-core/78.png)  
 
 ## 1. Chat Configuration
 ### 1. Ai Name
 > To launch 吟美核心 AI (v2.0.0), first give your AI a name. Then, when you ask for her name during conversation, she will address herself by that name.
 
-![1.png](../images/吟美核心/1.png)  
+![1.png](../images/yinmei-core/1.png)  
 
 !> Remember to click the "Save Configuration" button and then the "Refresh Configuration" button for the changes to take effect.  
 
-![save.png](../images/吟美核心/save.png)  
+![save.png](../images/yinmei-core/save.png)  
 
 ### 2. Universal AI Chat
 #### 2.1 Type Selection
 > In the LLM large model, you can select Universal Chat. This feature is compatible with all OpenAI standard interfaces.
 
-![3.png](../images/吟美核心/3.png)  
+![3.png](../images/yinmei-core/3.png)  
 
 **Service Address：**  
 Using Alibaba Bailian as an example: https://help.aliyun.com/zh/model-studio/developer-reference/use-qwen-by-calling-api  
 
-![4.png](../images/吟美核心/4.png)  
+![4.png](../images/yinmei-core/4.png)  
 
 **Key：**  
 Using Alibaba Bailian as an example: https://bailian.console.aliyun.com/?apiKey=1#/api-key  
 
-![5.png](../images/吟美核心/5.png)  
+![5.png](../images/yinmei-core/5.png)  
 
 **Model Name：**  
 See the text generation model [Ali Bailian as an example]:  
 https://help.aliyun.com/zh/model-studio/getting-started/models  
 
 **LLM Configuration Parameters：**  
-![124.png](../images/吟美核心/124.png)  
+![124.png](../images/yinmei-core/124.png)  
 
 **History：**  
 The context length of Ai Chat. Typically, one question and one answer constitutes one history record.  
@@ -156,12 +156,12 @@ Value range: [0, 2]
 ##### 1. Ali Bailian:  
 Ali Bailian includes 102 text generation models. [View model list](https://bailian.console.aliyun.com/?spm=5176.29619931.J_SEsSjsNv72yRuRFS2VknO.2.74cd405fRO0JGF&tab=doc#/doc/?type=model&url=2840914)  
 https://www.aliyun.com/product/bailian  
-![6.png](../images/吟美核心/6.png)  
+![6.png](../images/yinmei-core/6.png)  
 
 ##### 2. Zhipu Models:  
 GLM4, GLM4.5, GLM4.6, etc. [View model list](https://open.bigmodel.cn/pricing)  
 https://open.bigmodel.cn/  
-![7.png](../images/吟美核心/7.png)  
+![7.png](../images/yinmei-core/7.png)  
 
 ##### 3. Local Services
 **Local OneApi**  
@@ -226,7 +226,7 @@ https://www.siliconflow.cn/
 Enable search capabilities on different LLM model platforms, using Alibaba Bailian and Zhipu Qingyan as examples  
 Add search configuration to the [Interface Request Parameter Extension] section of Yinmei Core.  
 
-![125.png](../images/吟美核心/125.png)  
+![125.png](../images/yinmei-core/125.png)  
 ```json
 {
 "enable_search":true,
@@ -238,11 +238,11 @@ Add search configuration to the [Interface Request Parameter Extension] section 
 
 **Ali Bailian Search:**  
 https://bailian.console.aliyun.com/?accounttraceid=ce194831be774d6a91188482feb46b54xrie#/model-market/detail/qwen-plus-latest  
-![8.png](../images/吟美核心/8.png)
+![8.png](../images/yinmei-core/8.png)
 
 **glm Search:**  
 https://www.bigmodel.cn/dev/howuse/websearch  
-![9.png](../images/吟美核心/9.png)
+![9.png](../images/yinmei-core/9.png)
 <br>
 
 ##### 2. Deep Thinking
@@ -257,7 +257,7 @@ Document: https://docs.bigmodel.cn/cn/guide/start/concept-param#thinking
 ```
 
 #### 2.4 Chat Dialogue
-![39.png](../images/吟美核心/39.png)  
+![39.png](../images/yinmei-core/39.png)  
 
 ### 3. FastGPT Configuration
 #### 3.1 Account Registration
@@ -269,86 +269,86 @@ Below is my promotional link. Please use it to register and earn credits. **Prom
 
 #### 3.2 Importing FastGPT Workflows
 Download the FastGPT workflow configuration from the cloud drive  
-![10.png](../images/吟美核心/10.png)  
+![10.png](../images/yinmei-core/10.png)  
 
 Create a new blank workflow  
-![11.png](../images/吟美核心/11.png) 
+![11.png](../images/yinmei-core/11.png) 
 
 Name it and select Blank Workflow  
-![12.png](../images/吟美核心/12.png)
+![12.png](../images/yinmei-core/12.png)
 
 Import Configuration in the upper left corner:  
-![13.png](../images/吟美核心/13.png)
+![13.png](../images/yinmei-core/13.png)
 
 Upload the file  
-![14.png](../images/吟美核心/14.png) 
+![14.png](../images/yinmei-core/14.png) 
 
 Select the configuration  
-![15.png](../images/吟美核心/15.png) 
+![15.png](../images/yinmei-core/15.png) 
 
 Workflow import successful:  
-![16.png](../images/吟美核心/16.png)  
+![16.png](../images/yinmei-core/16.png)  
 
 Knowledge base needs to be reselected: The imported knowledge base is missing by default. You need to reselect your own knowledge base.  
-![17.png](../images/吟美核心/17.png)  
+![17.png](../images/yinmei-core/17.png)  
 
 Manually select your own knowledge base.  
-![18.png](../images/吟美核心/18.png)  
+![18.png](../images/yinmei-core/18.png)  
 
 Select a knowledge base.  
-![19.png](../images/吟美核心/19.png)  
+![19.png](../images/yinmei-core/19.png)  
 
 The interface after selection.  
-![20.png](../images/吟美核心/20.png)
+![20.png](../images/yinmei-core/20.png)
 
 If there are no knowledge base references, you can delete this knowledge base configuration.  
 
 After deletion, the process lines will be lost. <font color="red">Remember to manually link the lines</font>  
-![21.png](../images/吟美核心/21.png)  
+![21.png](../images/yinmei-core/21.png)  
 
 Yinmei has two personalities here. You can refer to my format and fill in your own personality traits.  
-![22.png](../images/吟美核心/22.png)  
+![22.png](../images/yinmei-core/22.png)  
 
 The model on the right shows the basic settings.  
 1. Select your chat model.  
 2. Configure common character settings here.  
 3. History: This is AI's short-term memory. 3-6 entries are generally suitable.    
-![23.png](../images/吟美核心/23.png)  
+![23.png](../images/yinmei-core/23.png)  
 
 #### 3.3 Create a new fastgpt cloud service address and key.
 
 Select a release channel, API access, and create a new key.  
-![24.png](../images/吟美核心/24.png)  
+![24.png](../images/yinmei-core/24.png)  
 
 Enter a name.  
-![25.png](../images/吟美核心/25.png)  
+![25.png](../images/yinmei-core/25.png)  
 
 Keep your key safe.  
-![26.png](../images/吟美核心/26.png)  
+![26.png](../images/yinmei-core/26.png)  
 
 Put the secret key back into the 吟美核心.  
 
 Password: fastgpt-t21ZxdTJ2FxfRpXB3kbEwQRcDwffewaZR4kHBco66dutDyScSCAVJ  
 Remember that the secret key has a Bearer at the beginning, which cannot be overwritten. Therefore, the actual secret key is:  
 Bearer fastgpt-t21ZxdTJ2FxfRpXB3kbEwQRcDwffewaZR4kHBco66dutDyScSCAVJ  
-![27.png](../images/吟美核心/27.png)  
+![27.png](../images/yinmei-core/27.png)  
 
 FastGPT address configuration:
 Cloud service API address: https://api.fastgpt.in/api  
-![28.png](../images/吟美核心/28.png)  
+![28.png](../images/yinmei-core/28.png)  
 
 Configure the URL to 吟美核心: http://192.168.2.198:3000/api/v1/chat/completions  
 Note: The cloud service here is shortened to https://api.fastgpt.in/api. In principle, you only need to replace the domain name and port number. Don't forget to include the "/v1/chat/completions" at the end.  
 
-![29.png](../images/吟美核心/29.png)  
+![29.png](../images/yinmei-core/29.png)  
 
 Remember to save the configuration.  
-![30.png](../images/吟美核心/30.png)  
+![30.png](../images/yinmei-core/30.png)  
 
 ## 2. Speech Synthesis
 ### 1. Microsoft Edge-TTS Configuration
 Turn on the speech configuration switch and select Microsoft Edge-TTS as the voice. This does not require additional deployment and can be used directly.  
-![30.png](../images/吟美核心/30.png)  
+![30.png](../images/yinmei-core/30.png)  
 
 ### 2. GPT-Sovits Configuration
 <span style="color:red">Note: GPT-Sovits [supports all series 1-4, Pro, and Pro Plus]</span>  
@@ -367,20 +367,20 @@ Quark Group 2: 428937868
 
 **GPT-SoVITS Pro Plus Latest Package：**  
 <font color="red">GPT-SoVITS-v2pro-yinmei Download: Please download the compressed package "GPT-SoVITS-v2pro-yinmei" from "yinmei-all" and unzip it to use.</font>  
-![118.png](../images/吟美核心/118.png)  
+![118.png](../images/yinmei-core/118.png)  
 
 [Pro Plus Voice Model Download](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12731807&loadingShow=1&noTitleBar=1&msource=merchant_share)  
-<img src="images/吟美核心/119.jpg" alt="" width="500">
+<img src="images/yinmei-core/119.jpg" alt="" width="500">
 
 #### 2.2 Voice Configuration
 **Configure Voice：**  
-![31.png](../images/吟美核心/31.png)  
+![31.png](../images/yinmei-core/31.png)  
 
 Temperature and speech rate are only effective for version 2.0.  
-![32.png](../images/吟美核心/32.png)  
+![32.png](../images/yinmei-core/32.png)  
 
 Open GPT-SoVITS-v2 and double-click api.bat to start it.  
-![33.png](../images/吟美核心/33.png)  
+![33.png](../images/yinmei-core/33.png)  
 
 #### 2.3. Starting the Software
 **Configure the IP：**  
@@ -388,14 +388,14 @@ Open Notepad and edit the api.bat file.
 If your voice is deployed on another machine on the LAN, please configure the IP address of that machine.
 If your voice and 吟美核心 are on the same machine, the default configuration is 127.0.0.1.
 The default port is 9880. If there is a port conflict, please configure a different port.
-![105.png](../images/吟美核心/105.png)  
+![105.png](../images/yinmei-core/105.png)  
 
 **Double-click api.bat to start the software：**  
-![34.png](../images/吟美核心/34.png)  
+![34.png](../images/yinmei-core/34.png)  
 
 **Startup Success Screen：**  
 A successful startup will display your currently configured IP address.
-![104.png](../images/吟美核心/104.png)  
+![104.png](../images/yinmei-core/104.png)  
 
 #### 2.4. Audio Model Selection
 **GPT-SOVITS2 audio model download：**  
@@ -403,11 +403,11 @@ https://pan.baidu.com/s/14WUDbWnBn7GPQYVREkWMug?pwd=1145
 **<font color="red">Special Thanks:</font>**  
 Thanks to "Cabbage Factory Employee No. 1145" on Bilibili for sharing the GPT-SOVITS integration package and model.  
 Thanks to "Hua'er Bu Ku" on Bilibili for their technical development of GPT-SOVITS.  
-[35.png](../images/吟美核心/35.png)  
+[35.png](../images/yinmei-core/35.png)  
 
 **Model Usage：**  
 Place files with the CKPT suffix in GPT_weights_v2 and files with the PTH suffix in SoVITS_weights_v2.  
-[36.png](../images/吟美核心/36.png)  
+[36.png](../images/yinmei-core/36.png)  
 
 **Startup Script：**  
 -s parameter: Use the corresponding PTH model.  
@@ -429,15 +429,15 @@ Assistant Voice: We can then reference this assistant's voice in singing replies
 
 The assistant needs to start an additional gpt-sovits service, separating the audio port from the main character port. Then, configure the service IP and port for this new audio address.  
 
-![38.png](../images/吟美核心/38.png)    
+![38.png](../images/yinmei-core/38.png)    
 
 ### 3. Voice Channels
 #### 3.1. Direct Speaker Output
 Added a new channel selection for voice output. The default output is to the speaker. This channel will be captured by the [live2D_audio_device parameter of the table pet] or the [VTS lip sync settings] to achieve lip syncing.  
-![66.png](../images/吟美核心/66.png)  
+![66.png](../images/yinmei-core/66.png)  
 #### 3.2. Output Virtual Channel B2  
 If you configure the main character's voice output channel in 吟美核心 to be VoiceMeeter's B2 virtual channel,  
-![123.png](../images/吟美核心/123.png)  
+![123.png](../images/yinmei-core/123.png)  
 #### 3.3. Virtual Channel Allocation Logic  
 The main character is assigned to virtual channel 2, and the assistant is assigned to virtual channel 3. Separating channels does not affect the lip syncing of different characters.  
 ![4.png](../images/yinmei-desktop-plus/4.png)  
@@ -445,12 +445,12 @@ The main character is assigned to virtual channel 2, and the assistant is assign
 
 If you select Speaker as the channel, you can hear the audio directly from your speakers. However, if you select VoiceMeeter's virtual channel as the output, you will not hear the audio. To monitor the virtual channel audio through the speakers, you need to configure the following:  
 
-![122.png](../images/吟美核心/122.png)  
+![122.png](../images/yinmei-core/122.png)  
 
 ### 4. Emotional Tone
 #### 4.1. Tone Configuration Scheme
 Configure reference audio. Each emotion name corresponds to a reference audio file name.  
-![106.png](../images/吟美核心/106.png)  
+![106.png](../images/yinmei-core/106.png)  
 > For example: "Happy": "The cake is already in front of you. Make a wish."  
 
 For the "Happy" emotion, use the reference audio file "The cake is already in front of you. Make a wish..WAV"  
@@ -461,8 +461,8 @@ You need to add the audio file "The cake is already in front of you, make a wish
 
 For reference audio, please download it here: [Download](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12444567&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 
-![107.png](../images/吟美核心/107.png)  
-![108.png](../images/吟美核心/108.png)  
+![107.png](../images/yinmei-core/107.png)  
+![108.png](../images/yinmei-core/108.png)  
 
 ## 3. Characters
 ### 1. VTube Studio
@@ -478,16 +478,16 @@ Related Action Documentation: https://www.bilibili.com/read/cv18777039/
 ##### 1. Virtual Sound Card Installation:
 **Virtual Sound Card Driver (Virtual Audio Cable) 4.66 Official Version**  
 https://www.pcsoft.com.cn/soft/123115.html  
-![108.png](../images/吟美核心/109.png)  
+![108.png](../images/yinmei-core/109.png)  
 
 **Voicemeeter Virtual Sound Card：**  
 https://vb-audio.com/Voicemeeter/banana.htm  
-![110.png](../images/吟美核心/110.png)  
+![110.png](../images/yinmei-core/110.png)  
 
 ##### 2. Virtual Channel Configuration:
 Tutorial: https://www.bilibili.com/video/BV1BPfVY9Epz  
 Watch Time: 34:44  
-![117.png](../images/吟美核心/117.png)  
+![117.png](../images/yinmei-core/117.png)  
 
 1. Virtual Channel Division:
 Singing Accompaniment: First Virtual Output Channel  
@@ -495,24 +495,24 @@ Singing Vocals: Second Virtual Output Channel
 Chatting: Second Virtual Output Channel  
 Assistant Chat: Third Virtual Output Channel  
 Note: The second virtual channel is used for lip-syncing with Live2D characters. To prevent other sounds from affecting the character's lip movements, this second channel is used only for the character's voice. Other accompaniment, music, or the host's dialogue audio do not occupy this second channel.  
-![111.png](../images/吟美核心/111.png)  
+![111.png](../images/yinmei-core/111.png)  
 
 2. VoiceMeeter must have the MME speaker configured; otherwise, Vtube Studio will not be able to select the virtual microphone.  
-![112.png](../images/吟美核心/112.png)  
+![112.png](../images/yinmei-core/112.png)  
 
 3. In VoiceMeeter, select Aux output to channel B2.  
-![113.png](../images/吟美核心/113.png)  
+![113.png](../images/yinmei-core/113.png)  
 
 4. In VTS, select OUT B2.  
-![114.png](../images/吟美核心/114.png)  
+![114.png](../images/yinmei-core/114.png)  
 
 5. In VTS, remember to set your lip sync to use sound and audio.  
-![115.png](../images/吟美核心/115.png)  
+![115.png](../images/yinmei-core/115.png)  
 
 #### 1.3. Character Motion Coordination
 Video: https://www.bilibili.com/video/BV1PMq9YZEWS  
 Views: 29:20  
-![116.png](../images/吟美核心/116.png)  
+![116.png](../images/yinmei-core/116.png)  
 
 ### 2. Yinmei Desktop Pet
 [Desktop Pet Configuration](/en/yinmei-desktop-plus?id=_1-live2d-v3)  
@@ -521,33 +521,33 @@ Views: 29:20
 ## 4. Live Streaming Configuration
 ### 1. Danmu
 Apply for B Station Open Platform Configuration
-![40.png](../images/吟美核心/40.png)  
+![40.png](../images/yinmei-core/40.png)  
 After applying for B Station Open Platform, find the secret key in your profile.
-![41.png](../images/吟美核心/41.png)  
+![41.png](../images/yinmei-core/41.png)  
 Enter the data here:  
 access_key_id: B Station Open Platform KeyId  
 access_key_secred: B Station Open Platform Secret Key  
 Linked Live Streaming Room: B Station Live Streaming Room Number  
-![42.png](../images/吟美核心/42.png)  
+![42.png](../images/yinmei-core/42.png)  
 Click on the avatar; the URL ID is the "Live Streaming User UID."  
-![43.png](../images/吟美核心/43.png)  
-![44.png](../images/吟美核心/44.png)  
+![43.png](../images/yinmei-core/43.png)  
+![44.png](../images/yinmei-core/44.png)  
 Create Project -> Live Streaming Tools to obtain the live streaming application ID.  
-![45.png](../images/吟美核心/45.png)  
+![45.png](../images/yinmei-core/45.png)  
 For the project ID, enter the "Bilibili Open Platform Application ID" for 吟美核心 2.0.  
-![46.png](../images/吟美核心/46.png)  
+![46.png](../images/yinmei-core/46.png)  
 Finally, save the configuration and restart the application for the changes to take effect.  
 
 ### 2. Initiate a chat in the livestream room
 **Initiate chat text：**   fuck you
-![47.png](../images/吟美核心/47.png)  
+![47.png](../images/yinmei-core/47.png)  
 Backend captures AI replies and comments.
-![48.png](../images/吟美核心/48.png)  
+![48.png](../images/yinmei-core/48.png)  
 New - Chat Reply Box: [Download](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476544&loadingShow=1&noTitleBar=1&msource=merchant_share)
 ![回复框效果.png](../images/plug/回复框效果.png)  
 BliveChat project, right-side barrage area configuration:
 Project address: https://github.com/xfgryujk/blivechat
-![49.png](../images/吟美核心/49.png)  
+![49.png](../images/yinmei-core/49.png)  
 
 **Start the Docker container：**  
 **Access address：**   http://localhost:12450
@@ -556,61 +556,61 @@ docker run --name blivechat -d -p 12450:12450 -v blivechat-data:/mnt/data xfgryu
 ```
 
 Also, the Bilibili anchor ID code must be configured correctly.
-![50.png](../images/吟美核心/50.png)  
+![50.png](../images/yinmei-core/50.png)  
 Visit: http://localhost:12450 and configure the ID code.
-![51.png](../images/吟美核心/51.png)  
+![51.png](../images/yinmei-core/51.png)  
 After the container is started, it will automatically be associated with the BliveChat project.
 
 ### 3. OBS Software Integration
 **WS Service Integration：**  
-![52.png](../images/吟美核心/52.png)  
+![52.png](../images/yinmei-core/52.png)  
 **WS Configuration：**  
-![53.png](../images/吟美核心/53.png)  
+![53.png](../images/yinmei-core/53.png)  
 **Import Configuration**
-![54.png](../images/吟美核心/54.png)  
+![54.png](../images/yinmei-core/54.png)  
 
 **Switching Scenes：**  
 "When the user enters "Switch + scene name": Pink Room, Shrine, Coastal Flower Shop, Flower Room, Morning Room. The system will intelligently determine the switching between morning and evening scenes based on the time of day, so the scenes will change between morning, dusk, and night.
 
 Configure room name and background music:
 
-![55.png](../images/吟美核心/55.png)  
+![55.png](../images/yinmei-core/55.png)  
 Daytime Effect
-![56.png](../images/吟美核心/56.png)  
+![56.png](../images/yinmei-core/56.png)  
 Nighttime Effect
-![57.png](../images/吟美核心/57.png)  
+![57.png](../images/yinmei-core/57.png)  
 
 ### 4. Vtube Studio Skin Linkage
 #### 4.1 Registering Emoticons
-![58.png](../images/吟美核心/58.png)  
+![58.png](../images/yinmei-core/58.png)  
 **Confirm Registration**
-![59.png](../images/吟美核心/59.png)  
+![59.png](../images/yinmei-core/59.png)  
 **Automatic Key Rewrite by Program**
-![60.png](../images/吟美核心/60.png)  
+![60.png](../images/yinmei-core/60.png)  
 **Save the configuration and restart the app for it to take effect**
-![61.png](../images/吟美核心/61.png)  
+![61.png](../images/yinmei-core/61.png)  
 **Link Status**  
-![62.png](../images/吟美核心/62.png)  
+![62.png](../images/yinmei-core/62.png)  
 
 #### 4.2 Configuring Required Emoticons for Vtube Studio
 **Emoticon Types：**  
 Emoticon Names: Happy, Crying, Covering Mouth, Angry, Embarrassed, Approval, Shame, Dizzy, Cute, Pat Head
 Emoticon Names Must Be Consistent with Vtuber Studio
-![63.png](../images/吟美核心/63.png)  
+![63.png](../images/yinmei-core/63.png)  
 **Widget Type：**   Pat Head is a widget type
-![64.png](../images/吟美核心/64.png)  
+![64.png](../images/yinmei-core/64.png)  
 
 **Clothes Effect：**  
 "When the user enters "Clothes + Outfit Name," the outfit can be changed. Casual Clothes, Wings of Love, Youthful Cat Girl, Glasses Cat Girl
 **Configuration Content：**  
-![65.png](../images/吟美核心/65.png)  
+![65.png](../images/yinmei-core/65.png)  
 
 ### 5. Yinmei Channel Settings
 #### 5.1. Voice Channels
 Added a new voice channel selection. By default, the output is to the speaker. This will be captured by the [live2D_audio_device parameter of the table pet] or the [VTS lip sync settings] to achieve lip syncing.
-![66.png](../images/吟美核心/66.png)  
+![66.png](../images/yinmei-core/66.png)  
 #### 5.2. Singing Channels
-![67.png](../images/吟美核心/67.png)  
+![67.png](../images/yinmei-core/67.png)  
 
 ## 5. Database
 ### 1. Live Streaming
@@ -632,34 +632,34 @@ docker run -itd --name yinmei-data -p 27018:27017 -e MONGO_INITDB_ROOT_USERNAME=
 ### 3. Chat History
 > When calling LLM, short-term memory is retrieved here.
 
-![68.png](../images/吟美核心/68.png)  
+![68.png](../images/yinmei-core/68.png)  
 
 > For long-term memory, the Yinmei intelligent analysis module is used for vectorized queries. Therefore, short-term and long-term memory are accessed differently.
 
-![69.png](../images/吟美核心/69.png)  
+![69.png](../images/yinmei-core/69.png)  
 
 > Chat History
 
-![74.png](../images/吟美核心/74.png)  
+![74.png](../images/yinmei-core/74.png)  
 
 ### 4. User Registration
 > Relying on Bilibili's open platform, user registration information is generated only after the user enters Bilibili's live broadcast room.
 
 Below is the user list.
-![70.png](../images/吟美核心/70.png)  
+![70.png](../images/yinmei-core/70.png)  
 
 ### 5. Points Function
 > To check your points, enter "My Points." To view the points rankings, enter "Rankings." Chatting, liking posts, and sending gifts can increase points. Singing, drawing, or dancing will deduct points. The base points for new users is 50.
 
 **Chatting, liking, and sending gifts increase points：**  
-![71.png](../images/吟美核心/71.png)  
+![71.png](../images/yinmei-core/71.png)  
 **Singing, drawing, and dancing consume points**
-![72.png](../images/吟美核心/72.png)  
+![72.png](../images/yinmei-core/72.png)  
 **Enter "Rankings" to view your points ranking; enter "My Points" to view your own points**
-![73.png](../images/吟美核心/73.png)  
+![73.png](../images/yinmei-core/73.png)  
 
 **User Points Flow：**  
-![75.png](../images/吟美核心/75.png)  
+![75.png](../images/yinmei-core/75.png)  
 
 
 ## 6. Emotion System
@@ -671,7 +671,7 @@ Below is the user list.
 !> Analyzing user questions using the Yinmei Analysis module (yinmei-analysis) to determine emotions.
 
 ?> Question: Where's the music I ordered? The analyzed emotion is: Doubt
-![76.png](../images/吟美核心/76.png)  
+![76.png](../images/yinmei-core/76.png)  
 
 **User Text Popup + Emotion Popup + Decision Popup**
 Effect Plugin: [Download](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12476099&loadingShow=1&noTitleBar=1&msource=merchant_share)  
@@ -682,7 +682,7 @@ Effect Plugin: [Download](https://mall.bilibili.com/neul-next/detailuniversal/de
 Configuration scheme key value, for example, "Maid Version" corresponds to the item prompt configuration.
 How to set Yinmei's aggressive and gentle emotions: [Download](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=12477860&loadingShow=1&noTitleBar=1&msource=merchant_share)  
 **Personality Configuration Location：**   Character [🌟]: /prompt/character/  
-![77.png](../images/吟美核心/77.png)  
+![77.png](../images/yinmei-core/77.png)  
 ```json
 "Angry Version": ["Angry"]
 ```
@@ -691,7 +691,7 @@ Of course, you can configure multiple emotions to belong to the same configurati
 "Angry Version": ["Angry","Awkward","Playful","Funny"]
 ```
 PS: Please note that if multiple emotions trigger multiple personalities at the same time, Yinmei will randomly select an emotion to use as the corresponding personality prompt.  
-![78.png](../images/吟美核心/78.png)  
+![78.png](../images/yinmei-core/78.png)  
 > After modifying your prompts, you can click the Refresh Character Prompt button to update them seamlessly in real time.
 
 > For example, if Yinmei's prompts are initially set to be aggressive and aggressive, and her words are always harsh and angry, after replacing them with gentle ones, clicking Refresh Character Prompt will instantly transform her into a gentle and adorable kitten.
@@ -702,20 +702,20 @@ PS: Please note that if multiple emotions trigger multiple personalities at the 
 **Action Recording：**   Record your own character movements.  
 **See the video tutorial：**   https://www.bilibili.com/video/BV1aT421X7tF/  
 After generating an action, please configure the expression name in VTS.  
-![79.png](../images/吟美核心/79.png)  
+![79.png](../images/yinmei-core/79.png)  
 
 The key is the expression name in VTS. The endwait is the duration for the action to run; the action will automatically end when the timer expires.
-![80.png](../images/吟美核心/80.png)  
+![80.png](../images/yinmei-core/80.png)  
 
 #### 3.2. Expression Triggering
 **The key is the expression name. The value is the AI keyword response text.**  
-![81.png](../images/吟美核心/81.png)  
+![81.png](../images/yinmei-core/81.png)  
 
 **The expression association configuration scheme name, "Happy," is the expression name in VTS.**  
-![82.png](../images/吟美核心/82.png)  
+![82.png](../images/yinmei-core/82.png)  
 
 **key represents Yinmei's reply keyword, donum represents the number of times the emoticon is executed, and timesleep represents the time to wait for the next emoticon to be executed in seconds**  
-![83.png](../images/吟美核心/83.png)  
+![83.png](../images/yinmei-core/83.png)  
 
 > A calculation time of 0.3 seconds is set for each character, which serves as the interval for calculating the time to trigger the emoticon. Adjust this value based on the character's speaking speed.
 
@@ -727,7 +727,7 @@ The key is the expression name in VTS. The endwait is the duration for the actio
 **Yinmei's answer：**   Really? I'm so <font style="color:red; font-weight:bold;">happy</font>, <font style="color:red; font-weight:bold;">hehe</font> We can see that the keywords "开心" and "呵" trigger the happy emoji. The reading speed per character is set to 0.3. Since "开心" starts at the 6th character, it takes 0.3*6 = 1.8 seconds to trigger the happy emoji. "呵" starts at the 11th character, so it takes 0.3*11 = 3.3 seconds to trigger the emoji.
 
 #### 3.3 Language Change
-![84.png](../images/吟美核心/84.png)  
+![84.png](../images/yinmei-core/84.png)  
 
 !> Change the language based on keyword + emotion changes
 
@@ -739,16 +739,16 @@ The key is the expression name in VTS. The endwait is the duration for the actio
 
 ## 7. QQ Robot
 ### 1. Napcat Configuration
-![85.png](../images/吟美核心/85.png)  
+![85.png](../images/yinmei-core/85.png)  
 After selecting the QQ robot, you will need to install the Napcat software to collect QQ information.  
 **Napcat Installation：**   https://github.com/NapNeko/NapCatQQ/releases  
 Please select the latest version for installation.  
-![86.png](../images/吟美核心/86.png)    
+![86.png](../images/yinmei-core/86.png)    
 **Napcat Tutorial：**   https://napneko.github.io/  
-![87.png](../images/吟美核心/87.png)  
+![87.png](../images/yinmei-core/87.png)  
 Configure a websocket server, set port to 30002, and define your own token.  
-![88.png](../images/吟美核心/88.png)   After configuration, you need to configure the Napcat websocket link in 吟美核心.  
-[89.png](../images/吟美核心/89.png)  
+![88.png](../images/yinmei-core/88.png)   After configuration, you need to configure the Napcat websocket link in 吟美核心.  
+[89.png](../images/yinmei-core/89.png)  
 
 ### 2. Wake-up Commands
 ```json
@@ -758,48 +758,48 @@ When a QQ group encounters the wake-up commands configured above for Yinmei, Pai
 
 ### 3. QQ List Configuration
 
-![91.png](../images/吟美核心/91.png)  
+![91.png](../images/yinmei-core/91.png)  
 QQ Number is the QQ number of your current AI.  
 **QQ Group Whitelist：**   Even if you have dozens of QQ groups, Yinmei will not monitor QQ messages if you haven't added any to the whitelist.  
 
 ### 4. Other Configurations
 
-![92.png](../images/吟美核心/92.png)  
+![92.png](../images/yinmei-core/92.png)  
 **Filter QQ Messages：**   To prevent you from engaging in endless chats with bots like QQ Group Manager after joining a QQ group, you can filter messages from these bots.  
 **Filter QQ Group Roles：**   You can filter messages based on the user roles in the QQ group, for example, admin: administrator; member: regular user; owner: group owner.  
 **Shared Message Count：**   Monitors the number of shared messages in a QQ group. This can be linked to the QQ group chat context, allowing for multi-user chat messages.  
 **Voice Trigger Language：**   The language used to trigger QQ voice messages. When set to "yue," voice messages will be sent whenever someone speaks Cantonese. Languages include: English (en), Japanese (jp), Korean (kor), Cantonese (yue), and Mandarin (zh).  
 
 ### 5. Probability Configuration
-![93.png](../images/吟美核心/93.png)  
+![93.png](../images/yinmei-core/93.png)  
 Probability Range: 0-100  
 Probability of @ing Someone:  
-![94.png](../images/吟美核心/94.png)  
+![94.png](../images/yinmei-core/94.png)  
 Quote Reply Probability:  
-![95.png](../images/吟美核心/95.png)  
+![95.png](../images/yinmei-core/95.png)  
 Voice Send Probability:  
-![96.png](../images/吟美核心/96.png)  
+![96.png](../images/yinmei-core/96.png)  
 Poke Probability:  
-![97.png](../images/吟美核心/97.png)  
+![97.png](../images/yinmei-core/97.png)  
 
 ### 6. Learning emojis
-![98.png](../images/吟美核心/98.png)  
+![98.png](../images/yinmei-core/98.png)  
 
 !> 1. Important Note: Learning and sending emojis requires the Yinmei database service to be enabled.
 
-![99.png](../images/吟美核心/99.png)  
+![99.png](../images/yinmei-core/99.png)  
 <br><br>
 2. There are three learning modes: 0 (no learning), 1 (learning officially named emojis), and 2 (user-defined emojis). Yinmei will name these emojis based on contextual keywords.  
-![100.png](../images/吟美核心/100.png)  
+![100.png](../images/yinmei-core/100.png)  
 <br><br>
 3. Remember to configure the emoji save path:  
-![101.png](../images/吟美核心/101.png)  
+![101.png](../images/yinmei-core/101.png)  
 
 ## 8. Search
 ### 1. Baidu Search
 This may trigger a security check. Be careful to avoid being redirected to the Baidu security verification code. Manually access the verification URL and copy the browser's cookie again. **Visit URL：**   https://www.baidu.com/s?ie=utf-8&tn=baidu&wd=%E6%80%AA%E4%BA%BA  
 Press F12 in your browser. In the message header, be sure to use the [Copy Value] button to avoid missing cookies.  
-[102.png](../images/吟美核心/102.png)  
+[102.png](../images/yinmei-core/102.png)  
 
 ### 2. Searxng Aggregate Search
 #### 2.1. Installing the Searxng Service
