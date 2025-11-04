@@ -1,6 +1,6 @@
 # 【开箱即用】【CosyVoice2】【阿里语音合成】【2025 年 10 月】【N卡版本-没有显卡不支持运行】
 ⚠️说明：此模型已经内置`cosyvoice2的模型、CosyVoice-ttsfrd、SenseVoiceSmall、wetext`等模型，所有python依赖包已经安装好，包括vllm加速包，无需在线下载，所以镜像会比较大，务求做到开箱即用，降低网络下载报错、安装依赖包报错等问题。  
-💖欢迎使用，vllm加速包：cosyvoice2，首包响应：0.7秒，rtf：0.5~0.7，显卡：4070tis  
+💖欢迎使用，vllm加速包：cosyvoice2，首包响应：0.6秒，rtf：0.4~0.7，显卡：4070tis  
 <br>
 ## ✅️镜像信息
 **AI吟美语音合成CosyVoice2**  
@@ -46,21 +46,22 @@ tensorrt-cu12：10.0.1  高性能推理引擎，必须用 GPU
 ⚠️Linux或者Window宿主机：   
 需要安装nvidia驱动：https://www.nvidia.cn/drivers/lookup/  
 需要安装cuda驱动：https://developer.nvidia.com/cuda-toolkit-archive  
-一般来说nvidia和cuda版本，宿主机的版本要比容器里面版本大，就没问题，向下兼容  
+一般来说nvidia和cuda版本，宿主机的cuda版本不要比容器里面版本cuda12.8大，就没问题，向下兼容  
 
 ⚠️所需宿主机安装要求：  
 1、要安装nvidia驱动  
-2、要安装cuda版本为12.6或以上版本，我觉得12.4或者12.1也可以，你们可以自行测试看看  
+2、要安装cuda版本为12.8以下版本，我觉得12.9也可以，你们可以自行测试看看  
 
 ⚠️版本说明：  
 window版本：  
 ```
-yinmei-cosyvoice【40系以下显卡】.rar：2.6.0+cu124
-yinmei-cosyvoice.rar：2.8.0+cu129
+yinmei-cosyvoice【40系以下显卡】.rar：torch2.6.0+cu124
+yinmei-cosyvoice【全系兼容】【torch2.8.0+cu129】：torch2.8.0+cu129
 ```
 docker版本：  
 ```
-2.7.0+cu126
+worm128/yinmei-cosyvoice:cu126：torch2.7.0+cu126
+worm128/yinmei-cosyvoice:cu128 or latest：torch2.7.0+cu128
 ```
 
 ⚠️本人测试环境：  

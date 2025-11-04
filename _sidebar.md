@@ -4,6 +4,6 @@
 * [**吟美分析**](/yinmei-analysis.md)
 * [**吟美桌宠**](/yinmei-desktop-plus.md)
 * [**吟美唱歌**](/yinmei-music.md)
-* [**cosyvoice**](/yinmei-cosyvoice.md)
+* [**CosyVoice**](/yinmei-cosyvoice.md)
 * [**开放平台**](/openapi.md)
 * [**版本更新**](/update.md)
