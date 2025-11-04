@@ -84,12 +84,13 @@ nvcc -V
 ```
 
 ## ✅️问题汇总
-1、内存松了导致减少一半内存  
-2、威联通nas不能映射显卡驱动  
-3、镜像拉取缓存问题  
+1、内存松了导致减少一半内存,内存不够导致项目启动OOM内存不足程序闪退  
+2、威联通nas的“--gpus all”不能映射显卡驱动，要手动配置  
+3、镜像使用飞机场拉取缓存问题  
 4、不保证可以： 魔改docker、宝塔docker、nas自研docker  
 
 例如，宝塔docker：  
+libnvidia-ml.so.1文件在宿主机是软连导致映射空文件  
 ```shell
 (base) root@c62e1d12f1cc:/program/cosyvoice#  ls -l /usr/lib/x86_64-linux-gnu/libnvidia-ml.so*
 -r-xr-xr-x 1 root root       0 Oct 24 12:56 /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1
