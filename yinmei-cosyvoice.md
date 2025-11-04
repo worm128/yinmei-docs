@@ -122,7 +122,7 @@ docker run -d ^
   -e MODEL_DIR=pretrained_models/CosyVoice2-0.5B ^
   -e PORT=50001 ^
   -e WEBPORT=50000 ^
-  -e LIMIT_COUNT=5 ^
+  -e LIMIT_COUNT=2 ^
   -e MODE=3 ^
   worm128/yinmei-cosyvoice:latest
 ```
