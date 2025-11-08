@@ -628,10 +628,13 @@ https://www.bilibili.com/video/BV1r3rgY6ER6/
 
 ### 2、安装步骤
 #### 2.1、数据库
-选择mongodb 6.0.16  
+Linux版本：   
 ```dockerfile
 docker pull mongo:6.0.16
 ```
+
+window版本：  
+[下载](https://www.mongodb.com/try/download/community)  
 
 #### 2.2、运行容器
 ```dockerfile
