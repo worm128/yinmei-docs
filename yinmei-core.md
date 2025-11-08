@@ -633,8 +633,7 @@ Linux版本：
 docker pull mongo:6.0.16
 ```
 
-window版本：  
-[下载](https://www.mongodb.com/try/download/community)  
+window版本：[下载](https://www.mongodb.com/try/download/community)  
 
 #### 2.2、运行容器
 ```dockerfile
