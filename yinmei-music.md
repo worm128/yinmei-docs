@@ -1,6 +1,6 @@
 ## 一、启动方式
 ### 1 下载包
-下载路径：需要在[吟美直播间](http://live.bilibili.com/3033646)上舰后，问程序猿的退休生活【QQ：314769095】获取  
+下载路径：需要[一次性购买](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=10&itemsId=13024783&loadingShow=1&noTitleBar=1&msource=merchant_share)唱歌模块，使用方式可以询问程序猿的退休生活【QQ：314769095】  
 
 ### 2、安装cuda
 **当前版本：**
