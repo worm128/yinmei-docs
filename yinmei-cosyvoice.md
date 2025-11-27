@@ -212,5 +212,5 @@ docker cp yinmei-cosyvoice:/program/cosyvoice/pretrained_models/CosyVoice2-0.5B/
 
 ## ✅️微调模型
 已经微调了cosyvoice2底层llm.pt模型，音色语气和情感有进一步提升  
-微调正确率:99.8%  镜像版本：worm128/yinmei-cosyvoice:plus  
+😀微调正确率:99.8%  🌐镜像版本：worm128/yinmei-cosyvoice:plus  
 ![微调参数](http://www.yinmei.vip/images/comm/6.png)  
