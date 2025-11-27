@@ -70,7 +70,7 @@ cuda驱动：12.6和12.4
 显卡：4070tis 16g 和 3090ti 24g  
 系统：Window11的wsl docker desktop  
 显存占用：6.5G  
-内存占用：8G  
+内存占用：8G-12g；峰值在12g，闲置状态8-9g    
 硬盘镜像占用：38.78G  
 
 🚨容器内验证是否能使用显卡：  
@@ -88,6 +88,22 @@ nvcc -V
 2、威联通nas的“--gpus all”不能映射显卡驱动，要手动配置  
 3、镜像使用飞机场拉取缓存问题  
 4、不保证可以： 魔改docker、宝塔docker、nas自研docker  
+
+查看容器是否可以读取显卡：  
+```docker
+# 1、查看显卡是否可用
+# NVIDIA-SMI 560.35.02 | Driver Version: 560.94 | CUDA Version: 12.6 
+docker run --rm --gpus all worm128/yinmei-cosyvoice nvidia-smi
+
+# 2、查看pytorch是否可用
+# 2.7.0+cu128 True
+docker run --rm --gpus all worm128/yinmei-cosyvoice /bin/bash -c "source /root/miniconda3/etc/profile.d/conda.sh && conda activate py310 && python -c \"import torch; print(torch.__version__, torch.cuda.is_available())\""
+
+# 3、查看vllm兼容的架构
+# GPU: NVIDIA GeForce RTX 4070 Ti SUPER
+# SM架构: sm_89
+docker run --rm --gpus all worm128/yinmei-cosyvoice /bin/bash -c "source /root/miniconda3/etc/profile.d/conda.sh && conda activate py310 && python -c \"import torch; prop = torch.cuda.get_device_properties(0); print(f'GPU: {prop.name}'); print(f'SM架构: sm_{prop.major}{prop.minor}')\""
+```
 
 例如，宝塔docker：  
 libnvidia-ml.so.1文件在宿主机是软连导致映射空文件  
@@ -139,7 +155,22 @@ MODE：1、api模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、webui模式&nbsp;&nbsp;&nb
 docker inspect -f '{{.State.ExitCode}} {{.State.Error}}' yinmei-cosyvoice
 137
 ```
-共享内存：--shm-size 20g；不设置这个容易OOM启动程序自动退出
+共享内存：--shm-size 20g；不设置这个容易OOM启动程序自动退出  
+
+🚨如果你电脑内存只有16g要注意程序容易OOM自动闪退  
+wsl docker软件在电脑主机只有16g时候，生成出来的容器默认只有7g显存左右，遇到闪退请配置    
+在路径：C:\Users\Administrator 放入文件.wslconfig  
+```
+[wsl2]
+memory=12GB   # 分配给 WSL2 最多 12GB
+processors=6  # 可选：限制 CPU 核心数
+swap=2GB
+localhostForwarding=true
+```
+然后重启wsl  
+```
+wsl shutdown
+```
 
 🚨指定GPU启动：  
 关键命令：--gpus "device=0"   
@@ -179,3 +210,7 @@ docker cp yinmei-cosyvoice:/program/cosyvoice/pretrained_models/CosyVoice2-0.5B/
 -v /J/ai/ai-code/yinmei-cosyvoice/data/spk2info.pt:/program/cosyvoice/pretrained_models/CosyVoice2-0.5B/spk2info.pt ^
 ```
 
+## ✅️微调模型
+已经微调了cosyvoice2底层llm.pt模型，音色语气和情感有进一步提升  
+微调正确率:99.8%  
+![微调参数](http://www.yinmei.vip/images/comm/6.png)  
