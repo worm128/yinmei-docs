@@ -1117,3 +1117,25 @@ d.点击“关闭抽奖”，在OBS界面的轮盘就会消失显示
 新建一个浏览器插件，放入自主抽奖插件：prize/prize.html  
 ![10.png](images/prize/10.png)  
 
+## 十一、聚合弹幕
+### 1、让弹幕飞
+#### 1.1、前言  
+开源项目：https://github.com/OrdinaryRoad-Project/ordinaryroad-barrage-fly  
+技术文档：https://barragefly.ordinaryroad.tech/  
+当前让弹幕飞项目，融合了抖音、快手、虎牙、斗鱼的弹幕抓取技术 
+#### 1.2、安装  
+![128.png](images/yinmei-core/128.png)  
+找到"yinmei-barragefly"文件夹，进入里面  
+![128.png](images/yinmei-core/129.png)  
+双击"build.bat"进行docker容器构建，当然前提是你的window或者linux要安装了docker软件  
+![130.png](images/yinmei-core/130.png)  
+构建成功后，你会看到有3个容器  
+然后你就可以进入地址： http://localhost:6883    
+账号和密码：admin
+#### 1.3、配置  
+![131.png](images/yinmei-core/131.png)  
+新建一个直播间监听配置  
+![132.png](images/yinmei-core/132.png)  
+然后你看这个快手的配置，填上直播间房间号，最好也把浏览器的cookie带上，这样效果更好  
+![133.png](images/yinmei-core/133.png)  
+最后，点击开始就可以进行直播间弹幕抓取，但是有时候会失败，可以多尝试几次，还有直播间如果没有上线，有可能抓取不了  
