@@ -6,7 +6,7 @@
 - **Ai吟美教程汇集：**https://www.bilibili.com/opus/1015233825290059779
 - **技术Q群：**27831318
 - **粉丝福利群：**264534845
-- **版本：**2.3.0
+- **版本：**2.4.0
 - **开源地址：**https://github.com/worm128/AI-YinMei
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114471733300844&bvid=BV1kh5TzLEv6&cid=29853159399&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="600px" height="600px"></iframe>
 
@@ -93,4 +93,4 @@
 输入“搜索+关键字”
 
 ## 技术架构
-![吟美流程图2.3.0.png](images/吟美流程图2.3.0.png)
+![吟美流程图2.4.0.png](images/吟美流程图2.4.0.png)
