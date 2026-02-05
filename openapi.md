@@ -9,6 +9,7 @@ uid = data["uid"]  # 获取用户昵称
 user_name = data["username"]  # 获取用户昵称
 uface = data["uface"]  #用户头像
 channel = data.get("channel", "api")  #渠道号
+chat_num = data.get("chat_num", 0)  # 联动AI交互累计次数
 chat_interrupt = data.get("chat_interrupt", False)  # 聊天打断参数
 ```
 返回参数：
@@ -39,7 +40,7 @@ channel = data.get("channel", "api")  #渠道号
 方法：POST  
 请求参数：
 ```json
-question = json["question"]  # 问题文本
+player_name = data.get("PlayerVoice", "MAIN")  # MAIN：主人物  ASSISTANT：助手
 text = json["text"]  # 回复文本
 lanuage = json["lanuage"]  # 聊天语言：AutoChange=智能识别语言【有情绪变化影响】, 英语：en，日文：jp，韩文：kor，粤语：yue，国语：zh；举例传入值：en 或者 AutoChange；
 emotion_array = json["emotion"] # 需要输入数组["开心","可爱"],感情变化：平淡,开心,伤心,生气,尴尬,害怕,可爱,激情,害羞,调皮,感激,深情,疑惑,搞笑,挑衅,无奈,好奇 
@@ -50,8 +51,8 @@ voiceType = json["voiceType"]  # 音频类型： chat=时序流式回复，other
 {"status": "成功"}
 ```
 
-## 4、回复文本：
-作用：AI回复文本  
+## 4、AI回复文本：
+作用：AI回复用户的文本，通常用于聊天回复框显示  
 地址：ws://localhost:18765  
 方法：WebSocket  
 请求参数：  
