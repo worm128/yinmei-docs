@@ -8,7 +8,7 @@
 - **粉丝福利群：**264534845
 - **版本：**2.4.0
 - **开源地址：**https://github.com/worm128/AI-YinMei
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114471733300844&bvid=BV1kh5TzLEv6&cid=29853159399&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="600px" height="600px"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116013291015338&bvid=BV17mfZBkEMR&cid=35823747307&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="1080px"></iframe>
 
 ## 项目下载
 - **吟美整合包下载地址：**  
