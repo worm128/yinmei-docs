@@ -1,14 +1,14 @@
 ## AI吟美资料
-- **AI名称：**吟美
-- **开发者：**Winlone
-- **B站频道：**程序猿的退休生活 https://space.bilibili.com/46130941
-- **直播间：**http://live.bilibili.com/3033646
-- **Ai吟美教程汇集：**https://www.bilibili.com/opus/1015233825290059779
-- **技术Q群：**27831318
-- **粉丝福利群：**264534845
-- **版本：**2.4.0
-- **开源地址：**https://github.com/worm128/AI-YinMei
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116013291015338&bvid=BV17mfZBkEMR&cid=35823747307&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="1080px"></iframe>
+- **AI名称：** 吟美
+- **开发者：** Winlone
+- **B站频道：**程序猿的退休生活 [点击进入](https://space.bilibili.com/46130941)
+- **直播间：** [点击进入](http://live.bilibili.com/3033646)
+- **Ai吟美教程汇集：** [点击进入](https://www.bilibili.com/opus/1015233825290059779)
+- **技术Q群：** 27831318
+- **粉丝福利群：** 264534845
+- **版本：** 2.4.0
+- **视频演示：** [点击观看](https://www.bilibili.com/video/BV17mfZBkEMR)
+- **开源地址：** [下载](https://github.com/worm128/AI-YinMei)
 
 ## 项目下载
 - **吟美整合包下载地址：**  
