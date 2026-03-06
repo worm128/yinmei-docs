@@ -88,6 +88,26 @@ nvcc -V
 2、威联通nas的“--gpus all”不能映射显卡驱动，要手动配置  
 3、镜像使用飞机场拉取缓存问题  
 4、不保证可以： 魔改docker、宝塔docker、nas自研docker  
+5、vllm在50系显卡不兼容，是gpu架构问题，50系支持12.0架构，40系支持8.9架构，vllm安装的wheel包只支持8.9以下，新版本没支持，不知道怎样解决。[架构说明](https://developer.nvidia.com/cuda/gpus)
+
+vllm编译成50系N卡架构：
+```shell
+# 一、在容器里面安装cuda编译环境，安装好能查看nvcc -v
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb && \
+    dpkg -i cuda-keyring_1.1-1_all.deb && \
+    apt-get update && \
+    apt-get install -y cuda-toolkit-12-8 && \
+    rm cuda-keyring_1.1-1_all.deb
+
+# 二、安装vllm流程
+export TORCH_CUDA_ARCH_LIST="12.0"
+
+# 使用更多 CPU 核心编译
+export MAX_JOBS=8
+
+# 再安装
+pip install -v git+https://github.com/vllm-project/vllm.git@v0.9.0
+```
 
 查看容器是否可以读取显卡：  
 ```docker
@@ -101,6 +121,7 @@ docker run --rm --gpus all worm128/yinmei-cosyvoice /bin/bash -c "source /root/m
 
 # 3、查看vllm兼容的架构
 # GPU: NVIDIA GeForce RTX 4070 Ti SUPER
+# 架构列表：[架构说明](https://developer.nvidia.com/cuda/gpus)
 # SM架构: sm_89
 docker run --rm --gpus all worm128/yinmei-cosyvoice /bin/bash -c "source /root/miniconda3/etc/profile.d/conda.sh && conda activate py310 && python -c \"import torch; prop = torch.cuda.get_device_properties(0); print(f'GPU: {prop.name}'); print(f'SM架构: sm_{prop.major}{prop.minor}')\""
 ```
@@ -132,7 +153,7 @@ Window docker cmd执行：
 docker run -d ^
   --name yinmei-cosyvoice ^
   --gpus all ^
-  --shm-size 20g
+  --shm-size 20g ^
   -p 50001:50001 ^
   -p 50000:50000 ^
   -e MODEL_DIR=pretrained_models/CosyVoice2-0.5B ^
@@ -174,16 +195,24 @@ wsl shutdown
 
 🚨指定GPU启动：  
 关键命令：--gpus "device=0"   
+关键命令：-e CUDA_VISIBLE_DEVICES=0 中的 0 是 容器内逻辑索引  
 ```bash
 ✅ 使用 GPU 0
-docker run --gpus "device=0" -d your-image:latest
+docker run --gpus all -e CUDA_VISIBLE_DEVICES=0 -d your-image:latest
 
 ✅ 使用 GPU 1
-docker run --gpus "device=1" -d your-image:latest
+docker run --gpus all -e CUDA_VISIBLE_DEVICES=1 -d your-image:latest
 
 ✅ 使用 GPU 2
-docker run --gpus "device=2" -d your-image:latest
+docker run --gpus all -e CUDA_VISIBLE_DEVICES=2 -d your-image:latest
 ```
+
+### 特别提醒：不要混淆物理索引和逻辑索引
+- --gpus "device=1" 中的 1 是 宿主机物理 GPU 索引（从 nvidia-smi 看）
+- CUDA_VISIBLE_DEVICES=0 中的 0 是 容器内逻辑索引
+- 两者关系：物理 device=1 → 容器内逻辑 device=0
+
+
 
 ✅地址访问：  
 webui：http://127.0.0.1:50000/  
