@@ -863,6 +863,12 @@ winget install --id=astral-sh.uv -e
 需要安装nodejs，自带npm包管理器  
 下载：https://nodejs.org/zh-cn/download  
 
+**安装mcp-proxy**  
+全局安装mcp-proxy：mcp服务外挂sse能力  
+```bash
+npm install -g mcp-proxy
+```
+
 #### 1.2 配置mcp工具  
 **第一步、打开功能列表：**
 ![1.png](images/funcall/1.png)  
