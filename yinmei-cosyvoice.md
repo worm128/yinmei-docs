@@ -67,7 +67,7 @@ worm128/yinmei-cosyvoice:cu128 or latest：torch2.7.0+cu128
 ⚠️本人测试环境：  
 nvidia驱动：560.94  
 cuda驱动：12.6和12.4  
-显卡：4070tis 16g 和 3090ti 24g  
+显卡：4070tis 16g、 3090ti 24g、 1060 6g
 系统：Window11的wsl docker desktop  
 显存占用：docker版本-占用4.4g，window版本-占用3g  
 内存占用：8G-12g；峰值在12g，闲置状态8-9g    
