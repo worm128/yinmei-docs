@@ -94,3 +94,7 @@
 
 ## 技术架构
 ![吟美流程图2.4.1.png](images/吟美流程图2.4.1.png)
+![聊天异步流程.png](images/聊天异步流程.png)
+![吟美工具调用.png](images/吟美工具调用.png)
+![吟美工具调用.png](images/意图分析.png)
+![流式语音.png](images/流式语音.png)
