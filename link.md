@@ -92,12 +92,10 @@
 **9. 搜索资讯功能：**  
 输入“搜索+关键字”
 
-**10. 聚合弹幕：**  
-![聚合弹幕.png](images/聚合弹幕.png)
-
 ## 技术架构
 ![吟美流程图2.4.1.png](images/吟美流程图2.4.1.png)
 ![聊天异步流程.png](images/聊天异步流程.png)
 ![吟美工具调用.png](images/吟美工具调用.png)
 ![意图分析.png](images/意图分析.png)
 ![流式语音.png](images/流式语音.png)
+![聚合弹幕.png](images/聚合弹幕.png)
