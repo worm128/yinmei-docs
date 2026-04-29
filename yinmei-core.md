@@ -142,12 +142,12 @@ temperature越高，生成的文本更多样，反之，生成的文本更确定
 #### 2.2 支持的平台
 > 看到支持OpenAi规范接口的平台，包括云平台的阿里百炼、智谱清言，还有本地服务 OneApi、Xinference等接口  
 
-##### 1、阿里百炼：  
+##### 1、阿里百炼 
 阿里百炼包含的102个文本生成模型,[查看模型列表](https://bailian.console.aliyun.com/?spm=5176.29619931.J_SEsSjsNv72yRuRFS2VknO.2.74cd405fRO0JGF&tab=doc#/doc/?type=model&url=2840914)    
 https://www.aliyun.com/product/bailian
 ![6.png](images/yinmei-core/6.png)  
 
-##### 2、智谱的模型：  
+##### 2、智谱的模型  
 GLM4、GLM4.5、GLM4.6等模型,[查看模型列表](https://open.bigmodel.cn/pricing)    
 https://open.bigmodel.cn/ 
 ![7.png](images/yinmei-core/7.png)  
@@ -183,7 +183,7 @@ docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 ```
 <br>
 
-##### 4、更多云服务：  
+##### 4、更多云服务  
 【智谱清言】  
 https://open.bigmodel.cn/  
 测试秘钥：Bearer xxx  
