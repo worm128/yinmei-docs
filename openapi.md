@@ -11,6 +11,9 @@ uface = data["uface"]  #用户头像
 channel = data.get("channel", "api")  #渠道号
 chat_num = data.get("chat_num", 0)  # 联动AI交互累计次数
 chat_interrupt = data.get("chat_interrupt", False)  # 聊天打断参数
+imglist = data.get("imglist", [])  #图片集合，图片需要base64编码，是字符串数组
+videolist = data.get("videolist", [])  #视频集合，视频需要base64编码，是字符串数组
+filelist = data.get("filelist", [])  #文件集合
 ```
 返回参数：
 ```json
