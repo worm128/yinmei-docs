@@ -30,11 +30,20 @@
 压缩包：吟美桌宠2.0-yinmei-desktop-plus.zip、cosyvoice2语音合成：yinmei-cosyvoice、GPT-SoVITS语音合成：GPT-SoVITS-v2pro-yinmei.zip、bert-vits2语音合成：yinmei-Bert-VITS2-ui.zip、大模型工具：mcp.zip、鉴黄：public-NSFW-y-distinguish.zip、绘画：stable-diffusion-webui.zip、人物：VTube Studio人物Live2D软件.zip  
 
 ## 整合包内容
-路径：人工智能->吟美核心，选择一个版本核心下载，一般是最新版本  
-![down-yinmei.png](images/down-yinmei.png)
+> 必须下载：AI-YinMei-v2.4.1.zip、yinmei-analysis.zip、yinmei-desktop-plus.zip、mcp.zip  
 
-路径：人工智能->yinmei-all  
+吟美核心，路径：人工智能->吟美核心，选择一个版本核心下载，一般是最新版本  
+![down-yinmei.png](images/down-yinmei.png)  
+进入目录下载AI-YinMei-v2.4.1.zip  
+![down-yinmei.png](images/down-yinmei2.png)  
+各个吟美模块划分细节    
+![down-yinmei.png](images/吟美模块划分.png)  
+
+其他功能模块，路径：人工智能->yinmei-all  
 ![other-software.png](images/other-software.png)
+
+语音模型下载，路径：人工智能->AI模型->语音合成模型  
+![speechmodel.png](images/speechmodel.png)
 
 ## 功能概览
 - **聚合弹幕：** 聚合直播弹幕，支持B站开发平台、napcat[QQ机器人]、barragefly[抖音、虎牙、快手、斗鱼]、微信直播、桌宠、后台聊天对话等9大来源渠道弹幕聚合显示。
