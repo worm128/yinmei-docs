@@ -30,9 +30,7 @@
 ![15.png](images/funcall/15.png)  
 
 ### 2、配置秘钥
-在每个项目的根目录的config.yml配置文件，找到在最后的valid_val值，替换即可。  
-![120.png](images/yinmei-core/120.png)  
-也可以在项目后台界面的首页替换秘钥  
+在项目后台界面的首页替换秘钥  
 ![121.png](images/yinmei-core/121.png)  
 
 
