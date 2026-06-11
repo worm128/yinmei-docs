@@ -1,7 +1,7 @@
 ## 快速启动
 **下载包：**  
 下载路径：在"吟美核心"文件夹  
-应用包：AI-YinMei-v2.2.0.zip  
+应用包：AI-YinMei-v2.4.2.zip  
 **启动方式：**
 双击启动“start.bat"或者"yinmei-core-api.exe"  
 
@@ -41,7 +41,7 @@
 OBS配置两个浏览器插件decision.html和emotion.html  
 ![00.png](images/plug/webplug.png)  
 
-### 2、AI吟美2.2.0语气参考音频
+### 2、AI吟美gpt-sovits语气参考音频
 语气参考音频：免费，已经内置gpt-sovits合成整合包内  
 ![00.png](images/plug/参考音频.png)  
 ![107.png](images/yinmei-core/107.png)  
@@ -82,6 +82,17 @@ OBS配置两个浏览器插件decision.html和emotion.html
 特效插件：免费，在核心html\effect文件夹内  
 ![126.png](images/yinmei-core/126.jpg)  
 ![127.png](images/yinmei-core/127.png)  
+
+## Docker安装
+### 1、升级window的wsl
+```bash
+#设置的代理，需要超级管理员的cmd
+netsh winhttp set proxy 127.0.0.1:10806
+#下载，web-download更快
+wsl --update --web-download
+```
+### 2、下载和安装window的docker
+[下载安装](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)  
 
 ## 一、聊天配置
 ### 1、Ai名称
