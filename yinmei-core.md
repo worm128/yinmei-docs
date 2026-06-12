@@ -579,7 +579,8 @@ https://vb-audio.com/Voicemeeter/banana.htm
 
 ## 五、直播配置  
 ### 1、弹幕
-申请开通B站开放平台配置  
+申请开通B站开放平台配置，更多[聚合弹幕](#十二、聚合弹幕)  
+弹幕支持：B站、微信直播、抖音、快手、斗鱼、虎牙  
 ![40.png](images/yinmei-core/40.png)  
 申请开通B站开放平台后，在个人资料找到秘钥  
 ![41.png](images/yinmei-core/41.png)  
@@ -672,7 +673,7 @@ docker run --name blivechat  -d -p 12450:12450 -v blivechat-data:/mnt/data xfgry
 
 ## 六、数据库
 ### 1、直播效果
-https://www.bilibili.com/video/BV1r3rgY6ER6/  
+https://www.bilibili.com/video/BV1FwP1zWEBp/  
 > 这里创建了mongodb后，会支持聊天记录、用户注册、用户积分等功能  
 
 ### 2、安装步骤
@@ -1173,6 +1174,7 @@ d.点击“关闭抽奖”，在OBS界面的轮盘就会消失显示
 ## 十二、聚合弹幕
 ### 1、让弹幕飞
 #### 1.1、前言  
+展示效果:https://www.bilibili.com/video/BV1iTqhBzEpt/  
 开源项目：https://github.com/OrdinaryRoad-Project/ordinaryroad-barrage-fly  
 技术文档：https://barragefly.ordinaryroad.tech/  
 当前让弹幕飞项目，融合了抖音、快手、虎牙、斗鱼的弹幕抓取技术 
