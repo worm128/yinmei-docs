@@ -99,7 +99,7 @@ wsl --update --web-download
 ### 3、Docker软件安装失败，可能和网络相关
 在吟美核心的start.bat启动命令第一行加入，可以让下载更顺畅，但是你必须有魔法软件，端口都要对应你的魔法软件  
 ```bash
-set ALL_PROXY=socks5://127.0.0.1:10806
+set ALL_PROXY=http://127.0.0.1:10806
 ```
 
 ## 一、聊天配置
