@@ -344,15 +344,15 @@ fastgpt地址配置：
 ## 二、知识库安装
 <span style="color:red">注意：知识库当前只支持fastgpt，你可以仅仅只用fastgpt的知识库能力，不使用其聊天能力</span>  
 [点击>>>>>>> 官方安装教程](https://doc.fastgpt.cn/zh-CN/self-host/dev)  
-### 1、新版安装： 
+### 1、新版安装
 ```cmd
 git clone git@github.com:labring/FastGPT.git
 cd FastGPT/deploy/dev
 docker compose up -d
 ```
 
-### 2、旧版安装：
-下载使用我的compose配置：[docker-compose.yml](images/docker-compose.yml)  
+### 2、旧版安装
+下载使用我的compose配置：[docker-compose.yml](https://docs.yinmei.vip/images/docker-compose.yml)  
 下载后直接在当前这个docker-compose.yml文件目录执行，你最好挑选一个合适的位置存放，会产生fastgpt文件  
 ```cmd
 docker compose up -d
