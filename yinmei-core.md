@@ -84,6 +84,8 @@ OBS配置两个浏览器插件decision.html和emotion.html
 ![127.png](images/yinmei-core/127.png)  
 
 ## Docker安装
+<b><font color='red'>Docker安装是刚需，没有Docker吟美失去数据库记忆，大模型工具，抽奖，用户记录，聊天记录等一系列功能矩阵</font></b>  
+<b><font color='blue'>注意：国内小伙伴没有魔法无法使用Docker</font></b>  
 ### 1、升级window的wsl
 ```bash
 #设置的代理，需要超级管理员的cmd
