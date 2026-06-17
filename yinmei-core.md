@@ -695,6 +695,10 @@ window版本：[下载](https://www.mongodb.com/try/download/community)
 ```dockerfile
 docker run -itd --name yinmei-data -p 27018:27017 -e MONGO_INITDB_ROOT_USERNAME=winlone -e MONGO_INITDB_ROOT_PASSWORD=123456 -v /j/ai/ai-code/yinmei-data/:/data/db mongo:6.0.16 --auth
 ```
+有些旧的系统遇到操作权限问题请使用-u 999  
+```dockerfile
+docker run -itd --name yinmei-data -p 27018:27017 -e MONGO_INITDB_ROOT_USERNAME=winlone -e MONGO_INITDB_ROOT_PASSWORD=123456 -v /j/ai/ai-code/yinmei-data/:/data/db -u 999 mongo:6.0.16 --auth
+```
 
 ### 3、聊天记录
 > 这里在调用llm时候，短期记忆会在这里抽取记忆  
