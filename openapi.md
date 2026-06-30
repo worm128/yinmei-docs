@@ -67,3 +67,31 @@ ws链接时候需要先注册插件，才会回调回复文本
 ```json
 {"type": "聊天回复", "voiceType":语音类别，chat：聊天语音|other：其他语音, "index": 流式回复索引位置, "traceid": 同一语音序列id一样, "chatStatus": start|空|end, "text": 回复文本}
 ```
+
+## 5、聚合弹幕：
+作用：B站、抖音、斗鱼、虎牙、快手、微信直播、QQ、后台等所有平台弹幕抓取    
+地址：ws://localhost:18765  
+方法：WebSocket  
+请求参数：  
+ws链接时候需要先注册插件，才会回调回复文本  
+```json
+{"register": "弹幕"}
+```
+返回参数：  
+```json
+{"type": "弹幕", "style": "聊天", "channel": "渠道名称", "username": "用户名称", "msg": "弹幕消息", "uface": "发弹幕的用户头像图片", "level": "用户级别"}
+```
+
+## 6、人物表情触发：
+作用：触发Live2D的人物表情    
+地址：ws://localhost:18765  
+方法：WebSocket  
+请求参数：  
+ws链接时候需要先注册插件，才会回调回复文本  
+```json
+{"register": "表情"}
+```
+返回参数：  
+```json
+{"type": "表情", "name": "表情名称"}
+```
