@@ -891,6 +891,7 @@ Q号是你当前AI的qq号码
 
 ### 2、searxng聚合搜索
 #### 2.1、安装searxng服务
+手动安装软件：  
 ```dockerfile
 docker run -d -p 10800:8080 ^
     -v "/j/ai/ai-code/searxng:/etc/searxng" ^
@@ -899,12 +900,23 @@ docker run -d -p 10800:8080 ^
     --name "searxng" ^
     searxng/searxng
 ```
+自动安装软件：  
+![134.png](images/yinmei-core/134.png)  
+首次安装会自动下载docker镜像，下载完之后会自动启动容器，容器配置使用docker/searxng/settings.yml配置文件  
+
 #### 2.2、配置searxng
-找到settings.yml配置文件，在formats参数加入配置  
+找到项目里面的docker/searxng/settings.yml配置文件  
+在formats参数加入配置，这是让服务提供api接口  
 ```json
 formats:
     - html
     - json
+```
+代理配置，没有魔法不能访问谷歌  
+```json
+proxies:
+      all://:
+        - http://127.0.0.1:10806
 ```
 
 #### 2.3、访问searxng
