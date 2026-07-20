@@ -958,6 +958,8 @@ winget install --id=astral-sh.uv -e
 npm install -g mcp-proxy
 ```
 
+启动服务：双击“全部一次性开启.bat”  
+
 ##### Linux安装
 **安装UVX工具**  
 ```bash
@@ -981,6 +983,9 @@ nvm install --lts
 ```bash
 npm install -g mcp-proxy
 ```
+
+启动服务：bash ./全部一次性开启.sh  
+关闭服务：bash ./全部一次性关闭.sh  
 
 
 #### 1.2 配置mcp工具  
