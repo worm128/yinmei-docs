@@ -989,6 +989,10 @@ npm install -g mcp-proxy
 
 
 #### 1.2 配置mcp工具  
+以上MCP服务器需要加入秘钥的模块：  
+tavily文件夹的start.sh脚本，找到TAVILY_API_KEY参数，进入TAVILY网站找到[API Keys](https://app.tavily.com/home)  
+mcp-server-tmdb文件夹的start.sh脚本，找到TMDB_API_KEY参数，复制TMDB的[API密钥](https://www.themoviedb.org/settings/api)
+
 **第一步、打开功能列表：**
 ![1.png](images/funcall/1.png)  
 **第二步、新增工具：**   
