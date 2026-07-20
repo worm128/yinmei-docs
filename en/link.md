@@ -113,4 +113,4 @@ Enter "search image + keyword"
 Enter "search + keyword"
 
 ## Technical Architecture
-![Yinmei Flowchart 2.4.2.png](../images/吟美流程图2.4.2.png)
+![Yinmei Flowchart 2.4.2.png](../images/吟美流程图2.4.1.png)

@@ -1,7 +1,7 @@
 ## 快速启动
 **下载包：**  
 下载路径：在"吟美核心"文件夹  
-应用包：AI-YinMei-v2.4.2.zip  
+应用包：AI-YinMei-v2.4.3.zip  
 **启动方式：**
 双击启动“start.bat"或者"yinmei-core-api.exe"  
 
