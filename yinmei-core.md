@@ -810,12 +810,30 @@ key名称就是vts的表情名称，endwait是这个动作运行的时间，时�
 ### 1、napcat配置
 ![85.png](images/yinmei-core/85.png)  
 当选择了QQ机器人后，需要你安装一个napcat软件进行QQ信息的采集  
-**napcat安装：**https://github.com/NapNeko/NapCatQQ/releases  
+#### napcat安装：
+- window版本安装：  
+https://github.com/NapNeko/NapCatQQ/releases  
 请选择最新版进行安装  
 ![86.png](images/yinmei-core/86.png)  
-**napcat教程：**https://napneko.github.io/  
+- docker版本安装：  
+```bash
+sudo docker run -d \
+  -p 31002:31002 \
+  -p 6099:6099 \
+  --name napcat \
+  --restart=always \
+  mlikiowa/napcat-docker:latest
+```
+- Linux版本安装：  
+```bash
+curl -o napcat.sh https://raw.githubusercontent.com/NapNeko/NapCat-Installer/main/script/install.sh && bash napcat.sh
+```
+访问：http://192.168.2.89:6099   
+
+#### napcat配置教程：
+https://napneko.github.io/  
 ![87.png](images/yinmei-core/87.png)  
-配置一个websocket服务器，端口配置30002，token自行定义  
+配置一个websocket服务器，端口配置31002，token自行定义  
 ![88.png](images/yinmei-core/88.png)  
 配置后需要再吟美核心的napcat websocket配置联动  
 ![89.png](images/yinmei-core/89.png)  
@@ -904,6 +922,7 @@ duckduckgo搜索国内需要魔法上网,ip和端口请根据实际情况配置
 ## 十、智化功能  
 ### 1、mcp服务
 #### 1.1 使用mcp服务必要软件  
+##### Window安装
 **安装UVX工具**  
 方法 1: PowerShell  
 ```bash
@@ -926,6 +945,31 @@ winget install --id=astral-sh.uv -e
 ```bash
 npm install -g mcp-proxy
 ```
+
+##### Linux安装
+**安装UVX工具**  
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source $HOME/.local/bin/env
+uvx --version
+```
+
+**安装NPX工具**  
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.bashrc
+nvm -v
+# 设置代理
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
+nvm install --lts
+```
+
+**安装mcp-proxy**  
+全局安装mcp-proxy：mcp服务外挂sse能力  
+```bash
+npm install -g mcp-proxy
+```
+
 
 #### 1.2 配置mcp工具  
 **第一步、打开功能列表：**
