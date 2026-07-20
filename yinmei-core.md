@@ -820,10 +820,13 @@ https://github.com/NapNeko/NapCatQQ/releases
 sudo docker run -d \
   -p 31002:31002 \
   -p 6099:6099 \
-  --name napcat \
-  --restart=always \
+  -v /data/program/AI-YinMei-v2.4.3/exp:/data/program/AI-YinMei-v2.4.3/exp \
+  --name yinmei-napcat \
   mlikiowa/napcat-docker:latest
 ```
+表情路径映射：-v /data/program/AI-YinMei-v2.4.3/exp:/data/program/AI-YinMei-v2.4.3/exp  
+<font color="red">注意：napcat如果是容器模式，记得表情路径要映射到容器里面，不然不能发送表情</font>  
+
 - Linux版本安装：  
 ```bash
 curl -o napcat.sh https://raw.githubusercontent.com/NapNeko/NapCat-Installer/main/script/install.sh && bash napcat.sh
