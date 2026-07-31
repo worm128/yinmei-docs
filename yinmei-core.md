@@ -822,11 +822,13 @@ sudo docker run -d \
   -p 6099:6099 \
   -v /data/program/AI-YinMei-v2.4.3/exp/:/data/program/AI-YinMei-v2.4.3/exp/ \
   -v /data/program/AI-YinMei-v2.4.3/porn/:/data/program/AI-YinMei-v2.4.3/porn/ \
+  -v /data/program/AI-YinMei-v2.4.3/吟美歌曲/:/data/program/AI-YinMei-v2.4.3/吟美歌曲/ \
   --name yinmei-napcat \
   mlikiowa/napcat-docker:latest
 ```
 表情路径映射：-v /data/program/AI-YinMei-v2.4.3/exp/:/data/program/AI-YinMei-v2.4.3/exp/  
 搜索图片路径映射：-v /data/program/AI-YinMei-v2.4.3/porn/:/data/program/AI-YinMei-v2.4.3/porn/  
+歌曲路径映射：-v /data/program/AI-YinMei-v2.4.3/吟美歌曲/:/data/program/AI-YinMei-v2.4.3/吟美歌曲/  
 <font color="red">注意：napcat如果是容器模式，记得表情路径要映射到容器里面，不然不能发送表情</font>  
 
 - Linux版本安装：  
