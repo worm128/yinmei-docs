@@ -183,13 +183,15 @@ docker run --name one-api -d --restart always -p 13000:3000 -e TZ=Asia/Shanghai 
 
 **本地Xinference**  
 接口：http://IP:9997/v1/chat/completions  
-容器安装：  
+容器安装：
+```dockerfile
+docker run --name xinference -d --restart always -p 9997:9997 -e XINFERENCE_HOME=/data -v /data/program/xinference/:/data --shm-size 20g --gpus all xprobe/xinference:v3.2.1 xinference-local -H 0.0.0.0
+```
 ```dockerfile
 docker run --name xinference -d --restart always -p 9997:9997 -e XINFERENCE_HOME=/data -v /j/ai/ai-code/xinference/:/data --shm-size 20g --gpus all xprobe/xinference:v0.12.3 xinference-local -H 0.0.0.0
 ```
-```dockerfile
-docker run --name xinference121 -d -p 9998:9997 -e XINFERENCE_HOME=/data -v /D/docker/xinference121:/data --shm-size 20g --gpus all xprobe/xinference:v1.2.1 xinference-local -H 0.0.0.0
-```
+
+
 <br>
 
 **本地ollama**  
@@ -349,12 +351,15 @@ fastgpt地址配置：
 
 ## 二、知识库安装
 <span style="color:red">注意：知识库当前只支持fastgpt，你可以仅仅只用fastgpt的知识库能力，不使用其聊天能力</span>  
-[点击>>>>>>> 官方安装教程](https://doc.fastgpt.cn/zh-CN/self-host/dev)  
+[点击>>>>>>> 官方安装教程](https://doc.fastgpt.cn/zh-CN/self-host/deploy/docker)  
 ### 1、新版安装
-```cmd
-git clone git@github.com:labring/FastGPT.git
-cd FastGPT/deploy/dev
-docker compose up -d
+生成docker-compose.yml配置：  
+```bash
+FASTGPT_DEPLOY_BASE_URL=https://doc.fastgpt.cn bash <(curl -fsSL https://doc.fastgpt.cn/deploy/install.sh)
+```
+拉镜像生成容器：  
+```bash
+docker-compose up -d
 ```
 
 ### 2、旧版安装
