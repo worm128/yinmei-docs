@@ -6,7 +6,7 @@
 - **Ai吟美教程汇集：** [点击进入](https://www.bilibili.com/opus/1015233825290059779)
 - **技术Q群：** 27831318
 - **粉丝福利群：** 264534845
-- **版本：** 2.4.3
+- **版本：** 2.4.4
 - **视频演示：** [点击观看](https://www.bilibili.com/video/BV17mfZBkEMR)
 - **开源地址：** [下载](https://github.com/worm128/AI-YinMei)
 
@@ -24,17 +24,17 @@
 夸克群2：428937868   
 - **吟美核心【版本迭代】：**  
 下载路径：人工智能 -> 吟美核心  
-压缩包：AI-YinMei-v2.4.3.zip  
+压缩包：AI-YinMei-v2.4.4.zip  
 - **功能整合包下载：**  
 下载路径：人工智能 -> yinmei-all  
 压缩包：吟美桌宠2.0-yinmei-desktop-plus.zip、cosyvoice2语音合成：yinmei-cosyvoice、GPT-SoVITS语音合成：GPT-SoVITS-v2pro-yinmei.zip、bert-vits2语音合成：yinmei-Bert-VITS2-ui.zip、大模型工具：mcp.zip、鉴黄：public-NSFW-y-distinguish.zip、绘画：stable-diffusion-webui.zip、人物：VTube Studio人物Live2D软件.zip  
 
 ## 整合包内容
-> 必须下载：AI-YinMei-v2.4.3.zip、yinmei-analysis.zip、yinmei-desktop-plus.zip、mcp.zip  
+> 必须下载：AI-YinMei-v2.4.4.zip、yinmei-analysis.zip、yinmei-desktop-plus.zip、mcp.zip  
 
 吟美核心，路径：人工智能->吟美核心，选择一个版本核心下载，一般是最新版本  
 ![down-yinmei.png](images/down-yinmei.png)  
-进入目录下载AI-YinMei-v2.4.3.zip  
+进入目录下载AI-YinMei-v2.4.4.zip  
 ![down-yinmei.png](images/down-yinmei2.png)  
 各个吟美模块划分细节    
 ![down-yinmei.png](images/吟美模块划分.png)  
@@ -44,6 +44,31 @@
 
 语音模型下载，路径：人工智能->AI模型->语音合成模型  
 ![speechmodel.png](images/speechmodel.png)
+
+## 模块资源分配
+> 以下资源说明均为粗略计算，以最好效果展示来说明资源占用情况  
+### 语音合成：
+gpt-sovits：内存-2G,显存-2.6G  
+cosyvoice2（Docker版）：内存-20G,显存-4.6G  
+bert-vits2：内存-7.3G,显存-2.3G  
+### 吟美模块：
+吟美核心：内存-200MB,显存-0G  
+吟美分析：内存-1.5G,显存-1.9G  
+吟美桌宠：内存-2~5G,显存-1.5G  
+### 其他第三方：
+Vtube Studio人物：内存-1G,显存-1G  
+WSL Docker：内存-2G以上,显存-0G  
+Xinference：内存-未知,显存-0G  
+m3e向量模块：内存-忽略不计,显存-600MB  
+fastgpt知识库：内存-400MB,显存-0G  
+让弹幕飞：内存-800MB,显存-0G  
+OBS：内存-1.3G,显存-600MB  
+其他直播软件：内存-1~2G以上,显存-预估600MB  
+### 完整直播占用：
+#### 基本直播：
+吟美核心+吟美分析+语音合成 = 内存-8G,显存-7.6G  
+#### 对话直播：
+吟美核心+吟美分析+吟美桌宠+语音合成 = 内存-10~13G,显存-9G  
 
 ## 功能概览
 - **聚合弹幕：** 聚合直播弹幕，支持B站开发平台、napcat[QQ机器人]、barragefly[抖音、虎牙、快手、斗鱼]、微信直播、桌宠、后台聊天对话等9大来源渠道弹幕聚合显示。
