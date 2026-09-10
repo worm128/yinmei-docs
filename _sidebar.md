@@ -7,3 +7,4 @@
 * [**CosyVoice**](/yinmei-cosyvoice.md)
 * [**开放平台**](/openapi.md)
 * [**版本更新**](/update.md)
+* [**接口文档**](http://api.yinmei.vip/docs)

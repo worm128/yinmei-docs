@@ -6,3 +6,4 @@
 * [**Yinmei Singing**](/en/yinmei-music.md)
 * [**Open Platform**](/en/openapi.md)
 * [**Version Update**](/en/update.md)
+* [**API Documentation**](http://api.yinmei.vip/docs)
