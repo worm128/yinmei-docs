@@ -1,14 +1,16 @@
 ## AI Yinmei Information
-- **AI Name：**Yinmei
-- **Developer：**Winlone
-- **Bilibili Channel：**Programmer's Retirement Life https://space.bilibili.com/46130941
-- **Live Stream：**http://live.bilibili.com/3033646
-- **Ai Yinmei Tutorial Collection：**https://www.bilibili.com/opus/1015233825290059779
-- **Technical QQ Group：**27831318
-- **Fan Group：**264534845
-- **Version：**2.4.2
-- **Open Source：**https://github.com/worm128/AI-YinMei
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114471733300844&bvid=BV1kh5TzLEv6&cid=29853159399&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="600px" height="600px"></iframe>
+- **AI Name：** Yinmei
+- **Developer：** Winlone
+- **Bilibili Channel：** [Programmer's Retirement Life](https://space.bilibili.com/46130941)
+- **Live Stream：**  [Click to enter](http://live.bilibili.com/3033646)
+- **Technical QQ Group：** 27831318
+- **Fan Group：** 264534845
+- **Version：** 2.4.4
+- **Open Source：**  [Click to enter](https://github.com/worm128/AI-YinMei)
+
+## Download the software 
+[Docker](https://hub.docker.com/r/worm128/yinmei-core) | [Windows](https://pan.baidu.com/s/1zQr_lafz5LiscHhkfSj2bw?pwd=2tep) | [Linux](https://pan.baidu.com/s/1zQr_lafz5LiscHhkfSj2bw?pwd=2tep)
+
 
 ## Project Download
 - **Yinmei Integration Package Download Address：**  
@@ -20,9 +22,9 @@ Baidu Netdisk Group 4: 969208563
 - **Quark：**  
 Quark Group 1: 1231405830
 Quark Group 2: 428937868
-- **Functional Integration Package Downloads (6)：**Artificial Intelligence -> yinmei-all
+- **Functional Integration Package Downloads (6)：** Artificial Intelligence -> yinmei-all
 Desktop Pet 2.0 yinmei-desktop-plus, TTS Speech Synthesis GPT-SoVITS-Versions 1.0 and 2.0, Pornography Detection public-NSFW-y-distinguish, Painting stable-diffusion-webui, Live2D Skin
-- **Yinmei Core [Version Iteration]：**Artificial Intelligence -> Yinmei Core
+- **Yinmei Core [Version Iteration]：** Artificial Intelligence -> Yinmei Core
 Yinmei Development Documentation: Artificial Intelligence -> Yinmei Development Documentation
 
 ## Integration Package Contents

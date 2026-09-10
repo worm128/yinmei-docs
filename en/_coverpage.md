@@ -1,6 +1,6 @@
 ![logo](../images/logo.png)
 
-# AI Yinmei <small>2.4.3</small>
+# AI Yinmei <small>2.4.4</small>
 
 > A one-stop AI live streaming platform.
 

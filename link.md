@@ -3,12 +3,14 @@
 - **开发者：** Winlone
 - **B站频道：**程序猿的退休生活 [点击进入](https://space.bilibili.com/46130941)
 - **直播间：** [点击进入](http://live.bilibili.com/3033646)
-- **Ai吟美教程汇集：** [点击进入](https://www.bilibili.com/opus/1015233825290059779)
 - **技术Q群：** 27831318
 - **粉丝福利群：** 264534845
 - **版本：** 2.4.4
 - **视频演示：** [点击观看](https://www.bilibili.com/video/BV17mfZBkEMR)
-- **开源地址：** [下载](https://github.com/worm128/AI-YinMei)
+- **开源地址：** [进入项目](https://github.com/worm128/AI-YinMei)
+
+## 下载软件
+[Docker版本](https://hub.docker.com/r/worm128/yinmei-core) | [Window版本](https://pan.baidu.com/s/1zQr_lafz5LiscHhkfSj2bw?pwd=2tep) | [Linux版本](https://pan.baidu.com/s/1zQr_lafz5LiscHhkfSj2bw?pwd=2tep)
 
 ## 项目下载
 - **吟美整合包下载地址：**  
