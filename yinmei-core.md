@@ -117,7 +117,14 @@ set ALL_PROXY=http://127.0.0.1:10806
 #### 2.1 类型选择
 > 在LLM大模型，可以选择通用聊天，此功能适配所有OpenAi规范的接口
 
-![3.png](images/yinmei-core/3.png)
+选择通用聊天：  
+![3.png](images/yinmei-core/3-1.png)  
+点击选择供应商按钮，会弹框供应商列表：  
+![3.png](images/yinmei-core/3-2.png)  
+选择一个供应商：  
+![3.png](images/yinmei-core/3-3.png)  
+选择供应商后会自动回填，地址会自动填写，只需要修改秘钥即可，秘钥要保留Bearer+空格开头：    
+![3.png](images/yinmei-core/3-4.png)  
 
 **服务地址：**  
 以阿里百炼为例：https://help.aliyun.com/zh/model-studio/developer-reference/use-qwen-by-calling-api
