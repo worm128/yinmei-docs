@@ -5,11 +5,11 @@
 - **Live Stream：**  [Click to enter](http://live.bilibili.com/3033646)
 - **Technical QQ Group：** 27831318
 - **Fan Group：** 264534845
-- **Version：** 2.4.4
+- **Version：** 3.0.0-Pre
 - **Open Source：**  [Click to enter](https://github.com/worm128/AI-YinMei)
 
 ## Download the software 
-[Docker](https://hub.docker.com/r/worm128/yinmei-core) | [Windows](https://pan.baidu.com/s/1zQr_lafz5LiscHhkfSj2bw?pwd=2tep) | [Linux](https://pan.baidu.com/s/1zQr_lafz5LiscHhkfSj2bw?pwd=2tep)
+[Docker](https://hub.docker.com/r/worm128/yinmei-core) | [Windows](https://pan.baidu.com/s/11kIws0H0YITmwVucqoCWrA?pwd=6e74) | [Linux](https://pan.baidu.com/s/11kIws0H0YITmwVucqoCWrA?pwd=6e74)
 
 
 ## Project Download
