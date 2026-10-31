@@ -1,4 +1,4 @@
-![logo](https://www.yinmei.vip/images/logo.png)
+<img src='https://www.yinmei.vip/images/logo.png' width="1000">
 
 # AI吟美 <small>2.4.4</small>
 
