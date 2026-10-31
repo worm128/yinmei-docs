@@ -8,6 +8,6 @@
 <p align="right" style="font-weight: bold; font-size: 1.5em">版本：3.0.1-Pre</p>
 <p align="right" style="font-weight: bold; font-size: 1.5em"><img src="https://www.yinmei.vip/images/logo.png" width="200px"/></p>
 <br/><br/><br/>
-<p align="center"><img src="images/直播间封面.png" width="80%"/></p>
+<p align="center"><img src="https://www.yinmei.vip/images/yinmei-cover.jpg"/></p>
 
 
