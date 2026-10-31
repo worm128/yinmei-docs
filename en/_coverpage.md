@@ -1,6 +1,6 @@
 <img src='https://www.yinmei.vip/images/logo.png' width="1000">
 
-# AI Yinmei <small>2.4.4</small>
+# AI Yinmei <small>3.0.1-Pre</small>
 
 > A one-stop AI live streaming platform.
 

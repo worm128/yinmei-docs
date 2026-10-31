@@ -1,6 +1,6 @@
 <img src='https://www.yinmei.vip/images/logo.png' width="1000">
 
-# AI吟美 <small>2.4.4</small>
+# AI吟美 <small>3.0.1-Pre</small>
 
 > 一站式人工智能互动平台
 
