@@ -6,6 +6,6 @@
 <p align="right" style="font-weight: bold; font-size: 1.5em">Technical QQ Group: 27831318</p>
 <p align="right" style="font-weight: bold; font-size: 1.5em">Fan Welfare Group: 264534845</p>
 <p align="right" style="font-weight: bold; font-size: 1.5em">Version: 2.4.4</p>
-<p align="right" style="font-weight: bold; font-size: 1.5em"><img src="../images/logo.png" width="200px"/></p>
+<p align="right" style="font-weight: bold; font-size: 1.5em"><img src="https://www.yinmei.vip/images/logo.png" width="200px"/></p>
 <br/><br/><br/>
 <p align="center"><img src="../images/直播间封面.png" width="80%"/></p>
