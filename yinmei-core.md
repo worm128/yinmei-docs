@@ -190,14 +190,12 @@ docker run --name one-api -d --restart always -p 13000:3000 -e TZ=Asia/Shanghai 
 
 **本地Xinference**  
 接口：http://IP:9997/v1/chat/completions  
+github：https://github.com/xorbitsai/inference  
 容器安装：
 ```dockerfile
-docker run --name xinference -d --restart always -p 9997:9997 -e XINFERENCE_HOME=/data -v /data/program/xinference/:/data --shm-size 20g --gpus all xprobe/xinference:v3.2.1 xinference-local -H 0.0.0.0
+docker run --name xinference -d -p 9997:9997 -e XINFERENCE_HOME=/data -v </on/your/host>:/data --gpus all xprobe/xinference:latest xinference-local -H 0.0.0.0
 ```
-```dockerfile
-docker run --name xinference -d --restart always -p 9997:9997 -e XINFERENCE_HOME=/data -v /j/ai/ai-code/xinference/:/data --shm-size 20g --gpus all xprobe/xinference:v0.12.3 xinference-local -H 0.0.0.0
-```
-
+如果一些大模型启动失败，可以加入--shm-size 20g增加虚拟内存  
 
 <br>
 
@@ -360,21 +358,40 @@ fastgpt地址配置：
 <span style="color:red">注意：知识库当前只支持fastgpt，你可以仅仅只用fastgpt的知识库能力，不使用其聊天能力</span>  
 [点击>>>>>>> 官方安装教程](https://doc.fastgpt.cn/zh-CN/self-host/deploy/docker)  
 ### 1、新版安装
-生成docker-compose.yml配置：  
-```bash
-FASTGPT_DEPLOY_BASE_URL=https://doc.fastgpt.cn bash <(curl -fsSL https://doc.fastgpt.cn/deploy/install.sh)
+下载docker compose配置：
+全球资源
+```cmd
+curl -fsSL https://doc.fastgpt.io/deploy/docker/main/global/docker-compose.pg.yml -o docker-compose.yml
 ```
-拉镜像生成容器：  
-```bash
+中国资源
+```cmd
+curl -fsSL https://doc.fastgpt.io/deploy/docker/main/cn/docker-compose.pg.yml -o docker-compose.source.yml
+```
+配置 密码+访问地址+沙盒，密码好像在4.17后不生效，账号是root，密码默认是123456  
+```cmd
+root 默认密码（重启后会强制重置该密码成环境变量值）
+x-default-root-psw: &x-default-root-psw '9280691521a476ee'
+FastGPT 前端访问地址，必须填写用户实际访问 FastGPT 的地址
+x-fe-domain: &x-fe-domain 'http://localhost:3000'
+Sandbox Proxy WebSocket 地址，必须填写用户实际访问地址
+x-agent-sandbox-proxy-url: &x-agent-sandbox-proxy-url 'ws://127.0.0.1:3006'
+Sandbox Proxy HTTP 预览地址，必须填写用户实际访问地址
+x-agent-sandbox-preview-proxy-url: &x-agent-sandbox-preview-proxy-url 'http://127.0.0.1:3006'
+```
+
+启动
+```cmd
 docker-compose up -d
 ```
 
-### 2、旧版安装
+### 2、手动安装
 下载使用我的compose配置：[docker-compose.yml](https://docs.yinmei.vip/images/docker-compose.yml)  
 下载后直接在当前这个docker-compose.yml文件目录执行，你最好挑选一个合适的位置存放，会产生fastgpt文件  
 ```cmd
 docker compose up -d
 ```
+账号：root  
+密码：123456  
 
 ## 三、语音合成
 ### 1、微软edge-tts配置
