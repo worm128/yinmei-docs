@@ -10,7 +10,12 @@ export default defineConfig({
         if (!t) { localStorage.setItem('vitepress-theme', 'sakura'); t = 'sakura'; }
         document.documentElement.classList.add('theme-' + t);
       } catch (e) {}
-    `],
+        `],
+        [
+    'script',
+    {},
+    `(function(){var hm=document.createElement('script');hm.src='https://hm.baidu.com/hm.js?ea78086b4e805db206b39ad35e71eec9';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm,s);})();`,
+        ],
     ],
     ignoreDeadLinks: true,
     themeConfig: {
@@ -23,8 +28,8 @@ export default defineConfig({
         root: {
             title: "AI吟美",
             label: '中文',
-            lang: 'cn',
-            link: '/cn/',
+            lang: 'zh-CN',
+            link: '/',
             description: 'AI吟美|AI情感|AI情绪|AI长期记忆|AI短期记忆|AI扩散思维|AI人工智能|AI意图分析|RAG|KAG|AI鉴黄NSFW|OBS直播|AI表情|Vtube Studio|AI桌宠|AI唱歌|AI绘画|语音合成|语音对话|funasr|VAD活检|声纹识别|语音识别|AI搜索|AI QBot|AI机器人|积分系统|AI抽奖系统|Live2D皮肤',
             themeConfig: {
                 // https://vitepress.dev/reference/default-theme-config
@@ -69,13 +74,13 @@ export default defineConfig({
         en: {
             title: "AI YinMei",
             label: 'English',
-            lang: 'en', // 可选，将作为 `lang` 属性添加到 `html` 标签中
+            lang: 'en-US', // 可选，将作为 `lang` 属性添加到 `html` 标签中
             link: '/en/', // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
             description: 'AI Yinmei | AI Emotion | AI Emotion | AI Long Term Memory | AI Short Term Memory | AI Diffusion Thinking | AI Artificial Intelligence | AI Intent Analysis | RAG | KAG | AI Yellow Recognition NSFW | OBS Live Streaming | AI Emotions | Vtube Studio | AI Table Pet | AI Singing | AI Painting | Speech Synthesis | Speech Dialogue | Funasr | VAD Biopsy | Voiceprint Recognition | Speech Recognition | AI Search | AI QBot | AI Robot | Integral System | AI Lottery System | Live2D Skin',
             themeConfig: {
                 logo: "https://www.yinmei.vip/ymlogo.png",
                 nav: [
-                    {text: 'Home', link: '/en'},
+                    {text: 'Home', link: '/en/'},
                     {text: 'Quick', link: '/en/README'}
                 ],
                 search: {
