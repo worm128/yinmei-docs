@@ -1,0 +1,1 @@
+import{Mt as e,ft as t,mt as n,n as r}from"./chunks/framework.CLZVGDxv.js";var i=JSON.parse(`{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"en/openapi.md","filePath":"en/openapi.md"}`),a={name:`en/openapi.md`};function o(r,i,a,o,s,c){return e(),t(`div`,null,[...i[0]||=[n("",20)]])}var s=r(a,[[`render`,o]]);export{i as __pageData,s as default};
