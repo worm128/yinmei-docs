@@ -36,7 +36,9 @@ export default defineConfig({
                 logo: "https://www.yinmei.vip/ymlogo.png",
                 nav: [
                     {text: '首页', link: '/'},
-                    {text: '快速开始', link: '/cn/README'}
+                    {text: '快速开始', link: '/cn/README'},
+                    {text: '官网', link: 'https://www.yinmei.vip/'},
+                    {text: '演示 ', link: 'http://demo.yinmei.vip/'}
                 ],
                 search: {
                     provider: 'local'
@@ -81,7 +83,9 @@ export default defineConfig({
                 logo: "https://www.yinmei.vip/ymlogo.png",
                 nav: [
                     {text: 'Home', link: '/en/'},
-                    {text: 'Quick', link: '/en/README'}
+                    {text: 'Quick', link: '/en/README'},
+                    {text: 'Official ', link: 'https://www.yinmei.vip/index-en.html'},
+                    {text: 'Demo ', link: 'http://demo.yinmei.vip/'}
                 ],
                 search: {
                     provider: 'local'
