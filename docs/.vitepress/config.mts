@@ -123,7 +123,7 @@ export default defineConfig({
         jp: {
             title: "AI吟美",
             label: '日語',
-            lang: 'jp', // 可选，将作为 `lang` 属性添加到 `html` 标签中
+            lang: 'ja', // 可选，将作为 `lang` 属性添加到 `html` 标签中
             link: '/jp/', // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
             description: 'AI吟美|AI感情|AI情緒|AI長期記憶|AI短期記憶|AI拡散的思考|AI人工知能|AI意図分析|RAG|KAG|AIによるNSFW（不適切コンテンツ）検知|OBSライブ配信|AI表情|Vtube Studio|AIデスクトップペット|AI歌唱|AI作画|音声合成|音声対話|funasr|VAD（音声区間検出）|声紋認識|音声認識|AI検索|AI QBot|AIロボット|ポイントシステム|AI抽選システム|Live2Dスキン',
             themeConfig: {

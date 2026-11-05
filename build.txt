@@ -1,0 +1,12 @@
+# 运行调试
+pnpm docs:dev
+
+#主题安装
+pnpm add vitepress-colorful-themes
+pnpm add element-plus @element-plus/icons-vue
+pnpm add -D unplugin-auto-import unplugin-vue-components
+
+# 创建
+pnpm docs:build
+
+项目：https://github.com/vuejs/vitepress
