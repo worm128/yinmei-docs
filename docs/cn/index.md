@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "AI吟美"
-  text: "一站式<br>  人工智能互动平台"
-  tagline: 泛用式人工智能：<br>  聚合直播、QQ机器人、桌宠、大模型工具。<br> 轻量级AI，开箱即用。<br>     多功能二次元AI机器人
+  text: "一站式人工智能互动平台"
+  tagline: 泛用式人工智能：<br>   聚合直播、QQ机器人、桌宠、大模型工具。<br>   轻量级AI，开箱即用。多功能二次元AI机器人
   image:
     src: https://www.yinmei.vip/images/logo.png
     alt: AI吟美3.0.0

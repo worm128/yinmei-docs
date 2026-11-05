@@ -38,7 +38,7 @@ export default defineConfig({
                     {text: '首页', link: '/'},
                     {text: '快速开始', link: '/cn/README'},
                     {text: '官网', link: 'https://www.yinmei.vip/'},
-                    {text: '演示 ', link: 'http://demo.yinmei.vip/'}
+                    {text: '演示', link: 'http://demo.yinmei.vip/'}
                 ],
                 search: {
                     provider: 'local'
@@ -67,7 +67,7 @@ export default defineConfig({
                 ],
 
                 footer: {
-                    message: 'Made with love by 程序猿的退休生活',
+                    message: '粤ICP备2026065892号-1',
                     copyright: 'Copyright © 2024-2026 AI吟美'
                 }
 
@@ -85,7 +85,7 @@ export default defineConfig({
                     {text: 'Home', link: '/en/'},
                     {text: 'Quick', link: '/en/README'},
                     {text: 'Official ', link: 'https://www.yinmei.vip/index-en.html'},
-                    {text: 'Demo ', link: 'http://demo.yinmei.vip/'}
+                    {text: 'Demo', link: 'http://demo.yinmei.vip/'}
                 ],
                 search: {
                     provider: 'local'
@@ -114,8 +114,55 @@ export default defineConfig({
                 ],
 
                 footer: {
-                    message: 'Made with love by Programming Ape',
+                    message: 'GD ICP Filing No. 2026065892-1',
                     copyright: 'Copyright © 2024-2026 AI YinMei'
+                }
+
+            }
+        },
+        jp: {
+            title: "AI吟美",
+            label: '日語',
+            lang: 'jp', // 可选，将作为 `lang` 属性添加到 `html` 标签中
+            link: '/jp/', // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
+            description: 'AI吟美|AI感情|AI情緒|AI長期記憶|AI短期記憶|AI拡散的思考|AI人工知能|AI意図分析|RAG|KAG|AIによるNSFW（不適切コンテンツ）検知|OBSライブ配信|AI表情|Vtube Studio|AIデスクトップペット|AI歌唱|AI作画|音声合成|音声対話|funasr|VAD（音声区間検出）|声紋認識|音声認識|AI検索|AI QBot|AIロボット|ポイントシステム|AI抽選システム|Live2Dスキン',
+            themeConfig: {
+                logo: "https://www.yinmei.vip/ymlogo.png",
+                nav: [
+                    {text: 'ホーム', link: '/jp/'},
+                    {text: 'クイックガイド', link: '/jp/README'},
+                    {text: '公式サイト ', link: 'https://www.yinmei.vip/index-jp.html'},
+                    {text: 'デモ', link: 'http://demo.yinmei.vip/'}
+                ],
+                search: {
+                    provider: 'local'
+                },
+
+                sidebar: [
+                    {
+                        text: 'Core-Config',
+                        items: [
+                            {text: 'ホーム', link: '/jp/README.md'},
+                            {text: 'ダウンロード・紹介', link: '/jp/link.md'},
+                            {text: '吟美コア', link: '/jp/yinmei-core.md'},
+                            {text: '吟美分析', link: '/jp/yinmei-analysis.md'},
+                            {text: '吟美デスクトップマスコット', link: '/jp/yinmei-desktop-plus.md'},
+                            {text: '吟美の歌唱', link: '/jp/yinmei-music.md'},
+                            {text: 'CosyVoice', link: '/jp/yinmei-cosyvoice.md'},
+                            {text: 'オープン・プラットフォーム', link: '/jp/openapi.md'},
+                            {text: 'アップデート情報', link: '/jp/update.md'},
+                            {text: 'APIドキュメント', link: 'http://api.yinmei.vip/docs'},
+                        ],
+                    }
+                ],
+
+                socialLinks: [
+                    {icon: 'github', link: 'https://github.com/worm128/AI-YinMei'}
+                ],
+
+                footer: {
+                    message: '粤ICP備2026065892号-1',
+                    copyright: 'Copyright © 2024-2026 AI吟美'
                 }
 
             }

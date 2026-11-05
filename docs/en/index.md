@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "AI YinMei"
   text: "One stop AI interactive platform"
-  tagline: Universal artificial intelligence:<br>Aggregate live streaming, QQ bots, table pets, and large model tools. <br>Lightweight AI, ready to use out of the box. <br>Multi functional anime AI robot
+  tagline: Universal artificial intelligence:<br>  Aggregate live streaming, QQ bots, table pets, and large model tools. <br>  Lightweight AI, ready to use out of the box. <br>Multi functional anime AI robot
   image:
     src: https://www.yinmei.vip/images/logo.png
     alt: AI YinMei 3.0.0

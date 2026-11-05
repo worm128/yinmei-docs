@@ -27,3 +27,9 @@
 .VPSponsors {
   display: none !important;
 }
+.main .text {
+  font-size: 32px;
+}
+.main .tagline {
+  font-size: 20px;
+}
