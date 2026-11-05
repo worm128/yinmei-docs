@@ -1,0 +1,29 @@
+/* 命中首页 hero 的 logo 图片 */
+.VPHero .image img,
+.VPHero .VPImage img {
+  animation: hero-glow 12s ease-in-out infinite;
+  transform-origin: center;
+  width: 500px !important;      /* 想要多大写多大 */
+  height: auto !important;      /* 等比，别写死 height 防拉伸 */
+  max-width: none !important;   /* 解掉 img 自身的 max-width:100% */
+}
+.VPHero .name::after {
+  content: " v3.0.1-Pre";
+  font-size: 0.3em;
+  color: var(--vp-c-text-2);
+  vertical-align: super;
+}
+@keyframes hero-glow {
+  /* —— 发光段：原来的 0~100% 压缩进前 10.7% —— */
+  0%     { filter: blur(5px) brightness(2);   opacity: 1; }
+  2%  { filter: blur(0)   brightness(1);   opacity: 1; }  /* 原 50% */
+  4%  { filter: blur(3px) brightness(1.5); opacity: 1; }  /* 原 85% */
+  5% { filter: blur(0)   brightness(1);   opacity: 1; }  /* 原 100%，此处开始停留 */
+
+  /* —— 停留段：保持静止直到 100% —— */
+  100%   { filter: blur(0)   brightness(1);   opacity: 1; }
+}
+
+.VPSponsors {
+  display: none !important;
+}
