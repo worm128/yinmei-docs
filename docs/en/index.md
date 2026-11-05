@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: Quick Start
       link: /en/README.html
+    - theme: brand
+      text: Download
+      link: http://file.yinmei.vip/AI-YinMei-v3.0.1-Pre-Windows-x64-Setup.exe?e=1825378971&token=wpcdkOVctYbTAJJtsjZRQu8rnhtB-zKJ45Yw90Hn:0LQ_Fe5fblxJWWFa-Q3KgrJrOAo=
 
 features:
   - title: Aggregated Live Streaming
