@@ -17,7 +17,7 @@ hero:
       link: /cn/README.html
     - theme: brand
       text: 极速下载
-      link: http://file.yinmei.vip/AI-YinMei-v3.0.1-Pre-Windows-x64-Setup.exe?e=1825378971&token=wpcdkOVctYbTAJJtsjZRQu8rnhtB-zKJ45Yw90Hn:0LQ_Fe5fblxJWWFa-Q3KgrJrOAo=
+      link: http://file.yinmei.vip/AI-YinMei-v3.0.1-Pre-Windows-x64-Setup.exe?e=1825422267&token=wpcdkOVctYbTAJJtsjZRQu8rnhtB-zKJ45Yw90Hn:dgxK9JuEZtd8uSnJr_4zCJ0dxlQ=
 
 features:
   - title: 聚合直播系统
